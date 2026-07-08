@@ -1,6 +1,31 @@
 {
   "workspace": "teachable",
-  "lastSweepAt": "2026-07-08T15:35:00Z",
-  "processedCommentIds": {},
+  "lastSweepAt": "2026-07-08T15:05:00Z",
+  "processedCommentIds": {
+    "3957e717-1d54-427a-ac1e-565cfcaddc8b": {
+      "postId": "b617452e-a925-4939-b214-c3cd5bf2cdcf",
+      "handledAt": "2026-07-08T15:05:00Z",
+      "classification": "clear-edit",
+      "note": "Client feedback (Ben Vincent) resolved manually by Rachel on 2026-06-03, pre-pilot; post published"
+    },
+    "ecaaf836-55f1-4c7b-9192-bb3c21e7bf26": {
+      "postId": "b617452e-a925-4939-b214-c3cd5bf2cdcf",
+      "handledAt": "2026-07-08T15:05:00Z",
+      "classification": "praise",
+      "note": "Client approval after fix (\"thanks! approved\")"
+    },
+    "d95c4f59-d76b-4bc8-a2e5-a716b1de40f4": {
+      "postId": "89b3b0b5-7a79-4f64-800a-e0bd026e7675",
+      "handledAt": "2026-07-08T15:05:00Z",
+      "classification": "internal",
+      "note": "Team @mention (Lana → Danny/Rachel) on Newsletter June #01; post since Finalized"
+    },
+    "8ca23ea0-2609-432b-99ec-d6cece0be590": {
+      "postId": "4bce82b8-3da9-49aa-b421-c56d35fe04d5",
+      "handledAt": "2026-07-08T15:05:00Z",
+      "classification": "internal",
+      "note": "Team @mention (Lana → Rachel) on Newsletter June #02; post since Finalized"
+    }
+  },
   "proposals": []
 }
