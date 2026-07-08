@@ -1,0 +1,113 @@
+<title>Ordinal Feedback Review</title>
+<style>
+:root {
+  --bg: #f6f7f5; --surface: #ffffff; --ink: #1c2320; --ink-soft: #5b665f;
+  --line: #dde3de; --accent: #0e7369; --accent-ink: #ffffff;
+  --del-ink: #b4233c; --del-bg: #fbe9ec; --ins-ink: #1a7f37; --ins-bg: #e6f4ea;
+  --warn-ink: #8a5a00; --warn-bg: #fdf3df; --chip-bg: #eceeeb;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --bg: #171b19; --surface: #202623; --ink: #e8ece9; --ink-soft: #9aa69e;
+  --line: #333b36; --accent: #4cc4b6; --accent-ink: #10201d;
+  --del-ink: #ff9aa8; --del-bg: #46232a; --ins-ink: #8fd9a0; --ins-bg: #1e3a28;
+  --warn-ink: #eec577; --warn-bg: #3a2f1a; --chip-bg: #2a312d;
+}}
+:root[data-theme="light"] {
+  --bg: #f6f7f5; --surface: #ffffff; --ink: #1c2320; --ink-soft: #5b665f;
+  --line: #dde3de; --accent: #0e7369; --accent-ink: #ffffff;
+  --del-ink: #b4233c; --del-bg: #fbe9ec; --ins-ink: #1a7f37; --ins-bg: #e6f4ea;
+  --warn-ink: #8a5a00; --warn-bg: #fdf3df; --chip-bg: #eceeeb;
+}
+:root[data-theme="dark"] {
+  --bg: #171b19; --surface: #202623; --ink: #e8ece9; --ink-soft: #9aa69e;
+  --line: #333b36; --accent: #4cc4b6; --accent-ink: #10201d;
+  --del-ink: #ff9aa8; --del-bg: #46232a; --ins-ink: #8fd9a0; --ins-bg: #1e3a28;
+  --warn-ink: #eec577; --warn-bg: #3a2f1a; --chip-bg: #2a312d;
+}
+body { background: var(--bg); color: var(--ink); margin: 0;
+  font-family: Seravek, 'Avenir Next', 'Segoe UI', ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.5; }
+main { max-width: 76rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+header.top { display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem 1rem;
+  border-bottom: 2px solid var(--accent); padding-bottom: 1rem; margin-bottom: 1.25rem; }
+header.top h1 { font-size: 1.35rem; margin: 0; letter-spacing: -.01em; }
+header.top .meta { color: var(--ink-soft); font-size: .85rem; }
+.stats { display: flex; gap: .75rem; flex-wrap: wrap; margin-bottom: 1.75rem; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: .4rem;
+  padding: .55rem 1rem; min-width: 7.5rem; }
+.stat b { display: block; font-size: 1.45rem; font-variant-numeric: tabular-nums; }
+.stat span { color: var(--ink-soft); font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: .5rem;
+  padding: 1.25rem 1.4rem; margin-bottom: 1.5rem; }
+.card-head { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.card h2 { margin: 0 0 .15rem; font-size: 1.08rem; text-wrap: balance; }
+.card-sub { color: var(--ink-soft); font-size: .82rem; }
+.chips { display: flex; gap: .4rem; align-items: flex-start; flex-wrap: wrap; }
+.chip { font-size: .72rem; padding: .18rem .55rem; border-radius: 999px;
+  background: var(--chip-bg); color: var(--ink-soft); white-space: nowrap; }
+.chip-clear-edit { background: var(--ins-bg); color: var(--ins-ink); }
+.chip-ambiguous { background: var(--warn-bg); color: var(--warn-ink); }
+.chip-question { background: var(--chip-bg); color: var(--ink); }
+h3 { font-size: .72rem; text-transform: uppercase; letter-spacing: .07em;
+  color: var(--ink-soft); margin: 1.1rem 0 .45rem; }
+.comment { margin: 0 0 .6rem; padding: .6rem .9rem; border-left: 3px solid var(--accent);
+  background: var(--bg); border-radius: 0 .35rem .35rem 0; }
+.comment p { margin: .25rem 0 0; }
+.comment-meta { font-size: .78rem; color: var(--ink-soft); }
+.diff { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
+@media (max-width: 46rem) { .diff { grid-template-columns: 1fr; } }
+.pane pre { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; font-size: .82rem;
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; line-height: 1.55;
+  background: var(--bg); border: 1px solid var(--line); border-radius: .4rem;
+  padding: .8rem .9rem; max-height: 30rem; overflow-y: auto; }
+del { background: var(--del-bg); color: var(--del-ink); text-decoration: line-through; border-radius: .15rem; }
+ins { background: var(--ins-bg); color: var(--ins-ink); text-decoration: none; border-radius: .15rem; }
+.rationale p { margin: 0; font-size: .9rem; }
+.card-foot { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap;
+  margin-top: 1.1rem; padding-top: .9rem; border-top: 1px solid var(--line); }
+.cmd { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: .8rem;
+  background: var(--accent); color: var(--accent-ink); padding: .3rem .7rem;
+  border-radius: .35rem; cursor: copy; }
+.cmd-reject { background: var(--chip-bg); color: var(--ink); }
+.link { margin-left: auto; color: var(--accent); font-size: .85rem; text-decoration: none; }
+.link:hover, .link:focus-visible { text-decoration: underline; }
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: .5rem;
+  padding: 2.5rem 1rem; text-align: center; color: var(--ink-soft); }
+.hist-list { list-style: none; padding: 0; margin: 0; }
+.hist { display: flex; gap: .6rem; align-items: baseline; padding: .45rem 0;
+  border-bottom: 1px solid var(--line); font-size: .85rem; }
+.hist-icon { font-weight: 700; }
+.hist-applied .hist-icon { color: var(--ins-ink); }
+.hist-rejected .hist-icon { color: var(--del-ink); }
+.hist-detail { color: var(--ink-soft); margin-left: auto; text-align: right; }
+.howto { color: var(--ink-soft); font-size: .85rem; margin: 0 0 1.5rem; }
+.howto code { background: var(--chip-bg); padding: .05rem .35rem; border-radius: .25rem;
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+</style>
+<main>
+  <header class="top">
+    <h1>Ordinal Feedback Review</h1>
+    <span class="meta">pilot: teachable · last sweep Jul 8, 11:35 AM ET</span>
+  </header>
+  <div class="stats">
+    <div class="stat"><b>0</b><span>pending review</span></div>
+    <div class="stat"><b>0</b><span>applied</span></div>
+    <div class="stat"><b>0</b><span>total proposals</span></div>
+  </div>
+  <p class="howto">To act on a proposal, reply <code>approve prop-xxxxxx</code> or
+  <code>reject prop-xxxxxx: reason</code> in the #ordinal-feedback digest thread —
+  the agent picks it up on its next sweep. For instant action, send the same command
+  to the Claude session.</p>
+  <div class="empty">No proposals waiting for review. New client feedback is checked hourly.</div>
+  
+</main>
+<script>
+document.querySelectorAll('.cmd').forEach((el) => {
+  el.addEventListener('click', () => {
+    navigator.clipboard.writeText(el.textContent).then(() => {
+      const t = el.textContent; el.textContent = 'copied!';
+      setTimeout(() => { el.textContent = t; }, 900);
+    });
+  });
+});
+</script>

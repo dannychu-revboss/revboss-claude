@@ -1,0 +1,22 @@
+{
+  "pilot": {
+    "workspaces": ["teachable"]
+  },
+  "teamDomain": "revboss.com",
+  "clientDomains": {
+    "teachable": ["teachable.com"]
+  },
+  "slack": {
+    "channelName": "ordinal-feedback",
+    "channelId": "C0BFW69B8MB"
+  },
+  "dashboardArtifactUrl": "https://claude.ai/code/artifact/061e2e24-437c-4ae6-b307-b3c0f9df6727",
+  "autonomy": "propose-only",
+  "editableStatuses": ["ToDo", "ForReview", "InProgress", "Blocked", "Tentative", "Scheduled", "Finalized"],
+  "onApproval": {
+    "applyEdit": true,
+    "replyToClientComment": true,
+    "setStatus": "ForReview"
+  },
+  "sweepLookbackDays": 30
+}
