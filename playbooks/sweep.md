@@ -8,7 +8,7 @@ guardrails in README.md: this is a **propose-only** system.
 
 1. Read `config.json` and `state/<workspace>.json` for each pilot workspace
    (create the state file from the schema below if missing).
-2. `git pull origin claude/ordinal-comment-agent-q6pfoi` first — another session may
+2. `git pull origin claude/slack-session-flb27i` first — another session may
    have updated state.
 
 ## 1. Check for approvals since last sweep (do this FIRST)
@@ -63,17 +63,25 @@ open comments (clients often leave several at once):
 ## 4. Publish
 
 1. Update `state.lastSweepAt`, write the state file.
-2. Regenerate the dashboard: `node dashboard/generate.mjs`, then publish
-   `dashboard/index.html` as the Artifact (same file path = same URL).
-3. Post a digest to Slack ONLY if something changed (new proposals, applied
+2. Regenerate the dashboard: `node dashboard/generate.mjs` (produces both
+   `dashboard/index.html` and `dashboard/dashboard.md`).
+3. Refresh the live review dashboard — a **private Slack Canvas** (client copy is
+   confidential, so nothing is published to a public URL; the environment also has
+   no tool to push to a `claude.ai/code/artifact` URL). Update it with the contents
+   of `dashboard/dashboard.md` using `mcp__Slack__slack_update_canvas`:
+   - `canvas_id`: `config.dashboardCanvasId`
+   - `action`: `replace` (no `section_id` → replaces the whole canvas body)
+   - `content`: the contents of `dashboard/dashboard.md` (drop the leading `# `
+     title line — the canvas title is set separately)
+4. Post a digest to Slack ONLY if something changed (new proposals, applied
    approvals). Format:
    - one line per new proposal: post title, client author, one-line summary of the
      feedback, proposal ID, link to the Ordinal post
-   - dashboard link
+   - the canvas link (`config.dashboardCanvasUrl`)
    - reminder: reply `approve <id>` or `reject <id>` in this thread
    Silent sweeps (nothing new) post nothing — no noise.
-4. Commit and push state + dashboard changes:
-   `git add -A && git commit -m "sweep: <summary>" && git push -u origin claude/ordinal-comment-agent-q6pfoi`
+5. Commit and push state + dashboard changes:
+   `git add -A && git commit -m "sweep: <summary>" && git push -u origin claude/slack-session-flb27i`
 
 ## State file schema (`state/<workspace>.json`)
 

@@ -1,6 +1,10 @@
 #!/usr/bin/env node
-// Renders state/*.json into dashboard/index.html — the human review UI for
-// proposed post edits. Dependency-free; run with `node dashboard/generate.mjs`.
+// Renders state/*.json into two review artifacts — run `node dashboard/generate.mjs`:
+//   • dashboard/index.html  — rich HTML review UI with word-level before/after diff
+//   • dashboard/dashboard.md — Canvas-flavored Markdown for the private Slack Canvas
+//     review dashboard (the environment has no way to publish to a claude.ai artifact
+//     URL, so the Slack Canvas is the live dashboard — see README.md).
+// Dependency-free.
 
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -232,4 +236,78 @@ document.querySelectorAll('.cmd').forEach((el) => {
 `;
 
 writeFileSync(join(root, 'dashboard', 'index.html'), html);
-console.log(`dashboard/index.html written — ${pending.length} pending, ${resolved.length} resolved.`);
+
+// --- Markdown dashboard (Slack Canvas) --------------------------------------
+// Canvas markdown can't do word-level red/green, so before/after copy is shown
+// as clearly-labeled fenced blocks (line breaks + emoji survive verbatim).
+
+const bq = (s) => String(s ?? '').split('\n').map((l) => `> ${l}`).join('\n');
+// Escape brackets in prose so Slack Canvas doesn't parse mention/link syntax
+// like `@[Name](urn:li:...)` as a link with an unsupported URL scheme. Copy in
+// the Before/After code fences is exempt — fenced text is never link-parsed.
+const mdProse = (s) => String(s ?? '').replace(/([[\]])/g, '\\$1');
+
+function proposalMd(p) {
+  const comments = (p.comments ?? []).map((c) =>
+    `> **${c.author}** · ${c.email} · ${fmtDate(c.createdAt)}\n>\n${bq(mdProse(c.message))}`
+  ).join('\n>\n');
+  const reply = p.suggestedReply
+    ? `**Proposed client reply**\n\n${bq(mdProse(p.suggestedReply))}\n\n`
+    : '';
+  return [
+    `## ${p.postTitle} — \`${p.id}\``,
+    ``,
+    `${p.workspace} · ${p.channel} · publishes ${p.publishDate ?? 'unscheduled'} · ${CLASS_LABEL[p.classification] ?? p.classification} · confidence: ${p.confidence}`,
+    ``,
+    `**Client feedback**`,
+    ``,
+    comments || '> _(none)_',
+    ``,
+    `**Before**`,
+    ``,
+    '```',
+    p.before ?? '',
+    '```',
+    ``,
+    `**After (proposed)**`,
+    ``,
+    '```',
+    p.after ?? '',
+    '```',
+    ``,
+    `**What changed & why**`,
+    ``,
+    mdProse(p.rationale),
+    ``,
+    reply + `**To act:** \`approve ${p.id}\`  ·  \`reject ${p.id}: reason\`  ·  [Open in Ordinal](${p.postUrl})`,
+    ``,
+    `---`,
+  ].join('\n');
+}
+
+let md = [
+  `# Ordinal Comment Agent — Review Dashboard`,
+  ``,
+  `Pilot: ${workspaces} · last sweep ${fmtDate(lastSweep)}`,
+  ``,
+  `**${pending.length}** pending · **${applied}** applied · **${all.length}** total`,
+  ``,
+  `To act on a proposal, reply \`approve prop-xxxxxx\` or \`reject prop-xxxxxx: reason\` in the #ordinal-feedback digest thread — the agent picks it up on its next sweep. For instant action, send the same command to the Claude session.`,
+  ``,
+  pending.length
+    ? pending.map(proposalMd).join('\n')
+    : `_No proposals waiting for review. New client feedback is checked hourly._`,
+].join('\n');
+
+if (resolved.length) {
+  md += '\n\n## Recent activity\n\n' + resolved.slice(0, 20).map((p) => {
+    const icon = p.status === 'applied' ? '✅' : '❌';
+    const extra = p.resolution && p.resolution !== p.status ? ` — ${p.resolution}` : '';
+    return `- ${icon} **${p.postTitle}** — \`${p.id}\` · ${p.status}${extra} · ${fmtDate(p.resolvedAt)}`;
+  }).join('\n');
+}
+md += '\n';
+
+writeFileSync(join(root, 'dashboard', 'dashboard.md'), md);
+
+console.log(`dashboard/index.html + dashboard/dashboard.md written — ${pending.length} pending, ${resolved.length} resolved.`);

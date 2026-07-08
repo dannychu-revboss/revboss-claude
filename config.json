@@ -11,7 +11,8 @@
     "channelName": "ordinal-feedback",
     "channelId": "C0BFW69B8MB"
   },
-  "dashboardArtifactUrl": "https://claude.ai/code/artifact/061e2e24-437c-4ae6-b307-b3c0f9df6727",
+  "dashboardCanvasId": "F0BGWN40LNL",
+  "dashboardCanvasUrl": "https://revboss.slack.com/docs/T03ANP437/F0BGWN40LNL",
   "autonomy": "propose-only",
   "editableStatuses": ["ToDo", "ForReview", "InProgress", "Blocked", "Tentative", "Scheduled", "Finalized"],
   "onApproval": {

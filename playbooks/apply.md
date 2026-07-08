@@ -26,8 +26,10 @@ instruction). Never run this without an approval.
 5. Set post status per `config.onApproval.setStatus` (default `ForReview`) with
    `ordinal_manage_post` action `update` so the client knows to re-check it.
 6. Update the proposal: `status: "applied"`, `resolvedAt`, `resolution: "applied"`.
-7. Regenerate + republish the dashboard, confirm in the Slack thread
-   (`✅ prop-xxxxxx applied to "<post title>"`), commit and push state.
+7. Regenerate the dashboard (`node dashboard/generate.mjs`) and refresh the Slack
+   Canvas with the new `dashboard/dashboard.md` via `mcp__Slack__slack_update_canvas`
+   (`canvas_id`: `config.dashboardCanvasId`, `action: replace`). Confirm in the Slack
+   thread (`✅ prop-xxxxxx applied to "<post title>"`), commit and push state.
 
 ## Rejections
 

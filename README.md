@@ -18,7 +18,7 @@ team member to parse the comment and hand-edit the post.
                     │    comments (email domain ≠ revboss.com)   │
                     │ 3. draft proposed revision per feedback    │
                     │ 4. write proposals to state, commit, push  │
-                    │ 5. re-render + publish review dashboard    │
+                    │ 5. re-render + refresh Slack Canvas board  │
                     │ 6. post digest to #ordinal-feedback        │
                     │ 7. check Slack thread for approvals ───────┼──┐
                     └────────────────────────────────────────────┘  │
@@ -44,16 +44,29 @@ repo holds the agent's instructions (playbooks), configuration, and memory (stat
 | `playbooks/sweep.md` | Instructions the agent follows on each hourly sweep |
 | `playbooks/apply.md` | Instructions for applying an approved proposal |
 | `state/<workspace>.json` | Agent memory: processed comment IDs + proposal queue |
-| `dashboard/generate.mjs` | Renders `state/*.json` into `dashboard/index.html` (the review UI) |
+| `dashboard/generate.mjs` | Renders `state/*.json` into `dashboard/index.html` (rich review UI) and `dashboard/dashboard.md` (source for the Slack Canvas dashboard) |
 
 ## Reviewing and approving proposals
 
-Each sweep publishes a dashboard (Artifact link is posted in `#ordinal-feedback`)
-showing every pending proposal with a side-by-side before/after diff. To act on one:
+The review dashboard is a **private Slack Canvas** in the RevBoss workspace, kept
+current on every sweep — it shows every pending proposal with the client comment,
+the before/after copy, the rationale, and the exact approve/reject commands. It is
+a canvas (not a public web page) on purpose: client copy is confidential, so the
+dashboard stays inside Slack. The canvas id and URL live in `config.json`
+(`dashboardCanvasId` / `dashboardCanvasUrl`), and a link is posted in
+`#ordinal-feedback`. To act on a proposal:
 
 - Reply in the Slack digest thread: `approve prop-abc123`, `reject prop-abc123`,
   or `reject prop-abc123: <reason>` — picked up on the next sweep, or
 - Tell the Claude session directly ("approve prop-abc123") for immediate action.
+
+> **Why a Slack Canvas and not a `claude.ai/code/artifact` link?** An earlier version
+> pointed at a hardcoded `claude.ai/code/artifact` URL, but nothing in this agent's
+> environment can push HTML to such a URL, so that link never updated and showed
+> empty. The Slack Canvas is a real surface the agent can refresh each sweep (via the
+> Slack MCP `slack_update_canvas` tool) while keeping confidential client copy private
+> to the team's workspace. `dashboard/index.html` is still generated as a richer local
+> view with a word-level diff.
 
 ## Guardrails
 
