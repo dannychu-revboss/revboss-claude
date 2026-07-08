@@ -1,10 +1,11 @@
 {
   "pilot": {
-    "workspaces": ["teachable"]
+    "workspaces": ["teachable", "innovation-challenge"]
   },
   "teamDomain": "revboss.com",
   "clientDomains": {
-    "teachable": ["teachable.com"]
+    "teachable": ["teachable.com"],
+    "innovation-challenge": ["skild.com"]
   },
   "slack": {
     "channelName": "ordinal-feedback",
