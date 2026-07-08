@@ -11,7 +11,15 @@ guardrails in README.md: this is a **propose-only** system.
 2. `git pull origin claude/ordinal-comment-agent-q6pfoi` first — another session may
    have updated state.
 
-## 1. Check for approvals since last sweep (do this FIRST)
+## 1. Flush any queued Slack digest (do this FIRST)
+
+If the state file has a `pendingSlackDigest` field, a previous sweep couldn't
+reach Slack. Post its `message` to the channel now, then delete the field.
+Conversely, if Slack is unreachable when YOU try to post a digest (retry ~3
+times, then stop — don't hammer a flapping connection), save the digest into
+`pendingSlackDigest` instead and commit it with the rest of the sweep.
+
+## 1b. Check for approvals since last sweep
 
 1. Read recent messages + thread replies in the Slack channel (`config.slack.channelId`)
    since `state.lastSweepAt`.

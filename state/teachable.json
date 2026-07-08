@@ -27,5 +27,10 @@
       "note": "Team @mention (Lana → Rachel) on Newsletter June #02; post since Finalized"
     }
   },
-  "proposals": []
+  "proposals": [],
+  "pendingSlackDigest": {
+    "queuedAt": "2026-07-08T15:20:00Z",
+    "reason": "Slack MCP connection was down during the 15:00Z sweep; post this at the start of the next sweep, then clear this field.",
+    "message": "**Sweep complete — checked every comment thread on recent Teachable posts.** No client comments are sitting unresponded. Details:\n\n✅ **Content Draft #379** — Ben Vincent's feedback (wrong host + registration link) was answered and fixed by Rachel on Jun 3; Ben closed it with \"thanks! approved.\" ([post](https://app.tryordinal.com/teachable/posts/b617452e-a925-4939-b214-c3cd5bf2cdcf))\n\nThe only comments without a reply are two **internal** asks from Lana tagging Danny/Rachel for thoughts on the June newsletters ([#01](https://app.tryordinal.com/teachable/posts/89b3b0b5-7a79-4f64-800a-e0bd026e7675), [#02](https://app.tryordinal.com/teachable/posts/4bce82b8-3da9-49aa-b421-c56d35fe04d5)) — both newsletters were finalized afterward, so they look moot.\n\nAll other recent posts have empty comment threads. Queue stays empty — I'll flag new client feedback here as it lands."
+  }
 }
