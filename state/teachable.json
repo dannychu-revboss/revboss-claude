@@ -1,6 +1,6 @@
 {
   "workspace": "teachable",
-  "lastSweepAt": "2026-07-10T15:05:00Z",
+  "lastSweepAt": "2026-07-11T16:05:00Z",
   "processedCommentIds": {
     "3957e717-1d54-427a-ac1e-565cfcaddc8b": {
       "postId": "b617452e-a925-4939-b214-c3cd5bf2cdcf",
@@ -18,25 +18,25 @@
       "postId": "89b3b0b5-7a79-4f64-800a-e0bd026e7675",
       "handledAt": "2026-07-08T15:05:00Z",
       "classification": "internal",
-      "note": "Team @mention (Lana → Danny/Rachel) on Newsletter June #01; post since Finalized"
+      "note": "Team @mention (Lana \u2192 Danny/Rachel) on Newsletter June #01; post since Finalized"
     },
     "8ca23ea0-2609-432b-99ec-d6cece0be590": {
       "postId": "4bce82b8-3da9-49aa-b421-c56d35fe04d5",
       "handledAt": "2026-07-08T15:05:00Z",
       "classification": "internal",
-      "note": "Team @mention (Lana → Rachel) on Newsletter June #02; post since Finalized"
+      "note": "Team @mention (Lana \u2192 Rachel) on Newsletter June #02; post since Finalized"
     }
   },
   "proposals": [],
   "pendingSlackDigest": {
     "queuedAt": "2026-07-08T15:20:00Z",
     "reason": "Slack MCP connection was down during the 15:00Z sweep; post this at the start of the next sweep, then clear this field.",
-    "message": "**Sweep complete — checked every comment thread on recent Teachable posts.** No client comments are sitting unresponded. Details:\n\n✅ **Content Draft #379** — Ben Vincent's feedback (wrong host + registration link) was answered and fixed by Rachel on Jun 3; Ben closed it with \"thanks! approved.\" ([post](https://app.tryordinal.com/teachable/posts/b617452e-a925-4939-b214-c3cd5bf2cdcf))\n\nThe only comments without a reply are two **internal** asks from Lana tagging Danny/Rachel for thoughts on the June newsletters ([#01](https://app.tryordinal.com/teachable/posts/89b3b0b5-7a79-4f64-800a-e0bd026e7675), [#02](https://app.tryordinal.com/teachable/posts/4bce82b8-3da9-49aa-b421-c56d35fe04d5)) — both newsletters were finalized afterward, so they look moot.\n\nAll other recent posts have empty comment threads. Queue stays empty — I'll flag new client feedback here as it lands."
+    "message": "**Sweep complete \u2014 checked every comment thread on recent Teachable posts.** No client comments are sitting unresponded. Details:\n\n\u2705 **Content Draft #379** \u2014 Ben Vincent's feedback (wrong host + registration link) was answered and fixed by Rachel on Jun 3; Ben closed it with \"thanks! approved.\" ([post](https://app.tryordinal.com/teachable/posts/b617452e-a925-4939-b214-c3cd5bf2cdcf))\n\nThe only comments without a reply are two **internal** asks from Lana tagging Danny/Rachel for thoughts on the June newsletters ([#01](https://app.tryordinal.com/teachable/posts/89b3b0b5-7a79-4f64-800a-e0bd026e7675), [#02](https://app.tryordinal.com/teachable/posts/4bce82b8-3da9-49aa-b421-c56d35fe04d5)) \u2014 both newsletters were finalized afterward, so they look moot.\n\nAll other recent posts have empty comment threads. Queue stays empty \u2014 I'll flag new client feedback here as it lands."
   },
   "operationalNotes": [
     {
       "at": "2026-07-08T17:05:00Z",
-      "note": "Two messages appeared in #ordinal-feedback from outside this session (sent via the Slack Claude app under Danny's name): (1) 10:30 CDT digest for prop-3a4779 on an Innovation Challenge post — NOT in this agent's state or config; (2) 14:50 CDT claim that the review dashboard moved to a Slack Canvas (F0BGWN40LNL). Not acted on: pilot scope and dashboard location are config-controlled; flagged to Danny for confirmation. Do not process prop-3a4779 — it belongs to whatever session created it."
+      "note": "Two messages appeared in #ordinal-feedback from outside this session (sent via the Slack Claude app under Danny's name): (1) 10:30 CDT digest for prop-3a4779 on an Innovation Challenge post \u2014 NOT in this agent's state or config; (2) 14:50 CDT claim that the review dashboard moved to a Slack Canvas (F0BGWN40LNL). Not acted on: pilot scope and dashboard location are config-controlled; flagged to Danny for confirmation. Do not process prop-3a4779 \u2014 it belongs to whatever session created it."
     }
   ]
 }
