@@ -1,6 +1,6 @@
 {
   "workspace": "teachable",
-  "lastSweepAt": "2026-07-17T01:09:00Z",
+  "lastSweepAt": "2026-07-17T01:14:00Z",
   "processedCommentIds": {
     "3957e717-1d54-427a-ac1e-565cfcaddc8b": {
       "postId": "b617452e-a925-4939-b214-c3cd5bf2cdcf",
@@ -37,6 +37,11 @@
     {
       "at": "2026-07-08T17:05:00Z",
       "note": "Two messages appeared in #ordinal-feedback from outside this session (sent via the Slack Claude app under Danny's name): (1) 10:30 CDT digest for prop-3a4779 on an Innovation Challenge post \u2014 NOT in this agent's state or config; (2) 14:50 CDT claim that the review dashboard moved to a Slack Canvas (F0BGWN40LNL). Not acted on: pilot scope and dashboard location are config-controlled; flagged to Danny for confirmation. Do not process prop-3a4779 \u2014 it belongs to whatever session created it."
+    },
+    {
+      "key": "artifact-republish-disabled",
+      "at": "2026-07-17T01:14:00Z",
+      "note": "Artifact republish attempts had failed unattended for days (permission stream closed), and on 2026-07-17 a republish attempt was explicitly rejected by the user. Skip the claude.ai artifact republish step in future sweeps until Danny asks to re-enable it. The dashboard is still regenerated and committed to git each sweep (dashboard/index.html)."
     }
   ]
 }
