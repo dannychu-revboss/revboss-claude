@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #4f46e5;
+  --color-brand-700: #4338ca;
+}
+
+body {
+  @apply bg-white text-neutral-900 antialiased;
+}
+
+.btn-primary {
+  @apply inline-flex cursor-pointer items-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-neutral-700 disabled:cursor-default disabled:opacity-50;
+}
+.btn-secondary {
+  @apply inline-flex cursor-pointer items-center gap-2 rounded-lg border border-neutral-200 bg-white px-4 py-2 text-sm font-medium text-neutral-700 transition-colors hover:bg-neutral-50;
+}
+.btn-danger {
+  @apply inline-flex cursor-pointer items-center gap-2 rounded-lg border border-red-200 bg-white px-4 py-2 text-sm font-medium text-red-600 transition-colors hover:bg-red-50;
+}
+.input {
+  @apply w-full rounded-lg border border-neutral-200 px-3 py-2 text-sm outline-none focus:border-neutral-400 focus:ring-2 focus:ring-neutral-100;
+}
+.label {
+  @apply mb-1.5 block text-sm font-medium text-neutral-700;
+}
+.card {
+  @apply rounded-xl border border-neutral-200 bg-white;
+}
+.tag {
+  @apply inline-block rounded-md bg-neutral-100 px-2 py-0.5 text-xs text-neutral-600;
+}

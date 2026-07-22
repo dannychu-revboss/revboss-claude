@@ -1,0 +1,98 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Client {
+  id          String   @id @default(cuid())
+  name        String
+  // Identity
+  about       String   @default("")
+  story       String   @default("")
+  offers      String   @default("[]") // JSON array of { title, description }
+  archetype   String   @default("")
+  voiceGuide  String   @default("")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  knowledge     KnowledgeItem[]
+  examples      StyleExample[]
+  preferences   ContentPreference[]
+  drafts        Draft[]
+  conversations Conversation[]
+}
+
+model KnowledgeItem {
+  id        String   @id @default(cuid())
+  clientId  String
+  client    Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  title     String
+  content   String
+  kind      String   @default("text") // "text" | "document"
+  tags      String   @default("[]") // JSON array of strings
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([clientId])
+}
+
+model StyleExample {
+  id        String   @id @default(cuid())
+  clientId  String
+  client    Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  title     String   @default("")
+  content   String
+  createdAt DateTime @default(now())
+
+  @@index([clientId])
+}
+
+model ContentPreference {
+  id        String   @id @default(cuid())
+  clientId  String
+  client    Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  rule      String
+  createdAt DateTime @default(now())
+
+  @@index([clientId])
+}
+
+model Draft {
+  id        String   @id @default(cuid())
+  clientId  String
+  client    Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  title     String   @default("Untitled post")
+  content   String   @default("")
+  status    String   @default("draft") // "draft" | "approved" | "published"
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([clientId])
+}
+
+model Conversation {
+  id        String    @id @default(cuid())
+  clientId  String
+  client    Client    @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  title     String    @default("New chat")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  messages  Message[]
+
+  @@index([clientId])
+}
+
+model Message {
+  id             String       @id @default(cuid())
+  conversationId String
+  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  role           String // "user" | "assistant"
+  content        String
+  createdAt      DateTime     @default(now())
+
+  @@index([conversationId])
+}
