@@ -1,4 +1,5 @@
 import { prisma } from "@/lib/db";
+import { CRAFT_GUIDE } from "@/lib/craft";
 import { parseOffers, parseTags } from "@/lib/utils";
 
 const MAX_KNOWLEDGE_ITEMS = 6;
@@ -108,14 +109,16 @@ export async function buildSystemPrompt(clientId: string, latestUserMessage: str
     );
   }
 
+  sections.push(CRAFT_GUIDE);
+
   sections.push(
     `## How to respond
 - You help RevBoss content writers ideate, draft, edit, and repurpose LinkedIn content for this client.
 - When you produce ready-to-publish post copy, wrap EACH complete post in tags exactly like this: <post title="Short descriptive title">post copy here</post>. The writer's editor picks these up, so include the full post inside the tags with real line breaks.
-- LinkedIn formatting: short lines, generous white space, a scroll-stopping first line (the hook shows before "see more"), no markdown syntax inside posts (plain text only — LinkedIn doesn't render markdown), and at most 2-3 hashtags only when they genuinely help.
-- Keep posts under 3,000 characters. Ideal length is usually 800-1,600.
+- No markdown syntax inside posts (plain text only — LinkedIn doesn't render markdown). Keep posts under 3,000 characters.
 - Outside of <post> tags, talk to the writer normally (analysis, options, feedback, ideas) using markdown.
-- Ground every factual claim about the client in the knowledge base above. If you need facts you don't have, ask the writer instead of inventing them.`
+- Ground every factual claim about the client in the knowledge base above. If you need facts you don't have, ask the writer instead of inventing them.
+- The client's own content preferences (above) are hard rules and override the house playbook where they conflict.`
   );
 
   return sections.join("\n\n");
