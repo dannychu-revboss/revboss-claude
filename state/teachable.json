@@ -1,6 +1,6 @@
 {
   "workspace": "teachable",
-  "lastSweepAt": "2026-08-04T15:19:00Z",
+  "lastSweepAt": "2026-08-04T16:15:00Z",
   "processedCommentIds": {
     "3957e717-1d54-427a-ac1e-565cfcaddc8b": {
       "postId": "b617452e-a925-4939-b214-c3cd5bf2cdcf",
@@ -42,6 +42,11 @@
       "key": "artifact-republish-disabled",
       "at": "2026-07-17T01:14:00Z",
       "note": "Artifact republish attempts had failed unattended for days (permission stream closed), and on 2026-07-17 a republish attempt was explicitly rejected by the user. Skip the claude.ai artifact republish step in future sweeps until Danny asks to re-enable it. The dashboard is still regenerated and committed to git each sweep (dashboard/index.html)."
+    },
+    {
+      "key": "teachable-workspace-inaccessible",
+      "at": "2026-08-04T16:15:00Z",
+      "note": "Ordinal returned 'Unknown or archived workspace slug.' for workspaceSlug=teachable, and 'teachable' is not in the workspace list this MCP session can access (22 workspaces returned, including innovation-challenge and revboss-eric). Post/comment sweeps for the Teachable pilot cannot run until the workspace is restored or config.json pilot.workspaces is repointed. Slack approve/reject processing is unaffected. Awaiting Danny's direction \u2014 no config change made."
     }
   ]
 }
