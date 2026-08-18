@@ -9,7 +9,7 @@
     "failureChannelId": "C0B52B5AZCM"
   },
   "airtable": {
-    "note": "IDs live in shared-config.md — listed here only as the set this agent touches.",
+    "note": "IDs live in shared-config.md \u2014 listed here only as the set this agent touches.",
     "base": "appVwdsrrutdDh24z",
     "reads": {
       "Clients": "tblKhLOUG8B2XtwNL",
@@ -46,17 +46,31 @@
   },
   "answerSurface": {
     "humanRunRequired": true,
-    "note": "The answer-surface reading is run by a person in ChatGPT + Claude, not by the agent. BASELINE is BLOCKED on it — no client brief ships without a human_check:true observation. WEEKLY is non-blocking: the agent puts a 2-question paste-ready pack at the top of the digest and continues, tracking skips.",
+    "note": "The answer-surface reading is run by a person in ChatGPT + Claude, not by the agent. BASELINE is BLOCKED on it \u2014 no client brief ships without a human_check:true observation. WEEKLY is non-blocking: the agent puts a 2-question paste-ready pack at the top of the digest and continues, tracking skips.",
     "weeklyQuestions": 2,
     "fullSweepCadence": "monthly",
-    "assistants": ["ChatGPT", "Claude"],
+    "assistants": [
+      "ChatGPT",
+      "Claude"
+    ],
     "instructions": "new chat per question, web search on, paste the raw answer back",
-    "runBy": "Danny (default) — reassign per client if someone else owns the relationship",
-    "blocking": { "baseline": true, "weekly": false }
+    "runBy": "Danny (default) \u2014 reassign per client if someone else owns the relationship",
+    "blocking": {
+      "baseline": true,
+      "weekly": false
+    }
   },
   "spendCaps": {
-    "weekly": { "searches_per_client": 6, "fetches_per_client": 12, "answer_surface_questions": 2 },
-    "baseline": { "searches_per_client": 24, "fetches_per_client": 48, "answer_surface_questions": 12 }
+    "weekly": {
+      "searches_per_client": 6,
+      "fetches_per_client": 12,
+      "answer_surface_questions": 2
+    },
+    "baseline": {
+      "searches_per_client": 24,
+      "fetches_per_client": 48,
+      "answer_surface_questions": 12
+    }
   },
   "guardrails": {
     "ordinalWrites": "ideas-only",
@@ -67,7 +81,62 @@
     "answerSurfaceBaselineRequiresHumanRun": true
   },
   "pilot": {
-    "note": "Start with 2–3 clients who already have voice bundles and an active Ordinal queue, then widen. Each entry needs clients/<slug>/pillars.json before its first weekly run.",
-    "clients": []
+    "note": "Dry run completed 2026-08-18 \u2014 see clients/DRY-RUN-2026-08-18.html. Each slug below has pillars.PROPOSED.json + buyer-questions.PROPOSED.json + a query pack, all UNAPPROVED. Rename PROPOSED -> pillars.json only after Danny + client sign-off; the weekly run skips any client without an approved pillars.json.",
+    "dryRunArtifact": "https://claude.ai/code/artifact/032ae9b6-adbf-4cbd-9bef-e5e67a0d7b2a",
+    "clients": [
+      {
+        "slug": "justfund-iara",
+        "client": "JustFund.US - Iara",
+        "clientRecordId": "recyA8iMsOaOxwSdp",
+        "ordinalWorkspace": "justfundus",
+        "profile": "Iara Peng",
+        "status": "pillars proposed \u2014 unapproved"
+      },
+      {
+        "slug": "david-freeman-david",
+        "client": "David Freeman Consulting Group - David",
+        "clientRecordId": "recRnxNcbmg5tHcIF",
+        "ordinalWorkspace": "david-freeman-consulting-group-david",
+        "profile": "David H. Freeman, J.D.",
+        "status": "pillars proposed \u2014 unapproved"
+      },
+      {
+        "slug": "agp-whitney",
+        "client": "AGP - Whitney",
+        "clientRecordId": "recXgEzUEydTFIuBi",
+        "ordinalWorkspace": "agp",
+        "profileId": "c773f2b2-7a36-4065-a4cc-31c90af70b4e",
+        "label": "Whitney",
+        "status": "pillars proposed \u2014 unapproved; title unconfirmed"
+      },
+      {
+        "slug": "agp-alyssa",
+        "client": "AGP - Alyssa",
+        "clientRecordId": "recz3HZXvkhsv2LvR",
+        "ordinalWorkspace": "agp",
+        "profileId": "a9b052fb-72b7-40af-b548-2f703cfa94c0",
+        "label": "Alyssa",
+        "status": "pillars proposed \u2014 unapproved; title unconfirmed"
+      },
+      {
+        "slug": "agp-trent",
+        "client": "AGP - Trent",
+        "clientRecordId": "recsgHKh04WDHpYT9",
+        "ordinalWorkspace": "agp-trent-ricker",
+        "profile": "Trent Ricker",
+        "status": "pillars proposed \u2014 unapproved"
+      }
+    ],
+    "multiSeatAccounts": [
+      {
+        "organization": "AGP",
+        "seats": [
+          "agp-whitney",
+          "agp-alyssa",
+          "agp-trent"
+        ],
+        "rule": "One org-level market/answer-surface research pass, then per-person pillar territory. Sector giving data -> Trent. Practitioner ask/segmentation -> Whitney. Healthcare/hospital foundations -> Alyssa. Nonprofit-CEO burnout -> Trent; CDO-seat candor -> Alyssa. Check for duplicate sources across seats in the same week before writing ideas."
+      }
+    ]
   }
 }

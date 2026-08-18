@@ -1,0 +1,433 @@
+<title>Pillar Research Dry Run</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#f6f8f7; --panel:#ffffff; --panel-2:#f0f4f2;
+  --ink:#141e1c; --muted:#5b6a66; --line:#dce3e0;
+  --accent:#10554c; --accent-soft:#e2eeeb; --copper:#9a5b12;
+  --ok:#2c6e49; --ok-soft:#e6f0e9; --watch:#9a5b12; --watch-soft:#f7eede;
+  --gap:#98302b; --gap-soft:#f8e8e6;
+  --display:"Spectral",Georgia,"Times New Roman",serif;
+  --body:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#101614; --panel:#171f1d; --panel-2:#1e2725;
+  --ink:#e9efec; --muted:#9aa8a3; --line:#2b3634;
+  --accent:#6fbfae; --accent-soft:#16302c; --copper:#d69a4e;
+  --ok:#7fc094; --ok-soft:#17281d; --watch:#d69a4e; --watch-soft:#2c2316;
+  --gap:#e08e86; --gap-soft:#2e1d1b;
+}}
+:root[data-theme="dark"]{
+  --ground:#101614; --panel:#171f1d; --panel-2:#1e2725;
+  --ink:#e9efec; --muted:#9aa8a3; --line:#2b3634;
+  --accent:#6fbfae; --accent-soft:#16302c; --copper:#d69a4e;
+  --ok:#7fc094; --ok-soft:#17281d; --watch:#d69a4e; --watch-soft:#2c2316;
+  --gap:#e08e86; --gap-soft:#2e1d1b;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:980px;margin:0 auto;padding:56px 22px 110px;display:flex;flex-direction:column;gap:34px}
+
+.mast{display:flex;flex-direction:column;gap:10px;padding-bottom:22px;border-bottom:2px solid var(--accent)}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(30px,4.6vw,44px);line-height:1.1;
+  margin:0;letter-spacing:-.015em;text-wrap:balance}
+.standfirst{font-family:var(--display);font-size:19px;line-height:1.5;color:var(--muted);max-width:62ch;margin:0}
+.runbar{display:flex;flex-wrap:wrap;gap:8px 26px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.runbar b{color:var(--ink);font-weight:500}
+
+h2{font-family:var(--display);font-weight:600;font-size:26px;line-height:1.2;margin:0 0 4px;
+  letter-spacing:-.01em;text-wrap:balance}
+h3{font-family:var(--body);font-weight:600;font-size:16.5px;margin:0 0 6px}
+.sec{display:flex;flex-direction:column;gap:16px}
+.sec-head{display:flex;flex-direction:column;gap:2px}
+.sec-head .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+p{margin:0 0 10px;max-width:70ch}
+p:last-child{margin-bottom:0}
+a{color:var(--accent);text-underline-offset:2px;text-decoration-thickness:1px;word-break:break-word}
+strong{font-weight:600}
+em{font-style:italic}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:22px 24px;
+  display:flex;flex-direction:column;gap:12px}
+.client{border-left:3px solid var(--accent)}
+.client-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px;
+  padding-bottom:10px;border-bottom:1px solid var(--line)}
+.client-name{font-family:var(--display);font-size:23px;font-weight:600;letter-spacing:-.01em}
+.client-who{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.02em}
+
+.decisions{background:var(--accent-soft);border:1px solid var(--line);border-radius:4px;padding:22px 24px;
+  display:flex;flex-direction:column;gap:14px}
+.decisions ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:10px}
+.decisions li::marker{font-family:var(--mono);color:var(--accent);font-weight:500}
+
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:520px}
+caption{text-align:left;font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--muted);padding-bottom:7px}
+th{text-align:left;font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted);padding:7px 11px 7px 0;border-bottom:1px solid var(--line);
+  white-space:nowrap}
+td{padding:9px 11px 9px 0;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+td.num,th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;
+  padding-right:14px;white-space:nowrap}
+.pname{font-weight:500}
+.pdef{color:var(--muted);font-size:13.5px;display:block;margin-top:1px}
+
+.chip{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;
+  text-transform:uppercase;padding:2px 7px;border-radius:2px;white-space:nowrap}
+.chip.ok{background:var(--ok-soft);color:var(--ok)}
+.chip.watch{background:var(--watch-soft);color:var(--watch)}
+.chip.gap{background:var(--gap-soft);color:var(--gap)}
+.chip.flat{background:var(--panel-2);color:var(--muted)}
+
+.finds{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+.finds li{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:baseline;font-size:15px}
+.finds .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--muted);padding-top:3px;white-space:nowrap}
+.pack{background:var(--panel-2);border-radius:3px;padding:14px 16px;display:flex;flex-direction:column;gap:7px}
+.pack ol{margin:0;padding-left:19px;display:flex;flex-direction:column;gap:4px}
+.pack code{font-family:var(--mono);font-size:13px;background:transparent}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+.bugs{display:flex;flex-direction:column;gap:14px}
+.bug{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--copper);
+  border-radius:4px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.bug .what{font-weight:600}
+.caveats{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:20px 24px}
+.caveats ul{margin:0;padding-left:19px;display:flex;flex-direction:column;gap:8px;max-width:74ch}
+footer{border-top:1px solid var(--line);padding-top:18px;font-family:var(--mono);font-size:12px;
+  color:var(--muted);display:flex;flex-direction:column;gap:5px}
+@media print{body{background:#fff}.wrap{padding:0}.card,.bug{break-inside:avoid}}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="eyebrow">Dry run · content-pillar-research</div>
+  <h1>What five clients should be talking about</h1>
+  <p class="standfirst">The research agent ran against live Ordinal and Airtable data for five pilot
+  clients. It proposed pillars, measured coverage against what is actually queued, and found two
+  bugs in itself. Nothing was written to Ordinal, Slack, or Airtable.</p>
+  <div class="runbar">
+    <span><b>Run</b> 2026-08-18</span>
+    <span><b>Mode</b> dry run — read-only</span>
+    <span><b>Clients</b> 5</span>
+    <span><b>Ordinal items read</b> 58</span>
+    <span><b>Writes</b> 0</span>
+  </div>
+</header>
+
+<section class="sec">
+  <div class="sec-head">
+    <span class="kicker">Before this goes live</span>
+    <h2>Four things need you</h2>
+  </div>
+  <div class="decisions">
+    <ol>
+      <li><strong>Approve or redraw the pillars.</strong> Five proposals are in the repo as
+      <code>pillars.PROPOSED.json</code> with <code>approved_by</code> set to UNAPPROVED — the agent
+      refuses to run a weekly pass against an unapproved registry, so nothing downstream can inherit
+      a set you haven't seen.</li>
+      <li><strong>Resolve the AGP collision.</strong> Whitney and Trent are queued to publish the
+      same thesis from the same source, three weeks apart. One of the two posts has to change.</li>
+      <li><strong>Run the five query packs.</strong> Three questions each, ChatGPT and Claude, about
+      two minutes per client. This is the step you asked to own, and no client brief ships without
+      it.</li>
+      <li><strong>Then say arm or hold.</strong> The Monday 7:00am CT Routine is written but not
+      created. I did not create it.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <span class="kicker">The point of a dry run</span>
+    <h2>Two bugs, both caught on real data</h2>
+  </div>
+  <p>Both would have produced confident, wrong output on live clients. Both are fixed and committed.</p>
+  <div class="bugs">
+    <div class="bug">
+      <div class="what">The coverage read was blind to whole statuses</div>
+      <p>A default <code>ordinal_search_content</code> page returned only <code>ToDo</code> and
+      <code>Posted</code> items for JustFund and David Freeman — hiding every <code>Scheduled</code>
+      post. On that data the agent reported David's flagship pillar as <span class="chip gap">starved</span>
+      when he in fact has three posts on it going out between 8/19 and 8/24. A false starvation flag
+      sends the team chasing content a client already has, which is worse than no flag.</p>
+      <p><strong>Fixed:</strong> the spec now requires enumerating every status explicitly, filtering
+      per profile on multi-seat workspaces, and confirming any starvation flag against a full pull
+      before reporting it.</p>
+    </div>
+    <div class="bug">
+      <div class="what">Planning ahead read as starvation</div>
+      <p>Coverage only counted queued posts landing inside a 21-day window. JustFund plans to
+      mid-November, so all eleven of her queued posts fell outside it and <em>every</em> pillar came
+      back starved.</p>
+      <p><strong>Fixed:</strong> three buckets now — published, queued near, queued further out.
+      Starvation means zero in both forward buckets. Coverage that exists but lands past the window
+      is <span class="chip watch">far-out</span>, a scheduling problem rather than a content one.</p>
+    </div>
+    <div class="bug">
+      <div class="what">And the validator earned its keep</div>
+      <p>It rejected match terms short enough to mis-tag: <code>ai</code> matches "training",
+      <code>pri</code> matches "priority", <code>atm</code> matches "statement". Left alone, those
+      inflate coverage and hide exactly the starvation this system exists to catch.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <span class="kicker">Client one</span>
+    <h2>JustFund</h2>
+  </div>
+  <div class="card client">
+    <div class="client-head">
+      <span class="client-name">Iara Peng</span>
+      <span class="client-who">Founder &amp; CEO · 20 items read · 2 posts/week</span>
+    </div>
+    <div class="scroll">
+      <table>
+        <caption>Proposed pillars · published in last 30d / queued near / queued later</caption>
+        <thead><tr><th>Pillar</th><th class="num">Share</th><th class="num">Pub</th><th class="num">Near</th><th class="num">Later</th><th>State</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pname">The cost of asking</span><span class="pdef">40-hour applications, 19 pages for $5,000, the common app</span></td><td class="num">30%</td><td class="num">1</td><td class="num">2</td><td class="num">2</td><td><span class="chip ok">ok</span></td></tr>
+          <tr><td><span class="pname">Who actually holds the pen</span><span class="pdef">Deciding vs advisory bodies, proximity as due diligence</span></td><td class="num">25%</td><td class="num">0</td><td class="num">1</td><td class="num">5</td><td><span class="chip watch">behind</span></td></tr>
+          <tr><td><span class="pname">Money that isn't a grant</span><span class="pdef">PRIs, catalytic capital, impact deposits, readiness</span></td><td class="num">20%</td><td class="num">1</td><td class="num">0</td><td class="num">2</td><td><span class="chip watch">far-out</span></td></tr>
+          <tr><td><span class="pname">Transactional so you can be transformative</span><span class="pdef">Process flow, disbursement, speed with rigor</span></td><td class="num">15%</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="chip gap">starved</span></td></tr>
+          <tr><td><span class="pname">Who gets to build for this sector</span><span class="pdef">Nonprofit tech, risk capital, connective tissue</span></td><td class="num">10%</td><td class="num">2</td><td class="num">0</td><td class="num">1</td><td><span class="chip watch">far-out</span></td></tr>
+          <tr><td><span class="pname">Building the thing while running it</span><span class="pdef">Leadership, failing forward — capped secondary</span></td><td class="num">—</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td><span class="chip flat">secondary</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="finds">
+      <li><span class="tag">strongest</span><span>The deepest, most disciplined queue of the five — dated through 19 November, with a genuine point of view in every post. She is the least in need of this agent and the best test of it.</span></li>
+      <li><span class="tag">unclassified</span><span><strong>"Thrive" doesn't fit any proposed pillar.</strong> Capacity building beyond the grant — 555 nonprofits surveyed, 84% naming fundraising support as their top need — is either a sixth pillar or an explicit out-of-scope decision. It shouldn't stay ambiguous.</span></li>
+      <li><span class="tag">signal</span><span>DAF policy is live for her buyers in 2026: the One Big Beautiful Bill Act changes DAF treatment, against $326B parked across 3.56M accounts and an unresolved payout debate. Deadline-shaped, and it lands on her capital pillar, which currently has nothing queued near-term.</span></li>
+      <li><span class="tag">ask</span><span>Which cohort and impact numbers she can publish, and whether Thrive is a pillar or not.</span></li>
+    </ul>
+    <div class="pack">
+      <span class="label">Query pack — for you to run</span>
+      <ol>
+        <li><code>how do we make our grant application shorter without losing what we need to know</code></li>
+        <li><code>what is participatory grantmaking and does it actually work</code></li>
+        <li><code>how do foundations deploy program related investments</code></li>
+      </ol>
+      <p style="font-size:13.5px;color:var(--muted);margin:0">The third is the only question in her set
+      taken from her own words — she says her phone rings with "which groups are ready for a PRI?"</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <span class="kicker">Client two</span>
+    <h2>David Freeman Consulting Group</h2>
+  </div>
+  <div class="card client">
+    <div class="client-head">
+      <span class="client-name">David H. Freeman, J.D.</span>
+      <span class="client-who">Founder &amp; CEO · 14 items read · 2 posts/week</span>
+    </div>
+    <div class="scroll">
+      <table>
+        <caption>Proposed pillars · published in last 30d / queued near / queued later</caption>
+        <thead><tr><th>Pillar</th><th class="num">Share</th><th class="num">Pub</th><th class="num">Near</th><th class="num">Later</th><th>State</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pname">When the doing gets cheaper, the getting is everything</span><span class="pdef">AI compresses matters; origination becomes a survival skill</span></td><td class="num">30%</td><td class="num">3</td><td class="num">3</td><td class="num">0</td><td><span class="chip ok">ok</span></td></tr>
+          <tr><td><span class="pname">Exoskeletons, not exhortations</span><span class="pdef">Reminders, cadence, a scoreboard, someone who asks on Friday</span></td><td class="num">30%</td><td class="num">0</td><td class="num">0</td><td class="num">4</td><td><span class="chip watch">far-out</span></td></tr>
+          <tr><td><span class="pname">Getting a "not" lawyer to move</span><span class="pdef">Micro actions, the ladder, self-perception</span></td><td class="num">20%</td><td class="num">0</td><td class="num">0</td><td class="num">3</td><td><span class="chip watch">far-out</span></td></tr>
+          <tr><td><span class="pname">Cross-serving that actually happens</span><span class="pdef">The four stalls, and the comp system nobody names</span></td><td class="num">20%</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td><span class="chip watch">far-out</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="finds">
+      <li><span class="tag">pattern</span><span><strong>Mono-topic, then whiplash.</strong> Every one of his six posts between 8/11 and 8/24 is AI-and-origination. From 9/10 onward, not one is. The calendar doesn't blend the topics — it switches channels, which is what "created then planned" looks like when you graph it.</span></li>
+      <li><span class="tag">owned</span><span>He coined <em>bureauplasticity</em> — a firm's ability to flex under pressure. That is the most citable asset in this pilot: an owned term nobody else can be the source for. It should be repeated deliberately, not used once.</span></li>
+      <li><span class="tag">signal</span><span>61% of in-house counsel plan to push for pricing changes tied to AI efficiency, while the billable hour is still the primary model at 67% of firms, and Ropes &amp; Gray now lets associates bill AI-training time. His live pillar is the client-side pressure, and this is the number for it.</span></li>
+      <li><span class="tag">missing</span><span><strong>No outcome data anywhere.</strong> He has coached more than 10,000 lawyers over 30 years and nothing in Ordinal or Airtable contains a single before/after book-growth figure. For a pillar that argues "fund the doing, not more training," that is the one asset that would end the argument.</span></li>
+    </ul>
+    <div class="pack">
+      <span class="label">Query pack — for you to run</span>
+      <ol>
+        <li><code>how will ai change what lawyers do all day</code></li>
+        <li><code>how do law firms make money when ai reduces billable hours</code></li>
+        <li><code>best business development coach for law firms</code></li>
+      </ol>
+      <p style="font-size:13.5px;color:var(--muted);margin:0">The third is the buying query — whoever
+      the model names there is on the shortlist he needs to be on.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <span class="kicker">Clients three, four, five</span>
+    <h2>AGP is one account with three voices</h2>
+  </div>
+  <p>Whitney, Alyssa and Trent share a market, a research pass, and — right now — some of the same
+  arguments. Handling them as three unrelated clients is what produced the collisions below;
+  handling them as one organization with assigned territory is the fix, and it also means the market
+  research runs once instead of three times.</p>
+
+  <div class="card">
+    <h3>The collisions</h3>
+    <ul class="finds">
+      <li><span class="tag">conflict</span><span><strong>Same thesis, same source, three weeks apart.</strong>
+      Whitney's 8/25 post ("giving is down is the wrong headline — generosity relocated") and Trent's
+      9/22 post ("generosity didn't shrink, it scattered") are the same argument off the same
+      Fundraising Effectiveness Project data. One has to change. The proposal assigns sector-level
+      giving data to Trent as CEO, and gives Whitney the practitioner-level cut.</span></li>
+      <li><span class="tag">conflict</span><span><strong>The same burnout statistic in one window.</strong>
+      Trent cites CEP's State of Nonprofits on 9/8 and 9/10; Alyssa cites the same research on 9/22.
+      The proposal splits the territory: nonprofit-CEO burnout is Trent's, the CDO seat is
+      Alyssa's.</span></li>
+      <li><span class="tag">source risk</span><span><strong>Every queued post across all three seats
+      is CONVERGE-derived</strong> — their own May summit. It's excellent raw material and it is a
+      finite well. When it runs dry there is no next source, which is precisely the problem this
+      agent is meant to replace.</span></li>
+      <li><span class="tag">stale data</span><span>All three are working from annual FEP figures. The
+      Q1 2026 cut is out: dollars up 4.3%, donor counts down 0.8%, retention 18% against 18.2% in
+      2024, repeat donors now ~61% of all dollars and recaptured donors another 15%. CCS's 2026
+      Pulse adds that 68% of nonprofits name acquisition as a top challenge, 48% retention.</span></li>
+      <li><span class="tag">opening</span><span>That data creates a real post for Trent: his queued
+      line is that only ~2% of lapsed donors ever return, while recaptured donors now contribute 15%
+      of all dollars. Both are true. The gap between them is the argument — recapture is
+      undervalued <em>because</em> the per-donor odds look bad.</span></li>
+    </ul>
+  </div>
+
+  <div class="card client">
+    <div class="client-head">
+      <span class="client-name">Whitney Norman</span>
+      <span class="client-who">Title unconfirmed · 6 items read</span>
+    </div>
+    <div class="scroll">
+      <table>
+        <caption>Proposed pillars · published / near / later</caption>
+        <thead><tr><th>Pillar</th><th class="num">Share</th><th class="num">Pub</th><th class="num">Near</th><th class="num">Later</th><th>State</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pname">How a person decides to give</span><span class="pdef">The ask itself; partnership over urgency</span></td><td class="num">30%</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td><span class="chip ok">ok</span></td></tr>
+          <tr><td><span class="pname">Segment for relevance, not ideology</span><span class="pdef">Behavior over proxies; mission as the shared center</span></td><td class="num">30%</td><td class="num">0</td><td class="num">2</td><td class="num">0</td><td><span class="chip ok">ok</span></td></tr>
+          <tr><td><span class="pname">Fundraising runs through every department</span><span class="pdef">The CDO in the budget room; org charts drawn for a different job</span></td><td class="num">25%</td><td class="num">0</td><td class="num">1</td><td class="num">0</td><td><span class="chip ok">ok</span></td></tr>
+          <tr><td><span class="pname">Borrowed playbooks</span><span class="pdef">E-commerce, SaaS and healthcare tactics applied to donors</span></td><td class="num">15%</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="chip gap">starved</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="finds">
+      <li><span class="tag">note</span><span>Her 8/18 post sits at <strong>Blocked</strong> — it was
+      dated for today and did not go out. Worth a look independent of this agent.</span></li>
+      <li><span class="tag">risk</span><span>"Borrowed playbooks" is her most differentiated pillar
+      and the easiest to let drift into vagueness. It needs one named tactic and its result each
+      time, or it should be dropped rather than half-run.</span></li>
+      <li><span class="tag">pack</span><span><code>how should we segment our donor file</code> ·
+      <code>should nonprofits segment donors by politics</code> ·
+      <code>how should we structure a nonprofit development team</code></span></li>
+    </ul>
+  </div>
+
+  <div class="card client">
+    <div class="client-head">
+      <span class="client-name">Alyssa Boger</span>
+      <span class="client-who">Title unconfirmed · 5 items read</span>
+    </div>
+    <div class="scroll">
+      <table>
+        <caption>Proposed pillars · published / near / later</caption>
+        <thead><tr><th>Pillar</th><th class="num">Share</th><th class="num">Pub</th><th class="num">Near</th><th class="num">Later</th><th>State</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pname">Built for the middle</span><span class="pdef">4,000+ community hospital foundations at $2M–$15M that the industry never designed for</span></td><td class="num">35%</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td><span class="chip watch">far-out</span></td></tr>
+          <tr><td><span class="pname">Two clocks: the quarter and the decade</span><span class="pdef">Boards reporting a relationship business on a sales calendar</span></td><td class="num">25%</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td><span class="chip watch">far-out</span></td></tr>
+          <tr><td><span class="pname">Know them or reach them</span><span class="pdef">The four rooms of a donor file; concentration risk</span></td><td class="num">20%</td><td class="num">0</td><td class="num">0</td><td class="num">2</td><td><span class="chip watch">far-out</span></td></tr>
+          <tr><td><span class="pname">Saying it out loud</span><span class="pdef">What CDOs say quietly and won't say on a stage</span></td><td class="num">20%</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td><span class="chip watch">far-out</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="finds">
+      <li><span class="tag">best find</span><span><strong>"Built for the middle" is the strongest
+      single position in this pilot.</strong> It names an audience by size, that audience recognizes
+      itself instantly, and no incumbent is claiming it — AHP segments community hospitals in its
+      benchmarking but its strategy content still centers large systems and high performers. If the
+      query pack shows no individual practitioner cited on those questions, this pillar is cheap to
+      win and the brief should say so plainly.</span></li>
+      <li><span class="tag">renewable</span><span>Her supply is months of one-on-one CDO
+      conversations and one repeated question — "what's the one thing you wish your board
+      understood?" That interview cadence is the asset. Protect it.</span></li>
+      <li><span class="tag">gap</span><span>Nothing published in the trailing 30 days and nothing
+      inside the next three weeks in the sample pulled. Verify against a full all-status pull before
+      acting on it — that is exactly the bug above.</span></li>
+      <li><span class="tag">pack</span><span><code>benchmarks for community hospital foundation fundraising</code> ·
+      <code>healthcare philanthropy consultant for community hospitals</code> ·
+      <code>how do i explain fundraising timelines to my hospital board</code></span></li>
+    </ul>
+  </div>
+
+  <div class="card client">
+    <div class="client-head">
+      <span class="client-name">Trent Ricker</span>
+      <span class="client-who">Chief Executive Officer · 5 items read</span>
+    </div>
+    <div class="scroll">
+      <table>
+        <caption>Proposed pillars · published / near / later</caption>
+        <thead><tr><th>Pillar</th><th class="num">Share</th><th class="num">Pub</th><th class="num">Near</th><th class="num">Later</th><th>State</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pname">Giving isn't down, it moved</span><span class="pdef">The five fault lines: ROI, privacy, anonymity, frustration, access</span></td><td class="num">35%</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td><span class="chip watch">far-out</span></td></tr>
+          <tr><td><span class="pname">They left because they stopped feeling seen</span><span class="pdef">Lapse, win-back, and the economics of recapture</span></td><td class="num">25%</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td><span class="chip watch">far-out</span></td></tr>
+          <tr><td><span class="pname">Naming the load</span><span class="pdef">Nonprofit CEO burnout, measured</span></td><td class="num">20%</td><td class="num">0</td><td class="num">1</td><td class="num">1</td><td><span class="chip ok">ok</span></td></tr>
+          <tr><td><span class="pname">Stepping back so the team steps up</span><span class="pdef">Two deliberate years off LinkedIn, and why he came back</span></td><td class="num">20%</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td><span class="chip watch">far-out</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="finds">
+      <li><span class="tag">uncopyable</span><span>"I stayed off LinkedIn for two years so my team's
+      names would be on the ideas" is a position no personal-branding consultant can take. It is his
+      most distinctive asset and it doubles as the credibility frame for everything else he
+      posts.</span></li>
+      <li><span class="tag">hard lane</span><span>On retention, CRM vendors — Bloomerang, Virtuous,
+      DonorPerfect — own the search space outright with weekly SEO content. Beating them needs an AGP
+      win-back result, and there isn't one on file. That's the ask.</span></li>
+      <li><span class="tag">pack</span><span><code>is charitable giving actually declining</code> ·
+      <code>how do nonprofits win back lapsed donors</code> ·
+      <code>best fundraising agency for nonprofits</code> — the last one is the whole-account buying
+      query, best measured on the CEO's seat.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <span class="kicker">Read these before you trust a number</span>
+    <h2>What this dry run is not</h2>
+  </div>
+  <div class="caveats">
+    <ul>
+      <li><strong>Counts are directional, not audited.</strong> I pulled samples of 5–20 items per
+      client, not every post. The coverage tables are good enough to reason about and not good enough
+      to quote — a real run enumerates every status and pages to the end.</li>
+      <li><strong>Almost every buyer question is mine, not a buyer's.</strong> One question across
+      all five sets came from a client's own words. Invented questions produce invented findings, so
+      the sets are marked and the phrasing should be replaced from call transcripts before any
+      baseline is measured. There are three Whitney transcripts and Client Context Docs for all three
+      AGP seats on file to mine.</li>
+      <li><strong>No answer-surface reading exists yet.</strong> That is the step you own, and it is
+      the reason no brief is attached to this report. Pillars can be proposed without it; a client
+      brief cannot be finished without it.</li>
+      <li><strong>Four of the five have no voice bundle.</strong> Only Iara has a calibrated writer
+      skill. Pillars tell a writer <em>what</em> to say; they don't fix <em>how</em> it sounds.</li>
+      <li><strong>Two titles are unconfirmed and one ICP is inferred.</strong> Whitney's and Alyssa's
+      roles are placeholders reading "CONFIRM," and the AGP ICP was read off post content because no
+      ICP framework doc exists for those seats. Neither guess belongs in front of a client.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <span>content-pillar-research · dry run 2026-08-18 · branch claude/client-research-content-agent-io0fa5</span>
+  <span>Read-only run. No Ordinal writes, no Slack posts, no Airtable records, no scheduled Routine.</span>
+</footer>
+
+</div>
