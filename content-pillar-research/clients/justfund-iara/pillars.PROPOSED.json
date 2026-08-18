@@ -1,0 +1,464 @@
+{
+  "client": "JustFund.US - Iara",
+  "client_record_id": "recyA8iMsOaOxwSdp",
+  "slug": "justfund-iara",
+  "person": {
+    "name": "Iara Peng",
+    "role": "Founder & CEO",
+    "linkedin_url": "https://www.linkedin.com/in/iara-peng/"
+  },
+  "organization": {
+    "name": "JustFund",
+    "website": "https://justfund.us",
+    "category": "Nonprofit grantmaking platform \u2014 common application, Wallet disbursement, Thrive capacity building",
+    "icp_summary": "Funders: foundation program and grants staff, pooled/collaborative fund managers, funder-network leaders, DAF holders, philanthropy operations."
+  },
+  "version": 1,
+  "created_at": "2026-08-18",
+  "reviewed_at": "2026-08-18",
+  "refresh_interval_days": 90,
+  "approved_by": "UNAPPROVED \u2014 dry-run proposal 2026-08-18, pending Danny review + client sign-off",
+  "cadence": {
+    "posts_per_week": 2,
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "timezone": "America/New_York"
+  },
+  "off_pillar_policy": "Leadership/management posts (failing forward, team culture) perform and are on-brand but reach peers rather than funders. Cap at one a month as secondary.",
+  "pillars": [
+    {
+      "id": "application-burden",
+      "name": "The cost of asking",
+      "tier": "primary",
+      "weight": 0.3,
+      "status": "active",
+      "definition": "What the current application system costs the organizations doing the work \u2014 hours, dollars, and access \u2014 and what a common application changes. Concrete and quantified: 40-hour applications, 19 pages for a $5,000 grant, a new portal per funder.",
+      "in_scope": [
+        "application length and burden",
+        "common application mechanics and rollout",
+        "what funders actually need to know to decide",
+        "access for organizations without a warm introduction"
+      ],
+      "out_of_scope": [
+        "product feature announcements",
+        "internal team culture"
+      ],
+      "why_now": "It is the argument Iara has the most first-party evidence for (26,000 nonprofits on one profile) and the one where the sector's own norms have already moved her way \u2014 a long application is now the outlier that has to explain itself.",
+      "buyer_questions": [
+        "q-01",
+        "q-03",
+        "q-08",
+        "q-09"
+      ],
+      "key_terms": [
+        "common application",
+        "application burden",
+        "grant application",
+        "one open door"
+      ],
+      "proof_assets": [
+        {
+          "type": "data",
+          "name": "40-Hour series (4 parts) \u2014 40 hrs \u2248 $5,000 of staff time at ~30% win rate",
+          "link": "https://app.tryordinal.com/justfundus/posts/02d17850-a498-4908-b39f-e5b368c97754",
+          "notes": "Part 1 published 8/13/26; parts 2-4 not yet queued \u2014 see coverage gap"
+        },
+        {
+          "type": "data",
+          "name": "26,000 nonprofits, one profile; 1,100+ funders searching",
+          "link": "https://justfund.us",
+          "notes": "Confirm current figures before each reuse"
+        },
+        {
+          "type": "experience",
+          "name": "Common application workshop with Funder Hui (pre-Maui-fires); the 19-page/$5,000 application",
+          "link": "",
+          "notes": "Ashley Lukens interview"
+        }
+      ],
+      "incumbent": {
+        "who": "Grants-management vendors' content teams (Submittable, Fluxx, Blackbaud category)",
+        "where": "Vendor blogs and SEO pages",
+        "cadence": "weekly-ish",
+        "strength": "SEO-shaped, feature-led, no first-party numbers",
+        "how_we_differ": "Iara can quantify the burden from the applicant side and has run the workshops; vendors describe features."
+      },
+      "formats": [
+        "text-only",
+        "text + image",
+        "carousel"
+      ],
+      "match": {
+        "terms": [
+          "application",
+          "common app",
+          "40 hours",
+          "18-page",
+          "19-page",
+          "portal",
+          "one open door",
+          "apply",
+          "applicant"
+        ],
+        "negative_terms": [
+          "investment readiness"
+        ]
+      },
+      "search_queries": [
+        "common grant application 2026 funders adopt",
+        "grant application burden nonprofit hours research",
+        "trust-based philanthropy application requirements"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.3,
+        "first_measured": null
+      }
+    },
+    {
+      "id": "real-participation",
+      "name": "Who actually holds the pen",
+      "tier": "primary",
+      "weight": 0.25,
+      "status": "active",
+      "definition": "The structural difference between consulting a community and letting it decide \u2014 deciding bodies vs advisory bodies, proximity as due diligence, and what pooled and collaborative funds look like when the power is real.",
+      "in_scope": [
+        "participatory grantmaking structures",
+        "deciding vs advisory bodies",
+        "pooled and collaborative funds",
+        "borrowed proximity / who screens",
+        "bidirectional accountability"
+      ],
+      "out_of_scope": [
+        "platform features",
+        "capital instruments (see capital-spectrum)"
+      ],
+      "why_now": "Funders keep asking what participatory grantmaking looks like when it's real, and Iara has on-the-record interviews with the people running it \u2014 a supply of specifics almost nobody else can publish.",
+      "buyer_questions": [
+        "q-02",
+        "q-04"
+      ],
+      "key_terms": [
+        "participatory grantmaking",
+        "deciding body",
+        "pooled fund",
+        "trust-based philanthropy"
+      ],
+      "proof_assets": [
+        {
+          "type": "interview",
+          "name": "Repair in Practice session \u2014 Black Migrant Power Fund + Bold Ventures (Jonathan Jayes-Green, Aubrey Rawlins)",
+          "link": "",
+          "notes": "The 2024 committee that voted itself smaller grants"
+        },
+        {
+          "type": "interview",
+          "name": "Lisa Pilar Cowan \u2014 The Haven Fund (pop-up foundation; gave up grant decisions)",
+          "link": "",
+          "notes": "Two queued posts already drawn from this"
+        },
+        {
+          "type": "interview",
+          "name": "Ashley Lukens \u2014 Funder Hui (no dues, statewide disaster collaborative)",
+          "link": "",
+          "notes": ""
+        }
+      ],
+      "incumbent": {
+        "who": "Trust-Based Philanthropy Project, participatory-grantmaking academics and consultants",
+        "where": "Reports, SSIR, conference stages",
+        "cadence": "steady",
+        "strength": "Strong and credible on principles",
+        "how_we_differ": "They publish frameworks; Iara publishes named funds, named people, and the specific meeting where a hard choice got made."
+      },
+      "formats": [
+        "text-only",
+        "repost + POV",
+        "text + clip"
+      ],
+      "match": {
+        "terms": [
+          "participatory",
+          "advisory",
+          "deciding body",
+          "pooled fund",
+          "collaborative fund",
+          "steering committee",
+          "proximity",
+          "accountability",
+          "trust-based"
+        ],
+        "negative_terms": []
+      },
+      "search_queries": [
+        "participatory grantmaking 2026 funder adoption",
+        "pooled fund community decision making philanthropy"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.25,
+        "first_measured": null
+      }
+    },
+    {
+      "id": "capital-spectrum",
+      "name": "Money that isn't a grant",
+      "tier": "primary",
+      "weight": 0.2,
+      "status": "active",
+      "definition": "The instruments between a grant and a market-rate investment \u2014 PRIs, catalytic capital, revolving loans, impact deposits \u2014 and the readiness gap that keeps mandated capital from landing anywhere.",
+      "in_scope": [
+        "PRIs and catalytic capital",
+        "investment readiness of grantees",
+        "novel instruments (impact deposits, zero-interest loans)",
+        "DAF payout and idle capital"
+      ],
+      "out_of_scope": [
+        "participatory structures",
+        "application mechanics"
+      ],
+      "why_now": "Foundation investment committees are carving out catalytic slices and cannot find anywhere to deploy them, and Iara is going through the readiness process herself right now \u2014 a first-person view of the gap while it's live.",
+      "buyer_questions": [
+        "q-06",
+        "q-07",
+        "q-10"
+      ],
+      "key_terms": [
+        "catalytic capital",
+        "program-related investment",
+        "investment readiness",
+        "impact deposit"
+      ],
+      "proof_assets": [
+        {
+          "type": "experience",
+          "name": "JustFund's own PRI readiness process \u2014 the 6-page checklist",
+          "link": "",
+          "notes": "Live and first-person; strongest asset on this pillar"
+        },
+        {
+          "type": "experience",
+          "name": "The impact-deposit idea (get your $5M back, we use the interest)",
+          "link": "",
+          "notes": "Original framing, already published once"
+        }
+      ],
+      "incumbent": {
+        "who": "Impact-investing funds, Mission Investors Exchange, philanthropy advisors",
+        "where": "Reports and panels",
+        "cadence": "steady",
+        "strength": "Deep on mechanics",
+        "how_we_differ": "Iara argues the demand side has to be *built with grants* \u2014 a claim the supply-side incumbents don't make."
+      },
+      "formats": [
+        "text-only",
+        "text + image"
+      ],
+      "match": {
+        "terms": [
+          "pris",
+          "program-related investment",
+          "program related investment",
+          "catalytic",
+          "impact investing",
+          "investment readiness",
+          "revolving loan",
+          "impact deposit",
+          "donor advised fund",
+          "donor-advised",
+          "payout",
+          "corpus"
+        ],
+        "negative_terms": []
+      },
+      "search_queries": [
+        "catalytic capital 2026 foundations deployment gap",
+        "donor advised fund payout policy 2026",
+        "program related investment nonprofit readiness"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.2,
+        "first_measured": null
+      }
+    },
+    {
+      "id": "grantmaking-operations",
+      "name": "Transactional so you can be transformative",
+      "tier": "primary",
+      "weight": 0.15,
+      "status": "active",
+      "definition": "The unglamorous machinery between a decision and a dollar \u2014 dockets, reviewer scores, compliance screening, banking details, disbursement lag \u2014 and what reclaiming that time makes possible.",
+      "in_scope": [
+        "grantmaking process flow and bottlenecks",
+        "speed with rigor",
+        "disbursement and compliance",
+        "what staff time gets spent on"
+      ],
+      "out_of_scope": [
+        "capital instruments",
+        "application design (see application-burden)"
+      ],
+      "why_now": "This is where the product lives, so it needs a disciplined share of the mix \u2014 enough to be credible on operations, not so much that the feed reads like a demo.",
+      "buyer_questions": [
+        "q-05"
+      ],
+      "key_terms": [
+        "grantmaking operations",
+        "speed of trust",
+        "disbursement",
+        "process flow"
+      ],
+      "proof_assets": [
+        {
+          "type": "customer-story",
+          "name": "Southern Worker Opportunity Fund / The LIFT Fund \u2014 $5M+ per cycle, 80% efficiency gain",
+          "link": "",
+          "notes": "Named and quotable; confirm it stays approved"
+        },
+        {
+          "type": "data",
+          "name": "Wallet: 5-7 business day disbursement with IRS/AT/hate-group screening",
+          "link": "",
+          "notes": ""
+        }
+      ],
+      "incumbent": {
+        "who": "Grants-management and payment vendors",
+        "where": "Vendor content",
+        "cadence": "high",
+        "strength": "Owns the operational keyword space",
+        "how_we_differ": "Iara frames operations as a values choice (transactional to enable transformative), not a feature list."
+      },
+      "formats": [
+        "text-only",
+        "text + case study"
+      ],
+      "match": {
+        "terms": [
+          "disbursement",
+          "docket",
+          "compliance",
+          "process flow",
+          "bottleneck",
+          "speed of trust",
+          "wallet",
+          "banking",
+          "grants management"
+        ],
+        "negative_terms": []
+      },
+      "search_queries": [
+        "grant disbursement time nonprofits 2026",
+        "grants management operations benchmarks"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.15,
+        "first_measured": null
+      }
+    },
+    {
+      "id": "sector-infrastructure",
+      "name": "Who gets to build for this sector",
+      "tier": "primary",
+      "weight": 0.1,
+      "status": "active",
+      "definition": "Why almost nobody builds serious technology for philanthropy, what it means that the sector's tools are assembled from other people's software, and the case for infrastructure built by people inside the problem.",
+      "in_scope": [
+        "nonprofit tech and who funds it",
+        "philanthropy as risk capital",
+        "infrastructure choices as values choices",
+        "nonprofits as connective tissue"
+      ],
+      "out_of_scope": [
+        "product features"
+      ],
+      "why_now": "It is the identity pillar \u2014 it explains why JustFund is a nonprofit and why Iara is credible on everything else. Small share, high leverage.",
+      "buyer_questions": [
+        "q-08"
+      ],
+      "key_terms": [
+        "nonprofit technology",
+        "risk capital",
+        "philanthropy infrastructure"
+      ],
+      "proof_assets": [
+        {
+          "type": "experience",
+          "name": "The year-long decision to build JustFund as a nonprofit",
+          "link": "",
+          "notes": ""
+        },
+        {
+          "type": "data",
+          "name": "Nonprofits: 1 in 10 working Americans, $1.5T sector",
+          "link": "",
+          "notes": "Sourced in a published post; keep the citation attached"
+        }
+      ],
+      "formats": [
+        "text-only"
+      ],
+      "match": {
+        "terms": [
+          "risk capital",
+          "nonprofit tech",
+          "infrastructure",
+          "connective tissue",
+          "who builds",
+          "sector"
+        ],
+        "negative_terms": [
+          "investment readiness"
+        ]
+      },
+      "search_queries": [
+        "nonprofit technology funding 2026 philanthropy infrastructure"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.1,
+        "first_measured": null
+      }
+    },
+    {
+      "id": "leading-a-nonprofit",
+      "name": "Building the thing while running it",
+      "tier": "secondary",
+      "weight": 0,
+      "status": "active",
+      "definition": "Leadership and team practice \u2014 failing forward, debriefs, perpetual pivot. Performs well and is authentically hers, but reaches peers rather than funders. Capped at roughly one post a month.",
+      "in_scope": [
+        "team practice",
+        "leadership lessons"
+      ],
+      "out_of_scope": [
+        "anything that displaces a primary slot"
+      ],
+      "why_now": "Engagement asset, not a pipeline asset. Kept deliberately small.",
+      "buyer_questions": [],
+      "key_terms": [
+        "leadership"
+      ],
+      "proof_assets": [
+        {
+          "type": "experience",
+          "name": "Failing forward series + Be the Buffalo",
+          "link": "",
+          "notes": ""
+        }
+      ],
+      "match": {
+        "terms": [
+          "failure",
+          "debrief",
+          "buffalo",
+          "pivot",
+          "my team",
+          "leadership"
+        ],
+        "negative_terms": []
+      },
+      "search_queries": []
+    }
+  ],
+  "notes": "Dry-run proposal built from 17 Ordinal items (6 published 7/30-8/18, 11 queued 10/15-11/19). Mix assumes 2 posts/week: over a month roughly 2-3 application-burden, 2 participation, 2 capital-spectrum, 1 operations, 1 infrastructure. Iara already has a calibrated writer skill (iara-post-writer), so pillar key_terms should be fed to that skill rather than a generic writer."
+}

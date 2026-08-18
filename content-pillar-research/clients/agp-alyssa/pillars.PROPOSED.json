@@ -1,0 +1,328 @@
+{
+  "client": "AGP - Alyssa",
+  "client_record_id": "recz3HZXvkhsv2LvR",
+  "slug": "agp-alyssa",
+  "person": {
+    "name": "Alyssa Boger",
+    "role": "CONFIRM TITLE \u2014 healthcare philanthropy lead, AGP",
+    "linkedin_url": "https://www.linkedin.com/in/alyssaboger/"
+  },
+  "organization": {
+    "name": "AGP",
+    "website": "https://www.teamagp.com",
+    "category": "Nonprofit fundraising and marketing agency (direct response, donor engagement, digital)",
+    "icp_summary": "CONFIRM: nonprofit CDOs/VPs of development, executive directors, and hospital foundation leaders. Pulled from post content, not from an ICP doc \u2014 no ICP framework exists in Airtable Resources for the AGP seats."
+  },
+  "version": 1,
+  "created_at": "2026-08-18",
+  "reviewed_at": "2026-08-18",
+  "refresh_interval_days": 90,
+  "approved_by": "UNAPPROVED \u2014 dry-run proposal 2026-08-18, pending Danny review + client sign-off",
+  "cadence": {
+    "posts_per_week": 2,
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "timezone": "America/New_York"
+  },
+  "off_pillar_policy": "General nonprofit fundraising goes to Whitney; sector data and CEO-level burnout go to Trent. Healthcare-specific cuts of those topics are fair game here.",
+  "pillars": [
+    {
+      "id": "the-neglected-middle",
+      "name": "Built for the middle",
+      "weight": 0.35,
+      "definition": "The 4,000+ community hospital foundations raising $2M\u2013$15M a year that healthcare philanthropy was never designed for: too big for templates, too small for enterprise retainers, expected to perform like the top 50 systems on a fraction of the staff and data.",
+      "in_scope": [
+        "community/regional/rural/faith-based hospital foundations",
+        "why sector benchmarks and models don't fit mid-size shops",
+        "what strategy built for this scale looks like",
+        "the structural gap, not a 'niche'"
+      ],
+      "out_of_scope": [
+        "academic medical center and nine-figure campaign playbooks",
+        "general nonprofit fundraising (Whitney/Trent)"
+      ],
+      "why_now": "The single most ownable position in this entire pilot. It names an audience by size, that audience recognizes itself instantly, and no incumbent is claiming it \u2014 AHP's own benchmarking segments community hospitals but the strategy content is still built around high performers and large systems.",
+      "buyer_questions": [
+        "q-01",
+        "q-02",
+        "q-05",
+        "q-08"
+      ],
+      "key_terms": [
+        "community hospital foundation",
+        "healthcare philanthropy",
+        "the middle",
+        "$2M-$15M"
+      ],
+      "proof_assets": [
+        {
+          "type": "data",
+          "name": "4,000+ community hospital foundations; 6,100+ US hospitals (AHA)",
+          "link": "",
+          "notes": "Keep the AHA citation attached"
+        },
+        {
+          "type": "experience",
+          "name": "Months of 1:1 conversations with hospital CDOs",
+          "link": "",
+          "notes": "Her renewable supply \u2014 protect the interview cadence"
+        },
+        {
+          "type": "positioning",
+          "name": "AGP is actively building for this middle",
+          "link": "",
+          "notes": "CONFIRM what specifically exists to point to"
+        }
+      ],
+      "incumbent": {
+        "who": "AHP (Association for Healthcare Philanthropy), BWF and large healthcare consultancies",
+        "where": "AHP reports/Report on Giving, conference stages",
+        "cadence": "periodic",
+        "strength": "Owns benchmarking data; content skews to high performers and large systems",
+        "how_we_differ": "She names the mid-size foundation as a structurally underserved class and says the industry failed it \u2014 a claim the associations serving all tiers cannot make."
+      },
+      "formats": [
+        "text-only",
+        "text + image",
+        "carousel"
+      ],
+      "match": {
+        "terms": [
+          "community hospital",
+          "hospital foundation",
+          "healthcare philanthropy",
+          "the middle",
+          "rural",
+          "regional medical",
+          "small shop",
+          "top 50",
+          "enterprise retainer"
+        ],
+        "negative_terms": []
+      },
+      "search_queries": [
+        "community hospital foundation fundraising benchmarks 2026",
+        "AHP report on giving community hospitals 2026",
+        "rural hospital foundation philanthropy trends"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.4,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary"
+    },
+    {
+      "id": "cdo-board-clock",
+      "name": "Two clocks: the quarter and the decade",
+      "weight": 0.25,
+      "definition": "The structural mismatch between how boards ask for fundraising results and how relationships actually mature \u2014 and what it does to CDO tenure when a relationship business is reported on a sales calendar.",
+      "in_scope": [
+        "board expectations and reporting cadence",
+        "major-gift timelines vs quarterly reporting",
+        "development director tenure and turnover",
+        "what CDOs wish their boards understood"
+      ],
+      "out_of_scope": [
+        "board governance generally",
+        "team structure (Whitney)"
+      ],
+      "why_now": "It is the pain her buyer feels every quarter, it comes straight from her own interview question, and the ~18-month development-director tenure figure gives it a number.",
+      "buyer_questions": [
+        "q-03",
+        "q-04"
+      ],
+      "key_terms": [
+        "hospital board",
+        "development director tenure",
+        "major gift timeline"
+      ],
+      "proof_assets": [
+        {
+          "type": "interview",
+          "name": "'What's the one thing you wish your board understood?' \u2014 months of CDO answers",
+          "link": "",
+          "notes": "Strongest asset she has; keep asking it"
+        }
+      ],
+      "incumbent": {
+        "who": "Board-governance consultants, AHA Trustee Services",
+        "where": "Trustee publications",
+        "cadence": "periodic",
+        "strength": "Speaks to boards, not to CDOs",
+        "how_we_differ": "She speaks for the CDO to the board \u2014 the same content, aimed the other direction."
+      },
+      "match": {
+        "terms": [
+          "board",
+          "quarterly",
+          "quarter",
+          "clock",
+          "tenure",
+          "18 months",
+          "development director",
+          "wish your board",
+          "reporting"
+        ],
+        "negative_terms": []
+      },
+      "search_queries": [
+        "development director tenure 2026 turnover data",
+        "hospital foundation board expectations fundraising"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.25,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary",
+      "formats": [
+        "text-only"
+      ]
+    },
+    {
+      "id": "relevance-over-volume",
+      "name": "Know them or reach them",
+      "weight": 0.2,
+      "definition": "The choice between a volume-led foundation that measures reach and a relevance-led one that measures resonance, made concrete: the four rooms of a donor file, and what donor-base concentration means when the top of the file ages out.",
+      "in_scope": [
+        "donor file depth and relationship tiers",
+        "volume vs relevance as a strategic choice",
+        "donor concentration risk",
+        "personalization at small-shop scale"
+      ],
+      "out_of_scope": [
+        "segmentation mechanics generally (Whitney)",
+        "sector giving totals (Trent)"
+      ],
+      "why_now": "It gives her flagship audience something to DO, and it pairs the industry's giving-is-up story with the fragility underneath it.",
+      "buyer_questions": [
+        "q-06"
+      ],
+      "key_terms": [
+        "donor file",
+        "relevance",
+        "donor concentration",
+        "personalization"
+      ],
+      "proof_assets": [
+        {
+          "type": "framework",
+          "name": "The four rooms: sidewalk, front porch, living room, kitchen table",
+          "link": "",
+          "notes": "Memorable and hers to own; Todd Hiestand quote from Converge"
+        },
+        {
+          "type": "event",
+          "name": "CONVERGE summit (AGP's own, May 2026) \u2014 session notes and speaker quotes",
+          "link": "",
+          "notes": "Every queued post across all three seats is Converge-derived. Rich, but a finite well \u2014 see notes."
+        }
+      ],
+      "incumbent": {
+        "who": "CRM vendors and donor-analytics providers",
+        "where": "Vendor content",
+        "cadence": "high",
+        "strength": "Tooling-led",
+        "how_we_differ": "The four-rooms metaphor is a strategy frame a CDO can use in a board meeting; software content can't do that."
+      },
+      "match": {
+        "terms": [
+          "four rooms",
+          "sidewalk",
+          "front porch",
+          "living room",
+          "kitchen table",
+          "volume-led",
+          "relevance-led",
+          "concentration",
+          "fragility",
+          "know them"
+        ],
+        "negative_terms": []
+      },
+      "search_queries": [
+        "donor concentration risk 2026 major donor dependence",
+        "donor file segmentation hospital foundation"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.2,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary",
+      "formats": [
+        "text-only"
+      ]
+    },
+    {
+      "id": "cdo-candor",
+      "name": "Saying it out loud",
+      "weight": 0.2,
+      "definition": "What hospital development leaders say quietly and won't say on a stage \u2014 the rehearsed calm before a board meeting, the campaign that isn't fine \u2014 and treating that candor as part of the job rather than a lapse in it.",
+      "in_scope": [
+        "leadership anxiety specific to healthcare development leaders",
+        "naming pressure as a leadership practice",
+        "what CDOs carry that their teams already sense"
+      ],
+      "out_of_scope": [
+        "nonprofit CEO burnout at sector level \u2014 that is Trent's; keep this to the CDO seat"
+      ],
+      "why_now": "Her highest-resonance material, and the source data is current (CEP: 56% of nonprofit leaders managing amid increased fear and stress). NOTE: this pillar's territory abuts Trent's leader-load pillar \u2014 the boundary is CDO/healthcare (her) vs nonprofit CEO/sector (him).",
+      "buyer_questions": [
+        "q-07"
+      ],
+      "key_terms": [
+        "chief development officer",
+        "leadership anxiety",
+        "burnout"
+      ],
+      "proof_assets": [
+        {
+          "type": "interview",
+          "name": "The four sentences CDOs said to her one-on-one",
+          "link": "",
+          "notes": "Deeply resonant; keep collecting them, always anonymized"
+        },
+        {
+          "type": "data",
+          "name": "CEP: 56% of nonprofit leaders report increased fear and stress",
+          "link": "",
+          "notes": "Trent cites CEP too \u2014 coordinate so the same stat isn't quoted twice in a week"
+        }
+      ],
+      "match": {
+        "terms": [
+          "anxiety",
+          "burnout",
+          "rehearse",
+          "dashboard is green",
+          "candor",
+          "out loud",
+          "stress",
+          "carrying"
+        ],
+        "negative_terms": [
+          "nonprofit ceos",
+          "89%"
+        ]
+      },
+      "search_queries": [
+        "healthcare development officer burnout 2026",
+        "CEP state of nonprofits 2026 leadership stress"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.2,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary",
+      "formats": [
+        "text-only"
+      ]
+    }
+  ],
+  "notes": "Dry-run proposal from 5 Ordinal items, all ToDo dated 9/17-10/1, all Converge-labeled. Nothing published in the trailing 30 days and nothing inside the next 3 weeks in the sample pulled \u2014 verify against a full all-status pull before acting on that. 'The neglected middle' is the strongest single position found across all five pilot clients and should probably carry more than 35% once proven."
+}

@@ -1,0 +1,116 @@
+{
+  "client": "AGP - Alyssa",
+  "slug": "agp-alyssa",
+  "pillars_version": 1,
+  "computed_at": "2026-08-18",
+  "window_days": 30,
+  "forward_window_days": 21,
+  "totals": {
+    "published_in_window": 0,
+    "forward": 0,
+    "queued_beyond": 5,
+    "items_considered": 5,
+    "excluded_dead": 0
+  },
+  "rows": [
+    {
+      "pillar_id": "the-neglected-middle",
+      "pillar": "Built for the middle",
+      "tier": "primary",
+      "weight": 0.35,
+      "published": 0,
+      "forward": 0,
+      "queued_beyond": 1,
+      "target_published": 0.0,
+      "actual_share": 0.0,
+      "deficit": 0.0,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "far-out"
+    },
+    {
+      "pillar_id": "cdo-board-clock",
+      "pillar": "Two clocks: the quarter and the decade",
+      "tier": "primary",
+      "weight": 0.25,
+      "published": 0,
+      "forward": 0,
+      "queued_beyond": 1,
+      "target_published": 0.0,
+      "actual_share": 0.0,
+      "deficit": 0.0,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "far-out"
+    },
+    {
+      "pillar_id": "relevance-over-volume",
+      "pillar": "Know them or reach them",
+      "tier": "primary",
+      "weight": 0.2,
+      "published": 0,
+      "forward": 0,
+      "queued_beyond": 2,
+      "target_published": 0.0,
+      "actual_share": 0.0,
+      "deficit": 0.0,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "far-out"
+    },
+    {
+      "pillar_id": "cdo-candor",
+      "pillar": "Saying it out loud",
+      "tier": "primary",
+      "weight": 0.2,
+      "published": 0,
+      "forward": 0,
+      "queued_beyond": 1,
+      "target_published": 0.0,
+      "actual_share": 0.0,
+      "deficit": 0.0,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "far-out"
+    }
+  ],
+  "next_batch": {
+    "size": 8,
+    "allocation": {
+      "the-neglected-middle": 3,
+      "cdo-board-clock": 2,
+      "relevance-over-volume": 2,
+      "cdo-candor": 1
+    }
+  },
+  "flags": [
+    {
+      "flag": "coverage-far-out",
+      "pillar_id": "the-neglected-middle",
+      "detail": "Built for the middle: 1 queued but none inside the next 21 days"
+    },
+    {
+      "flag": "coverage-far-out",
+      "pillar_id": "cdo-board-clock",
+      "detail": "Two clocks: the quarter and the decade: 1 queued but none inside the next 21 days"
+    },
+    {
+      "flag": "coverage-far-out",
+      "pillar_id": "relevance-over-volume",
+      "detail": "Know them or reach them: 2 queued but none inside the next 21 days"
+    },
+    {
+      "flag": "coverage-far-out",
+      "pillar_id": "cdo-candor",
+      "detail": "Saying it out loud: 1 queued but none inside the next 21 days"
+    }
+  ],
+  "tagging": {
+    "untagged": [],
+    "low_confidence": []
+  }
+}

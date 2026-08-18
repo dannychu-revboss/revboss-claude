@@ -1,0 +1,107 @@
+{
+  "client": "AGP - Whitney",
+  "slug": "agp-whitney",
+  "pillars_version": 1,
+  "computed_at": "2026-08-18",
+  "window_days": 30,
+  "forward_window_days": 21,
+  "totals": {
+    "published_in_window": 2,
+    "forward": 4,
+    "queued_beyond": 0,
+    "items_considered": 6,
+    "excluded_dead": 0
+  },
+  "rows": [
+    {
+      "pillar_id": "the-ask-mechanics",
+      "pillar": "How a person decides to give",
+      "tier": "primary",
+      "weight": 0.3,
+      "published": 1,
+      "forward": 1,
+      "queued_beyond": 0,
+      "target_published": 0.6,
+      "actual_share": 0.5,
+      "deficit": 0.0,
+      "days_since_last": 5,
+      "last_published": "2026-08-13",
+      "weeks_starved": 0,
+      "status": "ok"
+    },
+    {
+      "pillar_id": "segmentation-for-relevance",
+      "pillar": "Segment for relevance, not ideology",
+      "tier": "primary",
+      "weight": 0.3,
+      "published": 0,
+      "forward": 2,
+      "queued_beyond": 0,
+      "target_published": 0.6,
+      "actual_share": 0.0,
+      "deficit": 0.6,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "ok"
+    },
+    {
+      "pillar_id": "fundraising-is-a-team-sport",
+      "pillar": "Fundraising runs through every department",
+      "tier": "primary",
+      "weight": 0.25,
+      "published": 0,
+      "forward": 1,
+      "queued_beyond": 0,
+      "target_published": 0.5,
+      "actual_share": 0.0,
+      "deficit": 0.5,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "ok"
+    },
+    {
+      "pillar_id": "outside-the-sector",
+      "pillar": "Borrowed playbooks",
+      "tier": "primary",
+      "weight": 0.15,
+      "published": 1,
+      "forward": 0,
+      "queued_beyond": 0,
+      "target_published": 0.3,
+      "actual_share": 0.5,
+      "deficit": 0.0,
+      "days_since_last": 7,
+      "last_published": "2026-08-11",
+      "weeks_starved": 1,
+      "status": "starved"
+    }
+  ],
+  "next_batch": {
+    "size": 8,
+    "allocation": {
+      "the-ask-mechanics": 2,
+      "segmentation-for-relevance": 2,
+      "fundraising-is-a-team-sport": 2,
+      "outside-the-sector": 2
+    }
+  },
+  "flags": [
+    {
+      "flag": "pillar-no-forward",
+      "pillar_id": "outside-the-sector",
+      "detail": "Borrowed playbooks: nothing queued at all"
+    }
+  ],
+  "tagging": {
+    "untagged": [],
+    "low_confidence": [
+      {
+        "item": "Post #12 \u2014 Generosity relocated",
+        "pillar_id": "segmentation-for-relevance",
+        "reason": "matched 'behavior'"
+      }
+    ]
+  }
+}

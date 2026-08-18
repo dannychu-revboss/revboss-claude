@@ -1,0 +1,332 @@
+{
+  "client": "AGP - Trent",
+  "client_record_id": "recsgHKh04WDHpYT9",
+  "slug": "agp-trent",
+  "person": {
+    "name": "Trent Ricker",
+    "role": "Chief Executive Officer, AGP",
+    "linkedin_url": "https://www.linkedin.com/in/trentricker/"
+  },
+  "organization": {
+    "name": "AGP",
+    "website": "https://www.teamagp.com",
+    "category": "Nonprofit fundraising and marketing agency (direct response, donor engagement, digital)",
+    "icp_summary": "CONFIRM: nonprofit CDOs/VPs of development, executive directors, and hospital foundation leaders. Pulled from post content, not from an ICP doc \u2014 no ICP framework exists in Airtable Resources for the AGP seats."
+  },
+  "version": 1,
+  "created_at": "2026-08-18",
+  "reviewed_at": "2026-08-18",
+  "refresh_interval_days": 90,
+  "approved_by": "UNAPPROVED \u2014 dry-run proposal 2026-08-18, pending Danny review + client sign-off",
+  "cadence": {
+    "posts_per_week": 2,
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "timezone": "America/New_York"
+  },
+  "off_pillar_policy": "Healthcare cuts go to Alyssa; ask/segmentation tactics go to Whitney. As CEO he takes the sector-level and leadership-level view.",
+  "pillars": [
+    {
+      "id": "generosity-scattered",
+      "name": "Giving isn't down, it moved",
+      "weight": 0.35,
+      "definition": "The sector-level read on donor behavior: dollars up, donor base narrowing, and generosity reorganizing along identifiable fault lines \u2014 ROI, privacy, anonymity, frustration, access \u2014 rather than disappearing.",
+      "in_scope": [
+        "sector giving and donor-count data",
+        "the five fault lines",
+        "DAFs and giving that never appears in a file",
+        "what a shrinking base means for strategy"
+      ],
+      "out_of_scope": [
+        "individual ask tactics (Whitney)",
+        "healthcare-specific cuts (Alyssa)"
+      ],
+      "why_now": "As CEO he is the right seat for the sector-level thesis, and the data refreshed this quarter: FEP Q1 2026 shows dollars +4.3% with donor counts -0.8%, retention at 18% (vs 18.2% in 2024), repeat donors now ~61% of dollars and recaptured donors another 15%; CCS's 2026 Philanthropy Pulse has 68% of nonprofits naming acquisition as a top challenge. His queued post cites the older annual cut.",
+      "buyer_questions": [
+        "q-01",
+        "q-06",
+        "q-07"
+      ],
+      "key_terms": [
+        "donor participation",
+        "generosity",
+        "giving trends",
+        "donor base"
+      ],
+      "proof_assets": [
+        {
+          "type": "framework",
+          "name": "The five fault lines (ROI, privacy, anonymity, frustration, access)",
+          "link": "",
+          "notes": "Owned framing with an infographic already built"
+        },
+        {
+          "type": "data",
+          "name": "Fundraising Effectiveness Project quarterly data",
+          "link": "https://afpglobal.org/FundraisingEffectivenessProject",
+          "notes": "Refresh the numbers each quarter rather than reusing last year's"
+        }
+      ],
+      "incumbent": {
+        "who": "AFP/FEP, Giving USA, CCS, Blackbaud Institute",
+        "where": "Reports and press coverage",
+        "cadence": "quarterly/annual",
+        "strength": "They own the DATA and get cited for it",
+        "how_we_differ": "They publish the numbers; he publishes what a fundraiser should DO about them. Interpretation is the open lane \u2014 but it means he must be first and specific after each data drop."
+      },
+      "formats": [
+        "text-only",
+        "text + image",
+        "carousel"
+      ],
+      "match": {
+        "terms": [
+          "giving is down",
+          "generosity",
+          "donor participation",
+          "fault line",
+          "donor base",
+          "giving trends",
+          "fundraising effectiveness",
+          "dollars are up",
+          "scattered"
+        ],
+        "negative_terms": [
+          "hospital"
+        ]
+      },
+      "search_queries": [
+        "Fundraising Effectiveness Project Q2 2026 data",
+        "Giving USA 2026 donor participation decline",
+        "CCS Philanthropy Pulse 2026"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.3,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary"
+    },
+    {
+      "id": "retention-and-recapture",
+      "name": "They left because they stopped feeling seen",
+      "weight": 0.25,
+      "definition": "Why donors lapse and what brings them back: the receipt that says nothing, the only-mail-is-an-ask pattern, and the case that recapture is a bigger revenue line than most organizations staff for.",
+      "in_scope": [
+        "lapsed donor causes and win-back",
+        "first-to-second gift conversion",
+        "what each touchpoint builds or burns",
+        "recapture economics"
+      ],
+      "out_of_scope": [
+        "the ask itself (Whitney)",
+        "sector totals (see generosity-scattered)"
+      ],
+      "why_now": "There is a live tension worth publishing: his queued post says only ~2% of lapsed donors ever return, while the Q1 2026 FEP cut shows recaptured donors contributing ~15% of all dollars. Both can be true, and the gap between them is the argument \u2014 recapture is undervalued precisely because the per-donor odds look bad.",
+      "buyer_questions": [
+        "q-02",
+        "q-03",
+        "q-06"
+      ],
+      "key_terms": [
+        "donor retention",
+        "lapsed donors",
+        "recapture",
+        "second gift"
+      ],
+      "proof_assets": [
+        {
+          "type": "data",
+          "name": "FEP: ~70% of first-time donors never give again; ~2% of lapsed donors return",
+          "link": "",
+          "notes": "Pair with the Q1 2026 recapture figure for the tension"
+        },
+        {
+          "type": "experience",
+          "name": "NEEDED: an AGP client win-back result",
+          "link": "",
+          "notes": "An agency this size has retention case data. Nothing on file in Airtable Resources. Top ask."
+        }
+      ],
+      "incumbent": {
+        "who": "Bloomerang, Virtuous, DonorPerfect and other CRM content teams",
+        "where": "SEO blogs",
+        "cadence": "weekly",
+        "strength": "Dominates 'donor retention' search entirely",
+        "how_we_differ": "They publish tips; he can publish a CEO's argument about where the money actually is. Requires the case data above to beat them."
+      },
+      "match": {
+        "terms": [
+          "lapsed",
+          "retention",
+          "recapture",
+          "second gift",
+          "stopped feeling seen",
+          "felt like an atm",
+          "receipt",
+          "win back",
+          "touchpoint"
+        ],
+        "negative_terms": []
+      },
+      "search_queries": [
+        "donor retention rate 2026 recaptured donors data",
+        "lapsed donor reactivation benchmarks 2026"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.2,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary",
+      "formats": [
+        "text-only"
+      ]
+    },
+    {
+      "id": "leader-load",
+      "name": "Naming the load",
+      "weight": 0.2,
+      "definition": "The measurable weight nonprofit CEOs and EDs are carrying \u2014 burnout, demand, staffing \u2014 and treating naming it as part of leading rather than a private failure.",
+      "in_scope": [
+        "nonprofit CEO/ED burnout and capacity, at sector level",
+        "CONVERGE as a room that gives instead of asks",
+        "leading through fear and stress"
+      ],
+      "out_of_scope": [
+        "CDO-specific candor \u2014 that is Alyssa's, keep the seat distinction clean"
+      ],
+      "why_now": "CEP's State of Nonprofits numbers are current and stark (89% of nonprofit CEOs worried about their own burnout, 46% 'very much', 73% reporting higher demand), and as a CEO he has standing to say it about peers.",
+      "buyer_questions": [
+        "q-04"
+      ],
+      "key_terms": [
+        "nonprofit leadership",
+        "burnout",
+        "capacity"
+      ],
+      "proof_assets": [
+        {
+          "type": "data",
+          "name": "CEP State of Nonprofits",
+          "link": "",
+          "notes": "Alyssa cites CEP too \u2014 coordinate so the same figure isn't published twice in one week"
+        },
+        {
+          "type": "event",
+          "name": "CONVERGE \u2014 designing a room that pours back",
+          "link": "",
+          "notes": "His own event, his own design choice"
+        }
+      ],
+      "incumbent": {
+        "who": "CEP, Nonprofit Quarterly, sector press",
+        "where": "Reports and op-eds",
+        "cadence": "periodic",
+        "strength": "Owns the research",
+        "how_we_differ": "He runs an event built as a response to it \u2014 a thing done, not a thing observed."
+      },
+      "match": {
+        "terms": [
+          "burnout",
+          "nonprofit ceo",
+          "load",
+          "converge",
+          "empty",
+          "guest",
+          "fear and stress",
+          "demand for their services"
+        ],
+        "negative_terms": [
+          "chief development officer",
+          "rehearse"
+        ]
+      },
+      "search_queries": [
+        "CEP state of nonprofits 2026 burnout",
+        "nonprofit leadership capacity 2026"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.2,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary",
+      "formats": [
+        "text-only"
+      ]
+    },
+    {
+      "id": "ceo-voice",
+      "name": "Stepping back so the team steps up",
+      "weight": 0.2,
+      "definition": "What he learned in two deliberate years off LinkedIn \u2014 that a CEO's loudest voice quiets everyone else's \u2014 and how he thinks about when a leader should speak and when a leader should hold back.",
+      "in_scope": [
+        "why he stayed quiet and why he returned",
+        "building visibility for a team rather than a founder",
+        "credibility as something you spend or save"
+      ],
+      "out_of_scope": [
+        "generic personal-branding advice"
+      ],
+      "why_now": "It is the most unusual thing he has to say \u2014 almost every CEO on LinkedIn argues the opposite \u2014 and it doubles as the credibility frame for the rest of his posting. Also the pillar that makes the RevBoss engagement itself legible.",
+      "buyer_questions": [
+        "q-05"
+      ],
+      "key_terms": [
+        "ceo voice",
+        "thought leadership",
+        "stepping back"
+      ],
+      "proof_assets": [
+        {
+          "type": "experience",
+          "name": "Two years off LinkedIn on purpose; returned April 2026",
+          "link": "",
+          "notes": "First-person and unusual \u2014 his most distinctive asset"
+        },
+        {
+          "type": "data",
+          "name": "Edelman: 75% of B2B decision-makers moved by thought leadership; 60% pay a premium",
+          "link": "",
+          "notes": ""
+        }
+      ],
+      "incumbent": {
+        "who": "Personal-branding and executive-visibility consultants",
+        "where": "LinkedIn, saturated",
+        "cadence": "constant",
+        "strength": "Enormous volume, near-zero credibility",
+        "how_we_differ": "He argues for LESS founder voice, from the seat of someone who did it. Nobody in that category can copy the position."
+      },
+      "match": {
+        "terms": [
+          "stayed off linkedin",
+          "step back",
+          "stepped up",
+          "ceo's voice",
+          "thought leadership",
+          "my team's names",
+          "credibility"
+        ],
+        "negative_terms": []
+      },
+      "search_queries": [
+        "executive thought leadership B2B 2026 Edelman",
+        "should ceos post on linkedin research"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.15,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary",
+      "formats": [
+        "text-only"
+      ]
+    }
+  ],
+  "notes": "Dry-run proposal from 5 Ordinal items, all Scheduled 9/8-9/22. CONFLICT: his 9/22 'generosity scattered' post and Whitney's 8/25 'generosity relocated' post are the same thesis from the same source. This proposal assigns sector-level donor data to Trent (CEO seat) and asks Whitney's post to be re-angled or re-dated. Also verify the CEP burnout figures aren't double-published against Alyssa's 9/22 post \u2014 those two land in the same week."
+}

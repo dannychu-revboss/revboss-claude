@@ -1,0 +1,111 @@
+{
+  "client": "David Freeman Consulting Group - David",
+  "slug": "david-freeman-david",
+  "version": 1,
+  "reviewed_at": "2026-08-18",
+  "approved_by": "UNAPPROVED \u2014 dry-run proposal 2026-08-18, pending Danny review + client sign-off",
+  "method_note": "DRY RUN: all questions agent-drafted. David has 30 years of hearing these from managing partners in their own words \u2014 one 20-minute call replacing this phrasing would make the whole set stronger.",
+  "questions": [
+    {
+      "id": "q-01",
+      "text": "how will ai change what lawyers do all day",
+      "stage": "problem",
+      "source": "AGENT-DRAFTED from his 8/18 post",
+      "pillars": [
+        "ai-and-origination"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-02",
+      "text": "how do law firms make money when ai reduces billable hours",
+      "stage": "problem",
+      "source": "AGENT-DRAFTED \u2014 the question his 8/13 post answers",
+      "pillars": [
+        "ai-and-origination"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-03",
+      "text": "how do you get lawyers to do business development",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED \u2014 highest-intent question in his category",
+      "pillars": [
+        "reluctant-rainmakers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-04",
+      "text": "why doesn't law firm business development training work",
+      "stage": "problem",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "structure-beats-willpower"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-05",
+      "text": "best business development coach for law firms",
+      "stage": "compare",
+      "source": "AGENT-DRAFTED \u2014 the buying query; whoever the AI names here wins the shortlist",
+      "pillars": [
+        "reluctant-rainmakers",
+        "structure-beats-willpower"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-06",
+      "text": "how to get partners to cross sell each other's practices",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "growing-existing-clients"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-07",
+      "text": "law firm partner compensation cross selling credit",
+      "stage": "evaluate",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "growing-existing-clients"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-08",
+      "text": "how do you build a rainmaker culture in a law firm",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "structure-beats-willpower"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-09",
+      "text": "should law firms move away from the billable hour",
+      "stage": "evaluate",
+      "source": "AGENT-DRAFTED \u2014 live industry debate",
+      "pillars": [
+        "ai-and-origination"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-10",
+      "text": "how much should a law firm spend on business development training",
+      "stage": "evaluate",
+      "source": "AGENT-DRAFTED \u2014 budget-season timed",
+      "pillars": [
+        "structure-beats-willpower"
+      ],
+      "priority": 2
+    }
+  ]
+}

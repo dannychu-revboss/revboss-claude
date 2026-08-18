@@ -10,6 +10,25 @@ zero.
 
 ---
 
+## Reading the content first — enumerate every status
+
+**Do not trust a default `ordinal_search_content` page.** Ordinal's default listing returns a
+single page that can silently omit whole statuses — in the 2026-08-18 pilot dry run it returned only
+`ToDo` and `Posted` items for two clients, hiding their `Scheduled` posts entirely and producing
+false `pillar-starved` flags on pillars that were in fact fully covered for the next three weeks.
+
+So: **query each status explicitly** and merge — `Posted`, `Scheduled`, `ToDo`, `ForReview`,
+`Finalized`, `InProgress`, `Tentative`, `Blocked` — and page with `nextCursor` until `hasMore` is
+false for the statuses that matter. Then dedupe by post id.
+
+- `Posted` → trailing-window coverage.
+- `Scheduled` + `ToDo` + `ForReview` + `Finalized` + `InProgress` + `Tentative` → forward coverage.
+- `Blocked` → forward coverage, but flag it; a blocked post is not going out on its date.
+- Filter per person on multi-seat workspaces (`linkedInProfileId`), or one seat's numbers absorb another's.
+
+**Before reporting any starvation flag, confirm it against a full pull.** A false "starved" flag
+sends the team chasing content a client already has, which is worse than no flag at all.
+
 ## Sources — sweep in this order
 
 Ordered by how often they produce a postable, differentiated idea. Stop early when you've got

@@ -1,0 +1,81 @@
+{
+  "client": "AGP - Trent",
+  "slug": "agp-trent",
+  "version": 1,
+  "reviewed_at": "2026-08-18",
+  "approved_by": "UNAPPROVED \u2014 dry-run proposal 2026-08-18, pending Danny review + client sign-off",
+  "method_note": "DRY RUN: all questions agent-drafted from post content. AGP has three call transcripts on file for Whitney and Client Context Docs for all three seats \u2014 the real phrasing should come from those before any baseline is run.",
+  "questions": [
+    {
+      "id": "q-01",
+      "text": "is charitable giving actually declining",
+      "stage": "problem",
+      "source": "AGENT-DRAFTED \u2014 the question behind his own headline",
+      "pillars": [
+        "generosity-scattered"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-02",
+      "text": "why are we losing donors every year",
+      "stage": "problem",
+      "source": "AGENT-DRAFTED \u2014 NOTE overlaps Whitney q-03; measure it on one seat only",
+      "pillars": [
+        "retention-and-recapture"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-03",
+      "text": "how do nonprofits win back lapsed donors",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED \u2014 CRM vendors own this query today",
+      "pillars": [
+        "retention-and-recapture"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-04",
+      "text": "what is causing nonprofit leader burnout",
+      "stage": "problem",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "leader-load"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-05",
+      "text": "should a ceo post on linkedin or let the team",
+      "stage": "evaluate",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "ceo-voice"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-06",
+      "text": "best fundraising agency for nonprofits",
+      "stage": "compare",
+      "source": "AGENT-DRAFTED \u2014 the buying query for the whole AGP account; worth measuring on Trent's seat",
+      "pillars": [
+        "generosity-scattered",
+        "retention-and-recapture"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-07",
+      "text": "how do we grow revenue with a shrinking donor base",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "generosity-scattered"
+      ],
+      "priority": 1
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "client": "AGP - Alyssa",
+  "slug": "agp-alyssa",
+  "version": 1,
+  "reviewed_at": "2026-08-18",
+  "approved_by": "UNAPPROVED \u2014 dry-run proposal 2026-08-18, pending Danny review + client sign-off",
+  "method_note": "DRY RUN: all questions agent-drafted from post content. AGP has three call transcripts on file for Whitney and Client Context Docs for all three seats \u2014 the real phrasing should come from those before any baseline is run.",
+  "questions": [
+    {
+      "id": "q-01",
+      "text": "how do small hospital foundations compete for major gifts",
+      "stage": "problem",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "the-neglected-middle"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-02",
+      "text": "benchmarks for community hospital foundation fundraising",
+      "stage": "compare",
+      "source": "AGENT-DRAFTED \u2014 the query where AHP currently wins",
+      "pillars": [
+        "the-neglected-middle"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-03",
+      "text": "how do i explain fundraising timelines to my hospital board",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED from her own interview question",
+      "pillars": [
+        "cdo-board-clock"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-04",
+      "text": "why do development directors leave after 18 months",
+      "stage": "problem",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "cdo-board-clock"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-05",
+      "text": "healthcare philanthropy consultant for community hospitals",
+      "stage": "compare",
+      "source": "AGENT-DRAFTED \u2014 the buying query for her flagship pillar",
+      "pillars": [
+        "the-neglected-middle"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-06",
+      "text": "how should a hospital foundation segment its donor file",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "relevance-over-volume"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-07",
+      "text": "how do i deal with burnout as a chief development officer",
+      "stage": "problem",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "cdo-candor"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-08",
+      "text": "what should a hospital foundation with a small team focus on",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "the-neglected-middle"
+      ],
+      "priority": 2
+    }
+  ]
+}

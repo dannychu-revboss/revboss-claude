@@ -5,7 +5,7 @@ Given a client's pillar registry and a normalized dump of their content (publish
 posts plus everything queued in Ordinal), this answers:
 
   - how much of each pillar have we actually published in the trailing window?
-  - how much is queued going forward?
+  - how much is queued inside the near window, and how much sits further out?
   - how long since each pillar was last posted, and how many consecutive weeks
     has it had zero forward coverage?
   - how far is each pillar from its target share of the mix?
@@ -166,7 +166,8 @@ def build(pillars_doc, content_items, today, window_days, forward_days, next_bat
     window_start = today - timedelta(days=window_days)
     forward_end = today + timedelta(days=forward_days)
 
-    counts = {p["id"]: {"published": 0, "forward": 0, "last_published": None} for p in pillars}
+    counts = {p["id"]: {"published": 0, "forward": 0, "queued_beyond": 0, "last_published": None}
+              for p in pillars}
     untagged, low_confidence, dead = [], [], 0
 
     for item in content_items:
@@ -189,13 +190,20 @@ def build(pillars_doc, content_items, today, window_days, forward_days, next_bat
             if when and (prior is None or when > prior):
                 counts[pillar_id]["last_published"] = when
         else:
-            # Forward coverage: an undated live idea still counts (it's material we hold),
-            # a dated one counts only if the date lands inside the forward window.
+            # Three buckets, because "queued" and "queued soon" are different facts.
+            # An undated live idea is material we hold and can slot anywhere -> forward.
+            # A dated item inside the window is imminent coverage -> forward.
+            # A dated item past the window is real coverage sitting further out
+            # (clients who plan two months ahead) -> queued_beyond. Counting that as
+            # zero coverage would flag a well-stocked client as starved.
             if when is None or (today <= when <= forward_end):
                 counts[pillar_id]["forward"] += 1
+            elif when > forward_end:
+                counts[pillar_id]["queued_beyond"] += 1
 
     total_published = sum(c["published"] for c in counts.values()) or 0
     total_forward = sum(c["forward"] for c in counts.values()) or 0
+    total_beyond = sum(c["queued_beyond"] for c in counts.values()) or 0
 
     rows = []
     for pillar in pillars:
@@ -205,18 +213,21 @@ def build(pillars_doc, content_items, today, window_days, forward_days, next_bat
         expected_published = weight * total_published
         actual_share = (c["published"] / total_published) if total_published else 0.0
         last = c["last_published"]
+        queued_total = c["forward"] + c["queued_beyond"]
         weeks_starved = int((starved_state or {}).get(pid, 0))
-        if c["forward"] == 0 and weight > 0:
+        if queued_total == 0 and weight > 0:
             weeks_starved += 1
         else:
             weeks_starved = 0
 
         if weight == 0:
             status = "secondary"
-        elif c["forward"] == 0:
+        elif queued_total == 0:
             status = "starved"
-        elif c["published"] + c["forward"] == 0:
-            status = "empty"
+        elif c["forward"] == 0:
+            # Covered, but nothing lands inside the near window — a scheduling gap,
+            # not a content gap. Different problem, different fix.
+            status = "far-out"
         elif expected_published and c["published"] < expected_published - 1:
             status = "behind"
         else:
@@ -229,6 +240,7 @@ def build(pillars_doc, content_items, today, window_days, forward_days, next_bat
             "weight": round(weight, 3),
             "published": c["published"],
             "forward": c["forward"],
+            "queued_beyond": c["queued_beyond"],
             "target_published": round(expected_published, 1),
             "actual_share": round(actual_share, 3),
             "deficit": round(max(0.0, expected_published - c["published"]), 1),
@@ -244,7 +256,8 @@ def build(pillars_doc, content_items, today, window_days, forward_days, next_bat
     for row in rows:
         if row["weight"] <= 0:
             continue
-        boost = 1.0 + min(1.0, row["deficit"] / 3.0) + (0.5 if row["forward"] == 0 else 0.0)
+        queued_total = row["forward"] + row["queued_beyond"]
+        boost = 1.0 + min(1.0, row["deficit"] / 3.0) + (0.5 if queued_total == 0 else 0.0)
         alloc_weights[row["pillar_id"]] = row["weight"] * boost
     allocation = largest_remainder(alloc_weights, next_batch)
 
@@ -255,7 +268,11 @@ def build(pillars_doc, content_items, today, window_days, forward_days, next_bat
                           "detail": f"{row['pillar']}: 0 forward coverage for {row['weeks_starved']} weeks"})
         elif row["status"] == "starved":
             flags.append({"flag": "pillar-no-forward", "pillar_id": row["pillar_id"],
-                          "detail": f"{row['pillar']}: nothing queued"})
+                          "detail": f"{row['pillar']}: nothing queued at all"})
+        elif row["status"] == "far-out":
+            flags.append({"flag": "coverage-far-out", "pillar_id": row["pillar_id"],
+                          "detail": f"{row['pillar']}: {row['queued_beyond']} queued but none inside "
+                                    f"the next {forward_days} days"})
         if row["days_since_last"] is not None and row["days_since_last"] > 45 and row["weight"] > 0:
             flags.append({"flag": "pillar-cold", "pillar_id": row["pillar_id"],
                           "detail": f"{row['pillar']}: {row['days_since_last']} days since last post"})
@@ -275,7 +292,8 @@ def build(pillars_doc, content_items, today, window_days, forward_days, next_bat
         "window_days": window_days,
         "forward_window_days": forward_days,
         "totals": {"published_in_window": total_published, "forward": total_forward,
-                   "items_considered": len(content_items), "excluded_dead": dead},
+                   "queued_beyond": total_beyond, "items_considered": len(content_items),
+                   "excluded_dead": dead},
         "rows": rows,
         "next_batch": {"size": next_batch, "allocation": allocation},
         "flags": flags,

@@ -1,0 +1,80 @@
+{
+  "client": "AGP - Whitney",
+  "slug": "agp-whitney",
+  "version": 1,
+  "reviewed_at": "2026-08-18",
+  "approved_by": "UNAPPROVED \u2014 dry-run proposal 2026-08-18, pending Danny review + client sign-off",
+  "method_note": "DRY RUN: all questions agent-drafted from post content. AGP has three call transcripts on file for Whitney and Client Context Docs for all three seats \u2014 the real phrasing should come from those before any baseline is run.",
+  "questions": [
+    {
+      "id": "q-01",
+      "text": "how should we segment our donor file",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "segmentation-for-relevance"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-02",
+      "text": "how do we ask for a major gift without guilt tripping donors",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "the-ask-mechanics"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-03",
+      "text": "why are donors leaving our nonprofit",
+      "stage": "problem",
+      "source": "AGENT-DRAFTED \u2014 NOTE: overlaps Trent q-02; assign the answer-surface measurement to one seat only",
+      "pillars": [
+        "the-ask-mechanics"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-04",
+      "text": "should nonprofits segment donors by politics",
+      "stage": "evaluate",
+      "source": "AGENT-DRAFTED \u2014 her most contested position",
+      "pillars": [
+        "segmentation-for-relevance"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-05",
+      "text": "how should we structure a nonprofit development team",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "fundraising-is-a-team-sport"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-06",
+      "text": "what can nonprofits learn from ecommerce customer retention",
+      "stage": "compare",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "outside-the-sector"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-07",
+      "text": "how do you run a paddle raise at a gala",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "the-ask-mechanics"
+      ],
+      "priority": 2
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "client": "AGP - Trent",
+  "slug": "agp-trent",
+  "pillars_version": 1,
+  "computed_at": "2026-08-18",
+  "window_days": 30,
+  "forward_window_days": 21,
+  "totals": {
+    "published_in_window": 0,
+    "forward": 1,
+    "queued_beyond": 4,
+    "items_considered": 5,
+    "excluded_dead": 0
+  },
+  "rows": [
+    {
+      "pillar_id": "generosity-scattered",
+      "pillar": "Giving isn't down, it moved",
+      "tier": "primary",
+      "weight": 0.35,
+      "published": 0,
+      "forward": 0,
+      "queued_beyond": 1,
+      "target_published": 0.0,
+      "actual_share": 0.0,
+      "deficit": 0.0,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "far-out"
+    },
+    {
+      "pillar_id": "retention-and-recapture",
+      "pillar": "They left because they stopped feeling seen",
+      "tier": "primary",
+      "weight": 0.25,
+      "published": 0,
+      "forward": 0,
+      "queued_beyond": 1,
+      "target_published": 0.0,
+      "actual_share": 0.0,
+      "deficit": 0.0,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "far-out"
+    },
+    {
+      "pillar_id": "leader-load",
+      "pillar": "Naming the load",
+      "tier": "primary",
+      "weight": 0.2,
+      "published": 0,
+      "forward": 1,
+      "queued_beyond": 1,
+      "target_published": 0.0,
+      "actual_share": 0.0,
+      "deficit": 0.0,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "ok"
+    },
+    {
+      "pillar_id": "ceo-voice",
+      "pillar": "Stepping back so the team steps up",
+      "tier": "primary",
+      "weight": 0.2,
+      "published": 0,
+      "forward": 0,
+      "queued_beyond": 1,
+      "target_published": 0.0,
+      "actual_share": 0.0,
+      "deficit": 0.0,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "far-out"
+    }
+  ],
+  "next_batch": {
+    "size": 8,
+    "allocation": {
+      "generosity-scattered": 3,
+      "retention-and-recapture": 2,
+      "leader-load": 2,
+      "ceo-voice": 1
+    }
+  },
+  "flags": [
+    {
+      "flag": "coverage-far-out",
+      "pillar_id": "generosity-scattered",
+      "detail": "Giving isn't down, it moved: 1 queued but none inside the next 21 days"
+    },
+    {
+      "flag": "coverage-far-out",
+      "pillar_id": "retention-and-recapture",
+      "detail": "They left because they stopped feeling seen: 1 queued but none inside the next 21 days"
+    },
+    {
+      "flag": "coverage-far-out",
+      "pillar_id": "ceo-voice",
+      "detail": "Stepping back so the team steps up: 1 queued but none inside the next 21 days"
+    }
+  ],
+  "tagging": {
+    "untagged": [],
+    "low_confidence": []
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "client": "David Freeman Consulting Group - David",
+  "client_record_id": "recRnxNcbmg5tHcIF",
+  "slug": "david-freeman-david",
+  "person": {
+    "name": "David H. Freeman, J.D.",
+    "role": "Founder & CEO",
+    "linkedin_url": "https://www.linkedin.com/in/davidfreemanconsulting/"
+  },
+  "organization": {
+    "name": "David Freeman Consulting Group",
+    "website": "https://davidfreemanconsulting.com",
+    "category": "Law firm business development coaching, training, and accountability programs",
+    "icp_summary": "Managing partners, practice group leaders, and CMO/BD directors at mid-size to large law firms; secondary: individual partners who want to build a book."
+  },
+  "version": 1,
+  "created_at": "2026-08-18",
+  "reviewed_at": "2026-08-18",
+  "refresh_interval_days": 90,
+  "approved_by": "UNAPPROVED \u2014 dry-run proposal 2026-08-18, pending Danny review + client sign-off",
+  "cadence": {
+    "posts_per_week": 2,
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "timezone": "America/New_York"
+  },
+  "off_pillar_policy": "Generic motivational content is off-pillar. His edge is 30 years of specific coaching conversations \u2014 a post with no lawyer in it is off-pillar even if it is true.",
+  "pillars": [
+    {
+      "id": "ai-and-origination",
+      "name": "When the doing gets cheaper, the getting is everything",
+      "weight": 0.3,
+      "definition": "What AI compression does to a legal career: if a 40-hour matter becomes 15, revenue has to come from more matters, so origination stops being a specialty for a few rainmakers and becomes a survival skill for everyone. Includes what a lawyer's job actually becomes when the technical work is commoditized.",
+      "in_scope": [
+        "AI compressing matter economics",
+        "origination as a required skill",
+        "what the job becomes when doing is cheap",
+        "client pressure on pricing"
+      ],
+      "out_of_scope": [
+        "AI tool reviews and legal-tech product comparisons",
+        "AI ethics and privilege questions"
+      ],
+      "why_now": "This is what he is ALREADY publishing (all three of his published posts, 8/11\u20138/18) and it is the loudest conversation in the legal industry \u2014 but none of it is in his forward queue. Meanwhile the client-side pressure is now measurable: 61% of in-house counsel plan to push for pricing changes tied to AI efficiency, while the billable hour is still the primary model at 67% of firms (Thomson Reuters / Law.com, Dec 2025\u20132026).",
+      "buyer_questions": [
+        "q-01",
+        "q-02",
+        "q-09"
+      ],
+      "key_terms": [
+        "AI and the billable hour",
+        "origination",
+        "rainmakers",
+        "law firm business model"
+      ],
+      "proof_assets": [
+        {
+          "type": "experience",
+          "name": "30 years coaching lawyers through prior industry shifts",
+          "link": "",
+          "notes": "His standing credential; the 'never seen a moment like this' framing is his to make"
+        },
+        {
+          "type": "framework",
+          "name": "\"Bureauplasticity\" \u2014 his own coined term for firm-level flexibility under pressure",
+          "link": "https://app.tryordinal.com/david-freeman-consulting-group-david/posts/e71ef925-67db-416e-8dbb-0c273c7a57bd",
+          "notes": "Owned vocabulary \u2014 the single most citable asset he has. Repeat it."
+        }
+      ],
+      "incumbent": {
+        "who": "Legal-tech vendors, Big Four/consultancy thought leadership, legal press (Law.com, ALM)",
+        "where": "Trade press and vendor content",
+        "cadence": "daily",
+        "strength": "High volume on AI adoption and efficiency",
+        "how_we_differ": "Everyone else asks what AI does to the WORK. He asks what it does to the lawyer's JOB and to who brings in revenue. That question is nearly unoccupied."
+      },
+      "formats": [
+        "text-only",
+        "text + image"
+      ],
+      "match": {
+        "terms": [
+          "artificial intelligence",
+          "legal ai",
+          "ai has",
+          "ai will",
+          "ai does",
+          "ai just",
+          "ai reduces",
+          "ai efficiency",
+          "when ai",
+          "ai means",
+          "ai adoption",
+          "billable hour",
+          "origination",
+          "rainmaker",
+          "bureauplasticity",
+          "alternative fee",
+          "table stakes"
+        ],
+        "negative_terms": []
+      },
+      "search_queries": [
+        "law firm AI billable hour pricing pressure 2026",
+        "in-house counsel AI pricing demands 2026",
+        "AmLaw origination compensation AI"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.25,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary"
+    },
+    {
+      "id": "structure-beats-willpower",
+      "name": "Exoskeletons, not exhortations",
+      "weight": 0.3,
+      "definition": "Why telling lawyers to do business development fails, and what replaces it: reminders, cadence, a scoreboard, and somebody who asks on Friday. Training builds the muscle; structure is what makes it move.",
+      "in_scope": [
+        "accountability systems and cadence",
+        "why training alone dies on the vine",
+        "what firms should fund instead of more learning",
+        "leaders saying 'I tell them and they don't do it'"
+      ],
+      "out_of_scope": [
+        "individual mindset coaching (see reluctant-rainmakers)",
+        "comp-plan design (see growing-existing-clients)"
+      ],
+      "why_now": "It is his commercial core \u2014 the thing his programs actually sell \u2014 and budget season is imminent, which makes 'fund the doing, not another training' a time-bound argument for every firm leader about to renew the same line item.",
+      "buyer_questions": [
+        "q-04",
+        "q-08",
+        "q-10"
+      ],
+      "key_terms": [
+        "accountability",
+        "follow-through",
+        "business development structure",
+        "exoskeleton"
+      ],
+      "proof_assets": [
+        {
+          "type": "framework",
+          "name": "The exoskeleton metaphor \u2014 reminders, repetition, carrots",
+          "link": "",
+          "notes": "Owned framing; use the word"
+        },
+        {
+          "type": "experience",
+          "name": "The sole-equity-owner firm where everything became 'used to'",
+          "link": "",
+          "notes": "Anonymized client story, already drafted"
+        },
+        {
+          "type": "data",
+          "name": "NEEDED: his own program outcome numbers",
+          "link": "",
+          "notes": "He almost certainly has before/after book-growth data from 30 years of engagements. Nothing in Ordinal or Airtable Resources contains it. This is the top ask."
+        }
+      ],
+      "incumbent": {
+        "who": "Law firm BD trainers and coaching firms",
+        "where": "LinkedIn and webinars",
+        "cadence": "steady",
+        "strength": "Crowded field of generic advice",
+        "how_we_differ": "He argues against his own category ('not more training'), which is the most credible thing a trainer can say."
+      },
+      "match": {
+        "terms": [
+          "accountability",
+          "follow-through",
+          "follow up",
+          "reminder",
+          "cadence",
+          "scoreboard",
+          "structure",
+          "exoskeleton",
+          "training",
+          "budget",
+          "fund the doing",
+          "willpower"
+        ],
+        "negative_terms": [
+          "table stakes"
+        ]
+      },
+      "search_queries": [
+        "law firm business development accountability program 2026",
+        "why sales training fails professional services"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.3,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary",
+      "formats": [
+        "text-only"
+      ]
+    },
+    {
+      "id": "reluctant-rainmakers",
+      "name": "Getting a \"not\" lawyer to move",
+      "weight": 0.2,
+      "definition": "The craft of moving an individual lawyer who believes they are not a business developer: micro actions, walking down the ladder until you find a rung they will stand on, and the self-perception underneath the refusal.",
+      "in_scope": [
+        "micro actions and first steps",
+        "the 'I'm not a business developer' identity",
+        "coaching busy professionals with no bandwidth",
+        "what changes when someone's self-image shifts"
+      ],
+      "out_of_scope": [
+        "firm-level systems",
+        "AI economics"
+      ],
+      "why_now": "These are the posts only a 30-year coach can write, and they are the ones his buyers forward to the partner they're worried about. Highest-empathy, most human pillar in the set.",
+      "buyer_questions": [
+        "q-03",
+        "q-05"
+      ],
+      "key_terms": [
+        "business development for lawyers",
+        "micro action",
+        "reluctant partner"
+      ],
+      "proof_assets": [
+        {
+          "type": "experience",
+          "name": "Thousands of coached lawyers; the 'could you do this?' ladder; 'tied up in nots'",
+          "link": "",
+          "notes": "Deep, renewable supply. His strongest raw material."
+        }
+      ],
+      "incumbent": {
+        "who": "Individual coaches and legal-press advice columns",
+        "where": "LinkedIn",
+        "cadence": "steady",
+        "strength": "Generic and interchangeable",
+        "how_we_differ": "He publishes the actual dialogue from real sessions, including the lawyer's words. Nobody else has that transcript."
+      },
+      "match": {
+        "terms": [
+          "micro action",
+          "ladder",
+          "rung",
+          "not a business developer",
+          "nots",
+          "coach",
+          "comfort",
+          "one step",
+          "momentum"
+        ],
+        "negative_terms": [
+          "cross-serving"
+        ]
+      },
+      "search_queries": [
+        "how to get reluctant partners to do business development",
+        "lawyer business development mindset 2026"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.2,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary",
+      "formats": [
+        "text-only"
+      ]
+    },
+    {
+      "id": "growing-existing-clients",
+      "name": "Cross-serving that actually happens",
+      "weight": 0.2,
+      "definition": "Why growth from existing clients stalls at every firm \u2014 planning, skills, structure, follow-through \u2014 and the specific structural blockers, especially compensation systems that don't pay a partner to hand over a relationship.",
+      "in_scope": [
+        "cross-serving and cross-selling mechanics",
+        "compensation and origination credit",
+        "account ownership and client teams",
+        "introducing a colleague's practice"
+      ],
+      "out_of_scope": [
+        "net-new client acquisition",
+        "individual mindset work"
+      ],
+      "why_now": "It is the highest-dollar, lowest-effort growth available to a firm, and the comp-system blocker is the part almost nobody says out loud. Also the natural pairing with AI compression: existing clients are where the replacement revenue is.",
+      "buyer_questions": [
+        "q-06",
+        "q-07"
+      ],
+      "key_terms": [
+        "cross-serving",
+        "cross-selling",
+        "origination credit",
+        "client teams"
+      ],
+      "proof_assets": [
+        {
+          "type": "one-sheeter",
+          "name": "4 Reasons Cross-Selling Stalls (PDF, in Ordinal)",
+          "link": "https://app.tryordinal.com/david-freeman-consulting-group-david/posts/93ea6767-3e09-4b3d-af02-0e676ac03ca6",
+          "notes": "Downloadable asset with a 1-10 self-score \u2014 a lead magnet already built"
+        }
+      ],
+      "incumbent": {
+        "who": "Legal marketing consultancies, comp-plan consultants",
+        "where": "Trade press, conference panels",
+        "cadence": "steady",
+        "strength": "Credible on comp mechanics",
+        "how_we_differ": "He names the comp problem AND the behavioral one together; consultants usually own one or the other."
+      },
+      "formats": [
+        "text-only",
+        "text + link",
+        "One-Sheeter"
+      ],
+      "match": {
+        "terms": [
+          "cross-serving",
+          "cross-sell",
+          "cross serving",
+          "existing clients",
+          "origination credit",
+          "compensation",
+          "comp system",
+          "account",
+          "introduce"
+        ],
+        "negative_terms": []
+      },
+      "search_queries": [
+        "law firm cross selling compensation 2026",
+        "client team program law firm growth"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.2,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary"
+    }
+  ],
+  "notes": "Dry-run proposal from 11 Ordinal items (3 published 8/11-8/18, 8 queued 9/10-10/6). THE HEADLINE FINDING: 100% of his published content is AI-and-origination and 0% of his queue is \u2014 the queue is entirely coaching/structure/cross-serving. Whatever is driving his published posts is not connected to what is being produced next."
+}

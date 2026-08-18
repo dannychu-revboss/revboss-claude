@@ -1,0 +1,165 @@
+{
+  "client": "JustFund.US - Iara",
+  "slug": "justfund-iara",
+  "pillars_version": 1,
+  "computed_at": "2026-08-18",
+  "window_days": 30,
+  "forward_window_days": 21,
+  "totals": {
+    "published_in_window": 5,
+    "forward": 3,
+    "queued_beyond": 11,
+    "items_considered": 20,
+    "excluded_dead": 0
+  },
+  "rows": [
+    {
+      "pillar_id": "application-burden",
+      "pillar": "The cost of asking",
+      "tier": "primary",
+      "weight": 0.3,
+      "published": 1,
+      "forward": 2,
+      "queued_beyond": 2,
+      "target_published": 1.5,
+      "actual_share": 0.2,
+      "deficit": 0.5,
+      "days_since_last": 5,
+      "last_published": "2026-08-13",
+      "weeks_starved": 0,
+      "status": "ok"
+    },
+    {
+      "pillar_id": "real-participation",
+      "pillar": "Who actually holds the pen",
+      "tier": "primary",
+      "weight": 0.25,
+      "published": 0,
+      "forward": 1,
+      "queued_beyond": 5,
+      "target_published": 1.2,
+      "actual_share": 0.0,
+      "deficit": 1.2,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "behind"
+    },
+    {
+      "pillar_id": "capital-spectrum",
+      "pillar": "Money that isn't a grant",
+      "tier": "primary",
+      "weight": 0.2,
+      "published": 1,
+      "forward": 0,
+      "queued_beyond": 2,
+      "target_published": 1.0,
+      "actual_share": 0.2,
+      "deficit": 0.0,
+      "days_since_last": 19,
+      "last_published": "2026-07-30",
+      "weeks_starved": 0,
+      "status": "far-out"
+    },
+    {
+      "pillar_id": "grantmaking-operations",
+      "pillar": "Transactional so you can be transformative",
+      "tier": "primary",
+      "weight": 0.15,
+      "published": 1,
+      "forward": 0,
+      "queued_beyond": 0,
+      "target_published": 0.8,
+      "actual_share": 0.2,
+      "deficit": 0.0,
+      "days_since_last": 12,
+      "last_published": "2026-08-06",
+      "weeks_starved": 1,
+      "status": "starved"
+    },
+    {
+      "pillar_id": "sector-infrastructure",
+      "pillar": "Who gets to build for this sector",
+      "tier": "primary",
+      "weight": 0.1,
+      "published": 2,
+      "forward": 0,
+      "queued_beyond": 1,
+      "target_published": 0.5,
+      "actual_share": 0.4,
+      "deficit": 0.0,
+      "days_since_last": 0,
+      "last_published": "2026-08-18",
+      "weeks_starved": 0,
+      "status": "far-out"
+    },
+    {
+      "pillar_id": "leading-a-nonprofit",
+      "pillar": "Building the thing while running it",
+      "tier": "secondary",
+      "weight": 0.0,
+      "published": 0,
+      "forward": 0,
+      "queued_beyond": 1,
+      "target_published": 0.0,
+      "actual_share": 0.0,
+      "deficit": 0.0,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "secondary"
+    }
+  ],
+  "next_batch": {
+    "size": 8,
+    "allocation": {
+      "application-burden": 2,
+      "real-participation": 2,
+      "capital-spectrum": 1,
+      "grantmaking-operations": 2,
+      "sector-infrastructure": 1
+    }
+  },
+  "flags": [
+    {
+      "flag": "coverage-far-out",
+      "pillar_id": "capital-spectrum",
+      "detail": "Money that isn't a grant: 2 queued but none inside the next 21 days"
+    },
+    {
+      "flag": "pillar-no-forward",
+      "pillar_id": "grantmaking-operations",
+      "detail": "Transactional so you can be transformative: nothing queued at all"
+    },
+    {
+      "flag": "coverage-far-out",
+      "pillar_id": "sector-infrastructure",
+      "detail": "Who gets to build for this sector: 1 queued but none inside the next 21 days"
+    }
+  ],
+  "tagging": {
+    "untagged": [
+      {
+        "item": "Thrive",
+        "reason": "no term matched"
+      }
+    ],
+    "low_confidence": [
+      {
+        "item": "Infrastructure Choices Are Values Choices",
+        "pillar_id": "sector-infrastructure",
+        "reason": "matched 'infrastructure'"
+      },
+      {
+        "item": "No Dues, Anyone Can Join",
+        "pillar_id": "real-participation",
+        "reason": "matched 'trust-based'"
+      },
+      {
+        "item": "Wallet Linked In Post",
+        "pillar_id": "capital-spectrum",
+        "reason": "matched 'donor-advised'"
+      }
+    ]
+  }
+}

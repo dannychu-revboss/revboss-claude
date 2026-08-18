@@ -1,0 +1,111 @@
+{
+  "client": "JustFund.US - Iara",
+  "slug": "justfund-iara",
+  "version": 1,
+  "reviewed_at": "2026-08-18",
+  "approved_by": "UNAPPROVED \u2014 dry-run proposal 2026-08-18, pending Danny review + client sign-off",
+  "method_note": "DRY RUN: every question here is agent-drafted except q-07. Before this set is used for a real baseline, replace the phrasing with language from Iara's actual funder calls \u2014 invented questions produce invented findings.",
+  "questions": [
+    {
+      "id": "q-01",
+      "text": "how do we make our grant application shorter without losing what we need to know",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED \u2014 needs replacing with a funder's real phrasing from a call",
+      "pillars": [
+        "application-burden"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-02",
+      "text": "what is participatory grantmaking and does it actually work",
+      "stage": "problem",
+      "source": "AGENT-DRAFTED \u2014 Iara says funders ask her this directly; confirm wording",
+      "pillars": [
+        "real-participation"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-03",
+      "text": "best grants management software for a small foundation",
+      "stage": "compare",
+      "source": "AGENT-DRAFTED \u2014 high-intent comparison query",
+      "pillars": [
+        "application-burden"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-04",
+      "text": "how do we run a pooled fund with community decision makers",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "real-participation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-05",
+      "text": "how long should it take to get a grant payment out the door",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "grantmaking-operations"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-06",
+      "text": "are donor advised funds required to pay out",
+      "stage": "evaluate",
+      "source": "AGENT-DRAFTED \u2014 live 2026 policy debate",
+      "pillars": [
+        "capital-spectrum"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-07",
+      "text": "how do foundations deploy program related investments",
+      "stage": "evaluate",
+      "source": "CLIENT'S OWN REPORT \u2014 \"which groups are ready for a PRI\" is the question her phone rings with (published post 11/5 draft)",
+      "pillars": [
+        "capital-spectrum"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-08",
+      "text": "why can't nonprofits find funding they qualify for",
+      "stage": "problem",
+      "source": "AGENT-DRAFTED from her \"secret society\" post",
+      "pillars": [
+        "application-burden",
+        "sector-infrastructure"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q-09",
+      "text": "alternatives to submittable for grant applications",
+      "stage": "compare",
+      "source": "AGENT-DRAFTED \u2014 competitor-name query; verify the right incumbent name with Iara",
+      "pillars": [
+        "application-burden"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "q-10",
+      "text": "how do we get our grantees investment ready",
+      "stage": "implement",
+      "source": "AGENT-DRAFTED",
+      "pillars": [
+        "capital-spectrum"
+      ],
+      "priority": 2
+    }
+  ]
+}

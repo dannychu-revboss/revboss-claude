@@ -256,8 +256,10 @@ Pillars older than the refresh interval (default 90 days) → run the week as no
 
 ### 2. Coverage read — what are we already saying?
 
-Pull the client's Ordinal content (published in the trailing window + everything queued: ideas,
-To-Dos, dated To-Dos) via `ordinal_search_content`, normalize it, and run:
+Pull the client's Ordinal content via `ordinal_search_content` — **querying each status explicitly
+and merging**, never relying on the default page, which can hide whole statuses and manufacture
+false starvation flags (see `references/weekly-monitor.md` §Reading the content first). On a
+multi-seat workspace, filter by `linkedInProfileId` per person. Normalize, then run:
 
 ```
 python scripts/pillar_coverage.py --pillars clients/<slug>/pillars.json \
@@ -269,8 +271,15 @@ weeks starved, deficit vs. target weight, and a recommended mix for the next N p
 what makes the research actionable** — ideas get generated against deficits, not against whatever
 was interesting this week.
 
+It reports three buckets per pillar — `published` (trailing window), `forward` (queued inside the
+near window), and `queued_beyond` (queued further out) — because a client who plans two months ahead
+is covered, not starved. Only zero in *both* forward buckets is starvation; coverage that exists but
+lands past the window is `far-out`, a scheduling problem rather than a content one.
+
 Coverage tagging is keyword-based and imperfect: spot-check the auto-tagged items with low
-confidence and correct them in the content payload before trusting the numbers.
+confidence and correct them in the content payload before trusting the numbers. Short match terms
+over-tag (`ai` matches "training", `pri` matches "priority") — `validate_pillars.py` warns about
+these; fix the terms rather than explaining the number.
 
 ### 3. Topic radar — what's being talked about?
 

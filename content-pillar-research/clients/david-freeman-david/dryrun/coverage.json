@@ -1,0 +1,111 @@
+{
+  "client": "David Freeman Consulting Group - David",
+  "slug": "david-freeman-david",
+  "pillars_version": 1,
+  "computed_at": "2026-08-18",
+  "window_days": 30,
+  "forward_window_days": 21,
+  "totals": {
+    "published_in_window": 3,
+    "forward": 3,
+    "queued_beyond": 8,
+    "items_considered": 14,
+    "excluded_dead": 0
+  },
+  "rows": [
+    {
+      "pillar_id": "ai-and-origination",
+      "pillar": "When the doing gets cheaper, the getting is everything",
+      "tier": "primary",
+      "weight": 0.3,
+      "published": 3,
+      "forward": 3,
+      "queued_beyond": 0,
+      "target_published": 0.9,
+      "actual_share": 1.0,
+      "deficit": 0.0,
+      "days_since_last": 0,
+      "last_published": "2026-08-18",
+      "weeks_starved": 0,
+      "status": "ok"
+    },
+    {
+      "pillar_id": "structure-beats-willpower",
+      "pillar": "Exoskeletons, not exhortations",
+      "tier": "primary",
+      "weight": 0.3,
+      "published": 0,
+      "forward": 0,
+      "queued_beyond": 4,
+      "target_published": 0.9,
+      "actual_share": 0.0,
+      "deficit": 0.9,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "far-out"
+    },
+    {
+      "pillar_id": "reluctant-rainmakers",
+      "pillar": "Getting a \"not\" lawyer to move",
+      "tier": "primary",
+      "weight": 0.2,
+      "published": 0,
+      "forward": 0,
+      "queued_beyond": 3,
+      "target_published": 0.6,
+      "actual_share": 0.0,
+      "deficit": 0.6,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "far-out"
+    },
+    {
+      "pillar_id": "growing-existing-clients",
+      "pillar": "Cross-serving that actually happens",
+      "tier": "primary",
+      "weight": 0.2,
+      "published": 0,
+      "forward": 0,
+      "queued_beyond": 1,
+      "target_published": 0.6,
+      "actual_share": 0.0,
+      "deficit": 0.6,
+      "days_since_last": null,
+      "last_published": null,
+      "weeks_starved": 0,
+      "status": "far-out"
+    }
+  ],
+  "next_batch": {
+    "size": 8,
+    "allocation": {
+      "ai-and-origination": 2,
+      "structure-beats-willpower": 3,
+      "reluctant-rainmakers": 2,
+      "growing-existing-clients": 1
+    }
+  },
+  "flags": [
+    {
+      "flag": "coverage-far-out",
+      "pillar_id": "structure-beats-willpower",
+      "detail": "Exoskeletons, not exhortations: 4 queued but none inside the next 21 days"
+    },
+    {
+      "flag": "coverage-far-out",
+      "pillar_id": "reluctant-rainmakers",
+      "detail": "Getting a \"not\" lawyer to move: 3 queued but none inside the next 21 days"
+    },
+    {
+      "flag": "coverage-far-out",
+      "pillar_id": "growing-existing-clients",
+      "detail": "Cross-serving that actually happens: 1 queued but none inside the next 21 days"
+    }
+  ],
+  "tagging": {
+    "untagged": [],
+    "low_confidence": []
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "client": "AGP - Whitney",
+  "client_record_id": "recXgEzUEydTFIuBi",
+  "slug": "agp-whitney",
+  "person": {
+    "name": "Whitney Norman",
+    "role": "CONFIRM TITLE \u2014 senior fundraising strategy leader, AGP",
+    "linkedin_url": "https://www.linkedin.com/in/whitney-norman-8ab78225/"
+  },
+  "organization": {
+    "name": "AGP",
+    "website": "https://www.teamagp.com",
+    "category": "Nonprofit fundraising and marketing agency (direct response, donor engagement, digital)",
+    "icp_summary": "CONFIRM: nonprofit CDOs/VPs of development, executive directors, and hospital foundation leaders. Pulled from post content, not from an ICP doc \u2014 no ICP framework exists in Airtable Resources for the AGP seats."
+  },
+  "version": 1,
+  "created_at": "2026-08-18",
+  "reviewed_at": "2026-08-18",
+  "refresh_interval_days": 90,
+  "approved_by": "UNAPPROVED \u2014 dry-run proposal 2026-08-18, pending Danny review + client sign-off",
+  "cadence": {
+    "posts_per_week": 2,
+    "days": [
+      "Tue",
+      "Thu"
+    ],
+    "timezone": "America/New_York"
+  },
+  "off_pillar_policy": "Sector-trend and burnout topics belong to Trent; healthcare-specific topics belong to Alyssa. Route strong signals there instead of publishing them here.",
+  "pillars": [
+    {
+      "id": "the-ask-mechanics",
+      "name": "How a person decides to give",
+      "weight": 0.3,
+      "definition": "The moment of the ask, taken apart: what makes a donor say yes, why partnership beats urgency, and the specific conditions that make giving feel like belonging rather than obligation.",
+      "in_scope": [
+        "the ask itself, in a ballroom or across a table",
+        "urgency/guilt vs partnership and belonging",
+        "donor stewardship after the gift",
+        "what makes a donor feel seen"
+      ],
+      "out_of_scope": [
+        "donor data and segmentation mechanics (see segmentation-for-relevance)",
+        "sector-level giving trends (Trent owns those)"
+      ],
+      "why_now": "Her strongest existing material and the least contested part of the AGP topic space \u2014 nobody else on the account is publishing on the mechanics of the ask itself.",
+      "buyer_questions": [
+        "q-02",
+        "q-07",
+        "q-03"
+      ],
+      "key_terms": [
+        "donor engagement",
+        "the ask",
+        "donor stewardship",
+        "belonging"
+      ],
+      "proof_assets": [
+        {
+          "type": "framework",
+          "name": "Reggie Rivers' 8-step paddle raise, translated out of the ballroom",
+          "link": "",
+          "notes": "From Converge; already drafted"
+        },
+        {
+          "type": "event",
+          "name": "CONVERGE summit (AGP's own, May 2026) \u2014 session notes and speaker quotes",
+          "link": "",
+          "notes": "Every queued post across all three seats is Converge-derived. Rich, but a finite well \u2014 see notes."
+        }
+      ],
+      "incumbent": {
+        "who": "Major-gift trainers and fundraising authors",
+        "where": "LinkedIn, books, webinars",
+        "cadence": "high",
+        "strength": "Crowded but generic",
+        "how_we_differ": "She translates a specific observed system (the paddle raise) into everyday donor conversations \u2014 mechanism, not platitude."
+      },
+      "match": {
+        "terms": [
+          "the ask",
+          "paddle raise",
+          "gala",
+          "urgency",
+          "guilt",
+          "belonging",
+          "partnership",
+          "stewardship",
+          "donor engagement",
+          "invite donors",
+          "easy yes",
+          "honor the guest"
+        ],
+        "negative_terms": [
+          "segment",
+          "org chart"
+        ]
+      },
+      "search_queries": [
+        "major gift ask conversation 2026 research",
+        "donor stewardship urgency vs partnership"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.25,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary",
+      "formats": [
+        "text-only"
+      ]
+    },
+    {
+      "id": "segmentation-for-relevance",
+      "name": "Segment for relevance, not ideology",
+      "weight": 0.3,
+      "definition": "How to group a donor file by what people actually care about \u2014 giving history, attendance, volunteering \u2014 instead of by proxies like age, zip code, or assumed politics, and why ideological sorting costs more than it protects.",
+      "in_scope": [
+        "segmentation practice and proxies",
+        "behavioral data over demographics",
+        "political sorting and donor trust",
+        "mission as the shared center"
+      ],
+      "out_of_scope": [
+        "sector-level giving data (Trent)",
+        "the ask itself"
+      ],
+      "why_now": "Her most differentiated argument: 'even Republicans wear sneakers' is a position most agencies won't take publicly, and 7 in 10 people now say they distrust those with different values (Edelman), so the pressure to sort is rising.",
+      "buyer_questions": [
+        "q-01",
+        "q-04"
+      ],
+      "key_terms": [
+        "donor segmentation",
+        "relevance",
+        "donor file",
+        "behavioral data"
+      ],
+      "proof_assets": [
+        {
+          "type": "event",
+          "name": "CONVERGE summit (AGP's own, May 2026) \u2014 session notes and speaker quotes",
+          "link": "",
+          "notes": "Every queued post across all three seats is Converge-derived. Rich, but a finite well \u2014 see notes."
+        },
+        {
+          "type": "data",
+          "name": "Edelman Trust Barometer \u2014 ~7 in 10 reluctant to trust across values",
+          "link": "",
+          "notes": "Cite the source every time"
+        }
+      ],
+      "incumbent": {
+        "who": "CRM and data vendors, analytics consultancies",
+        "where": "Vendor content",
+        "cadence": "high",
+        "strength": "Owns the technical keyword space",
+        "how_we_differ": "She makes it a values/coalition argument, not a tooling one."
+      },
+      "match": {
+        "terms": [
+          "segment",
+          "segmentation",
+          "donor file",
+          "proxies",
+          "zip code",
+          "ideology",
+          "politics",
+          "relevance",
+          "behavior"
+        ],
+        "negative_terms": []
+      },
+      "search_queries": [
+        "nonprofit donor segmentation best practice 2026",
+        "political polarization donor communications nonprofit"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.25,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary",
+      "formats": [
+        "text-only"
+      ]
+    },
+    {
+      "id": "fundraising-is-a-team-sport",
+      "name": "Fundraising runs through every department",
+      "weight": 0.25,
+      "definition": "Why fundraising can't sit in one wing of the building: the CDO in the budget conversation, the data lead in donor experience, comms knowing the major-gift pipeline \u2014 and what it costs the organization (and the CEO) when it's carried by one department.",
+      "in_scope": [
+        "development team structure and org design",
+        "cross-functional fundraising",
+        "CDO seat at the table",
+        "leadership turnover as a symptom"
+      ],
+      "out_of_scope": [
+        "individual donor tactics",
+        "healthcare-specific board dynamics (Alyssa)"
+      ],
+      "why_now": "Her signature line, and it connects to a measurable pressure: record nonprofit CEO transitions in 2025. It is also the argument that sells an agency relationship.",
+      "buyer_questions": [
+        "q-05"
+      ],
+      "key_terms": [
+        "fundraising is a team sport",
+        "development team structure",
+        "chief development officer"
+      ],
+      "proof_assets": [
+        {
+          "type": "experience",
+          "name": "Years of cross-client observation of what widened teams do differently",
+          "link": "",
+          "notes": "NEEDS specifics: a named (or anonymized) org where widening the circle changed a number"
+        },
+        {
+          "type": "event",
+          "name": "CONVERGE summit (AGP's own, May 2026) \u2014 session notes and speaker quotes",
+          "link": "",
+          "notes": "Every queued post across all three seats is Converge-derived. Rich, but a finite well \u2014 see notes."
+        }
+      ],
+      "incumbent": {
+        "who": "Nonprofit management consultancies, BoardSource-type organizations",
+        "where": "Reports",
+        "cadence": "steady",
+        "strength": "Credible on governance",
+        "how_we_differ": "She frames it as a fundraising-performance question rather than a governance one."
+      },
+      "match": {
+        "terms": [
+          "team sport",
+          "org chart",
+          "development office",
+          "chief development officer",
+          "chief financial officer",
+          "department",
+          "ceo transition",
+          "roster",
+          "budget conversation"
+        ],
+        "negative_terms": [
+          "hospital"
+        ]
+      },
+      "search_queries": [
+        "nonprofit CEO turnover 2026 development office structure"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.2,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary",
+      "formats": [
+        "text-only"
+      ]
+    },
+    {
+      "id": "outside-the-sector",
+      "name": "Borrowed playbooks",
+      "weight": 0.15,
+      "definition": "Proven ideas from outside philanthropy \u2014 e-commerce journey mapping, SaaS reactivation, healthcare loyalty \u2014 adapted to donor relationships, with the mechanism made explicit rather than gestured at.",
+      "in_scope": [
+        "cross-vertical patterns applied to donors",
+        "lifecycle/journey mapping",
+        "reactivation and retention mechanics from other industries"
+      ],
+      "out_of_scope": [
+        "generic innovation talk with no named mechanism"
+      ],
+      "why_now": "Genuinely differentiated for a nonprofit-sector audience and easy for her to sustain given AGP's cross-vertical work. Smallest share because it needs a concrete example each time to avoid becoming vague.",
+      "buyer_questions": [
+        "q-06"
+      ],
+      "key_terms": [
+        "donor journey",
+        "lifecycle engagement",
+        "reactivation"
+      ],
+      "proof_assets": [
+        {
+          "type": "experience",
+          "name": "AGP's cross-vertical client work",
+          "link": "",
+          "notes": "NEEDS one named borrowed tactic and its result \u2014 without that this pillar drifts to generic"
+        }
+      ],
+      "match": {
+        "terms": [
+          "ecommerce",
+          "e-commerce",
+          "saas",
+          "customer journey",
+          "journey mapping",
+          "other industries",
+          "outside the sector",
+          "lifecycle",
+          "reactivation",
+          "personalization"
+        ],
+        "negative_terms": []
+      },
+      "search_queries": [
+        "customer retention tactics applied to nonprofit donors 2026"
+      ],
+      "metrics": {
+        "target_share_of_voice": 0.1,
+        "first_measured": null
+      },
+      "status": "active",
+      "tier": "primary",
+      "formats": [
+        "text-only"
+      ]
+    }
+  ],
+  "notes": "Dry-run proposal from 6 Ordinal items (2 posted, 3 scheduled, 1 Blocked), ALL Converge-labeled. CONFLICT RESOLVED IN THIS PROPOSAL: her queued 'generosity relocated' post (8/25) is the same thesis, same source (FEP), as Trent's queued 'generosity scattered' post (9/22). Sector-level giving data is assigned to Trent as CEO; Whitney gets the practitioner-level cut. One of the two posts needs to change before both go out."
+}
