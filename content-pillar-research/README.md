@@ -12,7 +12,8 @@ BASELINE (once per client, refreshed quarterly)
 ┌──────────────────────────────────────────────────────────────────────────┐
 │ 1. read the client        Resources · transcripts · site · past posts    │
 │ 2. buyer question set     8–12 questions in the buyer's own words        │
-│ 3. answer-surface baseline  ask them → record WHO the AI names today     │
+│ 3. answer-surface baseline  ⛔ HUMAN runs the pack in ChatGPT/Claude →   │
+│                             agent parses WHO gets named today            │
 │ 4. who owns each topic    competitors, practitioners, incumbents         │
 │ 5. score & pick 3–5       demand · credibility · differentiation ·       │
 │                           sustainability · pipeline proximity            │
@@ -25,7 +26,8 @@ WEEKLY MONITOR (scheduled, Monday morning)                 pillars.json
 │ 1. coverage read      Ordinal published + queued → per-pillar gaps       │
 │ 2. topic radar        what's being talked about, per pillar, with dates  │
 │ 3. score & cut        keep 5–8 signals, weighted toward starved pillars  │
-│ 4. answer surface     2 rotating buyer questions (full set monthly)      │
+│ 4. answer surface     agent builds a 2-question paste-ready pack for a   │
+│                       human (full set monthly); tracks skips             │
 │ 5. write idea seeds   → Ordinal as IDEAS ONLY, never scheduled           │
 │ 6. ask list           the 1–3 things we need FROM the client this week   │
 │ 7. report + Slack digest + Dashboard State receipt + state update        │
@@ -83,8 +85,10 @@ clients/<slug>/
 2. **Never contacts a client.** The ask list is a draft for a person to send.
 3. **Pillar changes require human approval.** The agent proposes a diff; a person accepts it.
 4. **Every claim carries a source URL and a date.** No unattributed statistics, ever.
-5. **Answer-surface results are dated observations, not rankings** — and they're a proxy for the
-   retrievable surface, not ChatGPT's own output. Say so every time.
+5. **The answer-surface reading is human-run, and BASELINE blocks on it.** The agent builds a
+   paste-ready query pack; a person runs it in ChatGPT and Claude. No client brief ships without a
+   `human_check: true` observation. The agent's own search reading is corroboration only and is
+   never described to a client as "what ChatGPT says."
 6. **Bounded spend** per client per run (see `config.json`).
 
 ## Running it

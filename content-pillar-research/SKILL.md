@@ -76,7 +76,9 @@ becomes the strategy, and every downstream skill inherits it.
 |---|---|---|
 | `pillars.json` | human-approved | The pillar registry — SSOT for what this client talks about. Schema: `references/pillar-registry-schema.md` |
 | `buyer-questions.json` | human-approved | The question set buyers would type into an AI, used for the answer-surface harness |
-| `answer-surface/<YYYY-MM-DD>.json` | agent | One observation per harness run — who got named for each question, on that date, by that method |
+| `answer-surface/<YYYY-MM-DD>.json` | agent (parses human input) | One observation per harness run — who got named for each question, on that date, by which assistant, run by whom. `human_check: true` = quotable to a client |
+| `answer-surface/<YYYY-MM-DD>-raw.md` | human paste, archived | The raw pasted ChatGPT/Claude answers behind that observation |
+| `query-pack-<YYYY-MM-DD>.md` | agent | The paste-ready questions handed to a human for the run above |
 | `radar-state.json` | agent | Seen-signal keys (dedupe), per-pillar starvation counters, last-run stamps, rotation cursor |
 | `weekly/<YYYY-MM-DD>.json` + `.html` | agent | The week's report input + rendered report |
 
@@ -106,9 +108,12 @@ These are not preferences. Breaking one damages a live client account.
 4. **Every claim carries a source.** A signal with no URL and no date does not go in a report. If
    you cannot source it, drop it or label it `unverified` and let it be visibly weak. Never invent
    a statistic, a competitor quote, a citation, or a "trend."
-5. **Answer-surface results are dated observations, not rankings.** Record the exact question, the
-   date, the method used, and who was named. Never present them as a stable leaderboard — they
-   drift week to week and the methods differ (see `references/query-harness.md` §Limits).
+5. **The answer-surface reading is run by a human, not by you.** You build a paste-ready query
+   pack; a person runs it in ChatGPT and Claude and hands back the answers. **BASELINE is blocked on
+   it** — no brief goes to a client without a `human_check: true` observation. Your own search
+   reading is corroboration only, stored separately and never described to a client as "what ChatGPT
+   says." Record the exact question, the date, the assistant, and who ran it. Never present any of
+   it as a stable leaderboard — it drifts (`references/query-harness.md` §2, §5).
 6. **Stay inside the pillars.** Weekly research is not open-ended market reading. A signal that
    maps to no pillar goes in an `off-pillar` bucket with a one-line note (it may be evidence for a
    REFRESH); it does not become a post idea.
@@ -157,12 +162,22 @@ solving the problem the client sells into. Rules:
   Wikipedia's; "how do teams actually handle X when Y" is a practitioner's.
 - Save to `buyer-questions.json`. This file is as strategic as the pillars — get it reviewed.
 
-### 3. Take the answer-surface baseline
+### 3. Take the answer-surface baseline — HUMAN-RUN, BLOCKING
 
-Run the question set through the harness in `references/query-harness.md`. For each question
-record: who got named, which domains/sources the answer leaned on, whether LinkedIn appeared,
-whether *this client or its people* appeared at all (usually: no), and what kind of source won
-(vendor page, listicle, practitioner post, community thread).
+**Stop and hand off.** Build the query pack (`references/query-harness.md` §2), write it to
+`clients/<slug>/query-pack-<date>.md`, and give it to the human with the questions inline so they
+can paste straight into ChatGPT. Then **wait**. Two minutes of their time buys the one artifact in
+this brief a client cannot argue with.
+
+You may run your own search-tool version while you wait — as `agent_observations`, labeled a proxy,
+never as the baseline. **Do not deliver a brief with the agent reading standing in for the human
+check.** If the human declines or the pack comes back empty, say plainly that the brief is
+incomplete and which section is missing.
+
+When the answers come back, parse each one and record: who got named (companies and individuals),
+which sources the answer leaned on, whether LinkedIn appeared, whether *this client or its people*
+appeared at all (usually: no), and what kind of source won (vendor page, listicle, practitioner
+post, community thread). Archive the raw paste alongside the parsed file.
 
 This is the single most persuasive artifact in the brief. "We asked the five questions your buyers
 ask. Here is who the model named. You were not in any of them" reframes content from
@@ -277,12 +292,20 @@ Score each signal on relevance-to-pillar, recency, buyer-proximity, the client's
 angle, and evidence strength. Keep the top signals; target **5–8 idea seeds per client per week**,
 weighted toward starved pillars. More than that is noise the team won't process.
 
-### 5. Answer-surface spot check (rotating)
+### 5. Answer-surface spot check — build the pack, don't fake the reading
 
-Two buyer questions per week on rotation (cursor in `radar-state.json`); the full set monthly.
-Record the observation, then compare to the baseline: are the client or their people appearing yet?
-Has an incumbent gotten stronger? Honor the methodology's timing — a new pillar takes a median of
-about a week to earn its first citation and up to ~37 days for most, so **do not call a pillar
+Two buyer questions per week on rotation (cursor in `radar-state.json`); the full set monthly. The
+weekly job is to **generate the pack and put it in the digest** — top of the digest, two questions,
+paste-ready. A human runs it.
+
+This one is **non-blocking**: the weekly run continues without it. But track it honestly —
+increment `human_checks_skipped` in `radar-state.json` each week it comes back unrun, and at 4
+consecutive skips raise `answer-surface-blind`, because a month of unmeasured share-of-voice is
+fiction, not a trend.
+
+When a reading does come back, compare to the baseline: are the client or their people appearing
+yet? Has an incumbent gotten stronger? Honor the methodology's timing — a new pillar takes a median
+of about a week to earn its first citation and up to ~37 days for most, so **do not call a pillar
 failed before day 30**.
 
 ### 6. Write idea seeds to Ordinal
@@ -307,8 +330,9 @@ generic "anything to share?" is the thing this replaces.
 ### 8. Report, digest, receipt
 
 - Render the weekly report: `python scripts/build_report.py --kind weekly --input clients/<slug>/weekly/<date>.json --output clients/<slug>/weekly/<date>.html`
-- Post a short digest to `#content-team-ops`: per client one block — pillar coverage line, the
-  week's top 3 signals with links, ideas written (count + titles), the ask list, and any flags.
+- Post a short digest to `#content-team-ops`: per client one block — **the 2-question answer-surface
+  pack at the top** (paste-ready, so it can be run from the phone), then the pillar coverage line,
+  the week's top 3 signals with links, ideas written (count + titles), the ask list, and any flags.
   Link the full report. Keep it skimmable; the report holds the detail.
 - Write the Dashboard State receipt (always).
 - Update `radar-state.json`: seen keys, starvation counters, rotation cursor, last-run stamp.
@@ -360,8 +384,9 @@ If the request is really one of those, say so and route it rather than half-doin
 
 Every run, in the chat and in the artifacts:
 
-- **BASELINE**: the brief (HTML), a validated `pillars.json`, the dated answer-surface baseline,
-  and a plain-language summary of the five pillars with the one-line "why this one."
+- **BASELINE**: the query pack (first — it's a blocking dependency), then the brief (HTML), a
+  validated `pillars.json`, the human-run dated answer-surface baseline, and a plain-language
+  summary of the five pillars with the one-line "why this one."
 - **WEEKLY**: the report (HTML), the idea seeds actually written to Ordinal (titles + confirmation
   they're `ToDo`), the coverage table, the ask list, flags, and the receipt.
 - Always: what you could *not* verify, and what you'd need to close the gap. A visible unknown is

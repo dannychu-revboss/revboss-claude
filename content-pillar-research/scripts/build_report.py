@@ -168,7 +168,11 @@ def render_brief(d):
             indiv = ("yes" if row.get("individual_post_cited") else "no")
             srows.append([esc(row.get("question")), esc(named), present, esc(indiv),
                           f'<span class="small muted">{esc(row.get("note"))}</span>'])
-        body = (f'<p class="small muted">Observed {esc(surface.get("observed_at"))} · '
+        if surface.get("human_check"):
+            badge = '<span class="tag ok">human-run</span>'
+        else:
+            badge = ('<span class="tag warn">agent proxy — not a human check</span>')
+        body = (f'<p class="small muted">{badge} Observed {esc(surface.get("observed_at"))} · '
                 f'method: {esc(surface.get("method"))}</p>'
                 + table(["Question", "Who the answer named", "You", "Any individual cited?", "Note"], srows))
         if surface.get("limits"):
@@ -352,16 +356,40 @@ def render_weekly(d):
             [[esc(a.get("what")), esc(a.get("pillar")), esc(a.get("unblocks")), esc(a.get("why_now"))]
              for a in asks])))
 
-    # answer surface
+    # answer surface — human-run gate
     surface = d.get("answer_surface") or {}
+    pack = d.get("query_pack") or {}
+    if pack.get("questions") and not surface.get("checked"):
+        status = pack.get("status") or "pending"
+        skipped = pack.get("weeks_skipped")
+        tone = "bad" if (isinstance(skipped, int) and skipped >= 3) else "warn"
+        body = (f'<div class="card"><p><span class="tag {tone}">needs 2 minutes of a human</span>'
+                + (f' <span class="small muted">unrun for {skipped} week(s)</span>' if skipped else "")
+                + "</p>"
+                + '<p>Run each in <b>ChatGPT</b> and <b>Claude</b> — new chat per question, web '
+                  "search on — then paste the answers back. The agent cannot do this step: it can't "
+                  "see what an assistant tells a buyer, and a real answer is the only version a "
+                  "client can't argue with.</p>"
+                + bullets(pack["questions"])
+                + kv("What to capture", "who got named (companies and people) · were we named at "
+                     "all · was any individual's post cited, or all vendor pages", raw=False)
+                + (f'<p class="small muted">Pack file: {esc(pack.get("file"))}</p>'
+                   if pack.get("file") else "")
+                + "</div>")
+        parts.append(section("Answer-surface pack — for you to run", body))
     if surface.get("checked"):
         rows = [[esc(c.get("question")), esc(", ".join(c.get("named") or []) or "—"),
                  ('<span class="tag ok">present</span>' if c.get("client_present")
                   else '<span class="tag bad">absent</span>'),
                  esc(c.get("vs_baseline"))]
                 for c in surface["checked"]]
+        badge = ('<span class="tag ok">human-run</span>' if surface.get("human_check")
+                 else '<span class="tag warn">agent proxy — not a human check</span>')
         parts.append(section("Answer-surface spot check",
-                             f'<p class="small muted">Observed {esc(surface.get("observed_at"))}</p>'
+                             f'<p class="small muted">{badge} Observed '
+                             f'{esc(surface.get("observed_at"))}'
+                             + (f' · {esc(surface.get("method"))}' if surface.get("method") else "")
+                             + "</p>"
                              + table(["Question", "Who was named", "You", "vs. baseline"], rows)))
 
     # flags

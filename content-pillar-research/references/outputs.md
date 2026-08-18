@@ -22,9 +22,11 @@ Required sections, in this order — the order is the argument:
 
 1. **What your buyers are actually asking.** The buyer question set, with where each question's
    phrasing came from (their sales calls, not our imagination).
-2. **Who the AI names today.** The dated answer-surface baseline. Which questions, which sources
-   won, who was named, and whether the client appeared. Include the method and its limits
-   (`query-harness.md` §5) — verbatim honesty here is what makes the rest credible.
+2. **Who the AI names today.** The dated, **human-run** answer-surface baseline — name the
+   assistant, the date, and that a person ran it. Which questions, which sources won, who was named,
+   and whether the client appeared. Include the method and its limits (`query-harness.md` §5) —
+   verbatim honesty here is what makes the rest credible. This section may not be built from the
+   agent's own search reading; if the human check hasn't happened, the brief isn't finished.
 3. **Why individual profiles are the lever.** The short version of `methodology.md` §1–3 with
    attributed numbers. Two paragraphs, not a lecture.
 4. **What you can own — and why you specifically.** Per candidate pillar: buyer demand, the client's
@@ -60,7 +62,8 @@ Required sections, in this order — the order is the argument:
   ],
   "answer_surface": {
     "observed_at": "2026-08-18",
-    "method": "...",
+    "human_check": true,
+    "method": "ChatGPT + Claude, new chat each, web search on — run by Danny 2026-08-18",
     "limits": "...",
     "rows": [
       { "question": "...", "named": ["Vendor A"], "client_present": false,
@@ -101,7 +104,8 @@ Internal-first, but written so it can be forwarded to a client without editing. 
 4. **Ideas written** — titles, pillar, format, and confirmation they're unscheduled `ToDo` ideas.
 5. **Recommended next-batch mix** — from `pillar_coverage.py`: "next 8 posts: 4 / 3 / 1".
 6. **Ask list** — max 3, each tied to a pillar and the post it unblocks.
-7. **Answer-surface check** — the 2 rotating questions: who was named, movement vs. baseline.
+7. **Answer-surface check** — the 2 rotating questions. If a human ran them: who was named and
+   movement vs. baseline. If not: the paste-ready pack, and how many weeks it's gone unrun.
 8. **Flags** — with the condition that tripped and the recommended action.
 9. **Off-pillar** — strong signals that fit no pillar, one line each. Watch for a drumbeat here;
    three weeks of the same off-pillar theme is REFRESH evidence.
@@ -134,7 +138,9 @@ Internal-first, but written so it can be forwarded to a client without editing. 
     { "title": "...", "pillar": "...", "format": "text-only", "ordinal_status": "ToDo", "idea_id": "..." }
   ],
   "asks": [ { "what": "...", "pillar": "...", "unblocks": "...", "why_now": "..." } ],
-  "answer_surface": { "observed_at": "2026-08-18", "checked": [
+  "answer_surface": { "observed_at": "2026-08-18", "human_check": true,
+    "method": "ChatGPT, run by Danny", "pack_status": "run | pending | skipped(3 weeks)",
+    "checked": [
       { "question": "...", "named": ["Vendor A"], "client_present": false, "vs_baseline": "unchanged" } ] },
   "flags": [ { "flag": "pillar-starved", "detail": "pricing-honesty, 2 weeks", "action": "..." } ],
   "off_pillar": [ { "what": "...", "source_url": "...", "note": "..." } ],
@@ -158,7 +164,8 @@ Shape is in `weekly-monitor.md` §Digest shape. Rules:
 |---|---|---|
 | Idea seeds | Ordinal | `status: "ToDo"` confirmed on every write; pillar label attached; never dated, never `Scheduled` |
 | `pillars.json` | `clients/<slug>/` | Human-approved only; validated before write; `version` bumped |
-| Answer-surface observation | `clients/<slug>/answer-surface/<date>.json` | One file per run; never overwrite a prior date |
+| Query pack | `clients/<slug>/query-pack-<date>.md` | Paste-ready; goes at the top of the digest. BASELINE blocks on its answers |
+| Answer-surface observation | `clients/<slug>/answer-surface/<date>.json` | One file per run; never overwrite a prior date. `human_check` must be set truthfully; raw paste archived beside it |
 | `radar-state.json` | `clients/<slug>/` | Agent-owned; updated at end of every run |
 | Run receipt | Airtable Dashboard State | Every run, including clean ones. `content-pillar-research-run` |
 | Flags | Airtable Ops Backlog | One row per flag, deduped by flag + pillar + week |

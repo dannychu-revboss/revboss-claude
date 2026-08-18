@@ -41,7 +41,18 @@
     "no_client_input_weeks": 3,
     "refresh_interval_days": 90,
     "judgment_floor_days": 30,
-    "dedupe_ttl_days": 45
+    "dedupe_ttl_days": 45,
+    "human_answer_surface_skips_flag": 4
+  },
+  "answerSurface": {
+    "humanRunRequired": true,
+    "note": "The answer-surface reading is run by a person in ChatGPT + Claude, not by the agent. BASELINE is BLOCKED on it — no client brief ships without a human_check:true observation. WEEKLY is non-blocking: the agent puts a 2-question paste-ready pack at the top of the digest and continues, tracking skips.",
+    "weeklyQuestions": 2,
+    "fullSweepCadence": "monthly",
+    "assistants": ["ChatGPT", "Claude"],
+    "instructions": "new chat per question, web search on, paste the raw answer back",
+    "runBy": "Danny (default) — reassign per client if someone else owns the relationship",
+    "blocking": { "baseline": true, "weekly": false }
   },
   "spendCaps": {
     "weekly": { "searches_per_client": 6, "fetches_per_client": 12, "answer_surface_questions": 2 },
@@ -52,7 +63,8 @@
     "neverSchedule": true,
     "neverContactClient": true,
     "pillarChangesRequireHumanApproval": true,
-    "everyClaimNeedsASource": true
+    "everyClaimNeedsASource": true,
+    "answerSurfaceBaselineRequiresHumanRun": true
   },
   "pilot": {
     "note": "Start with 2–3 clients who already have voice bundles and an active Ordinal queue, then widen. Each entry needs clients/<slug>/pillars.json before its first weekly run.",

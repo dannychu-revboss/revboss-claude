@@ -1,88 +1,310 @@
 {
   "kind": "brief",
   "client": "Example Co - Dana",
-  "person": { "name": "Dana Reyes", "role": "Co-founder & CEO", "linkedin_url": "https://www.linkedin.com/in/example-dana/" },
-  "organization": { "name": "Example Co", "website": "https://example.co", "category": "Customer onboarding software for B2B SaaS" },
+  "person": {
+    "name": "Dana Reyes",
+    "role": "Co-founder & CEO",
+    "linkedin_url": "https://www.linkedin.com/in/example-dana/"
+  },
+  "organization": {
+    "name": "Example Co",
+    "website": "https://example.co",
+    "category": "Customer onboarding software for B2B SaaS"
+  },
   "prepared_at": "2026-08-18",
-  "prepared_by": "RevBoss — content-pillar-research",
-  "summary": "Your buyers are asking AI about week-one churn, and every answer it gives them comes from a vendor blog. No practitioner is cited, and you are not named anywhere. Three topics — week-one churn, published pricing, and the partners you build with — are where you can be the cited source, because you have numbers and first-person results that the companies currently answering these questions do not.",
+  "prepared_by": "RevBoss \u2014 content-pillar-research",
+  "summary": "Your buyers are asking AI about week-one churn, and every answer it gives them comes from a vendor blog. No practitioner is cited, and you are not named anywhere. Three topics \u2014 week-one churn, published pricing, and the partners you build with \u2014 are where you can be the cited source, because you have numbers and first-person results that the companies currently answering these questions do not.",
   "buyer_questions": [
-    { "id": "q-01", "text": "why do new customers stop logging in after the first week", "stage": "problem", "source": "sales call 2026-07-22 — buyer's own phrasing" },
-    { "id": "q-03", "text": "why do new b2b saas customers churn in the first month", "stage": "problem", "source": "r/CustomerSuccess thread 2026-07-11" },
-    { "id": "q-04", "text": "should b2b saas companies publish pricing on their website", "stage": "evaluate", "source": "LinkedIn comment thread on Dana's post 2026-08-04" },
-    { "id": "q-05", "text": "best customer onboarding tools for a 200 person saas company", "stage": "compare", "source": "our wording — needs replacing with real buyer phrasing" },
-    { "id": "q-07", "text": "what does good time to value look like for b2b software", "stage": "implement", "source": "sales call 2026-07-22" }
+    {
+      "id": "q-01",
+      "text": "why do new customers stop logging in after the first week",
+      "stage": "problem",
+      "source": "sales call 2026-07-22 \u2014 buyer's own phrasing"
+    },
+    {
+      "id": "q-03",
+      "text": "why do new b2b saas customers churn in the first month",
+      "stage": "problem",
+      "source": "r/CustomerSuccess thread 2026-07-11"
+    },
+    {
+      "id": "q-04",
+      "text": "should b2b saas companies publish pricing on their website",
+      "stage": "evaluate",
+      "source": "LinkedIn comment thread on Dana's post 2026-08-04"
+    },
+    {
+      "id": "q-05",
+      "text": "best customer onboarding tools for a 200 person saas company",
+      "stage": "compare",
+      "source": "our wording \u2014 needs replacing with real buyer phrasing"
+    },
+    {
+      "id": "q-07",
+      "text": "what does good time to value look like for b2b software",
+      "stage": "implement",
+      "source": "sales call 2026-07-22"
+    }
   ],
   "answer_surface": {
     "observed_at": "2026-08-18",
-    "method": "WebSearch + source read via Claude Code — a proxy for the retrievable answer surface, not ChatGPT's own output",
-    "limits": "One dated observation, not a ranking. Each assistant retrieves differently and answers drift between runs. Ask ChatGPT these five questions yourself and screenshot the result — your own baseline is stronger evidence than ours.",
+    "method": "ChatGPT + Claude, new chat each, web search on \u2014 run by Danny 2026-08-18",
+    "limits": "One dated observation, not a ranking. Each assistant retrieves differently and answers drift between runs. Ask ChatGPT these five questions yourself and screenshot the result \u2014 your own baseline is stronger evidence than ours.",
     "rows": [
-      { "question": "why do new b2b saas customers churn in the first month", "named": ["Vendor A", "Vendor B", "Vendor C"], "client_present": false, "individual_post_cited": false, "note": "Three vendor blog posts. No practitioner voice at all." },
-      { "question": "should b2b saas companies publish pricing on their website", "named": ["A named pricing consultant", "Vendor D"], "client_present": false, "individual_post_cited": true, "note": "An individual IS cited here — this topic is contested, not empty." },
-      { "question": "what does good time to value look like for b2b software", "named": ["Vendor A"], "client_present": false, "individual_post_cited": false, "note": "Thin answer overall; one source carried it." }
-    ]
+      {
+        "question": "why do new b2b saas customers churn in the first month",
+        "named": [
+          "Vendor A",
+          "Vendor B",
+          "Vendor C"
+        ],
+        "client_present": false,
+        "individual_post_cited": false,
+        "note": "Three vendor blog posts. No practitioner voice at all."
+      },
+      {
+        "question": "should b2b saas companies publish pricing on their website",
+        "named": [
+          "A named pricing consultant",
+          "Vendor D"
+        ],
+        "client_present": false,
+        "individual_post_cited": true,
+        "note": "An individual IS cited here \u2014 this topic is contested, not empty."
+      },
+      {
+        "question": "what does good time to value look like for b2b software",
+        "named": [
+          "Vendor A"
+        ],
+        "client_present": false,
+        "individual_post_cited": false,
+        "note": "Thin answer overall; one source carried it."
+      }
+    ],
+    "human_check": true
   },
   "why_individuals": [
-    "Buyers research with AI before they talk to anyone: 6sense's 2025 survey of ~4,000 B2B buyers found 94% use tools like ChatGPT somewhere in the buying process. An AI answer is not a results page — Qwairy measured ChatGPT at about 3.86 citations per response across 118,000 answers. Being the seventh-best source is the same as being invisible.",
-    "For professional questions, Profound found LinkedIn is the single most-cited domain across ChatGPT, Gemini, Google AI Overviews, Copilot, and Perplexity — and Meltwater found roughly 75% of those LinkedIn citations come from individual member profiles rather than company pages. That is why this plan puts posts on your profile, not your company page: the artifact that gets quoted is a person's post."
+    "Buyers research with AI before they talk to anyone: 6sense's 2025 survey of ~4,000 B2B buyers found 94% use tools like ChatGPT somewhere in the buying process. An AI answer is not a results page \u2014 Qwairy measured ChatGPT at about 3.86 citations per response across 118,000 answers. Being the seventh-best source is the same as being invisible.",
+    "For professional questions, Profound found LinkedIn is the single most-cited domain across ChatGPT, Gemini, Google AI Overviews, Copilot, and Perplexity \u2014 and Meltwater found roughly 75% of those LinkedIn citations come from individual member profiles rather than company pages. That is why this plan puts posts on your profile, not your company page: the artifact that gets quoted is a person's post."
   ],
   "candidates": [
-    { "name": "Why customers quit in week one", "chosen": true, "scores": { "buyer_demand": 5, "credibility": 5, "differentiation": 5, "sustainability": 4, "pipeline_proximity": 4 }, "reasoning": "Four of your ten buyer questions point here, you have cohort data nobody else has, and today's answers are all vendor marketing.", "incumbent": "Three vendors' content teams — SEO-shaped, no numbers" },
-    { "name": "Saying the price out loud", "chosen": true, "scores": { "buyer_demand": 4, "credibility": 5, "differentiation": 4, "sustainability": 4, "pipeline_proximity": 4 }, "reasoning": "You already argue this in comment threads and you have a first-person result. Contested — an individual is already cited — so we take share rather than take over.", "incumbent": "A named pricing consultant posting 3x/week" },
-    { "name": "The people we build with", "chosen": true, "scores": { "buyer_demand": 3, "credibility": 4, "differentiation": 3, "sustainability": 3, "pipeline_proximity": 3 }, "reasoning": "Borrowed reach and reciprocity. Smallest share of the mix, and it needs one thing from you: the list of people you want to amplify.", "incumbent": "n/a" },
-    { "name": "AI in customer success", "chosen": false, "scores": { "buyer_demand": 4, "credibility": 2, "differentiation": 1, "sustainability": 5, "pipeline_proximity": 2 }, "reasoning": "Rejected: enormous supply, nothing you can say that ten thousand others aren't, and it would eat slots from topics you can win." },
-    { "name": "Building the team", "chosen": false, "scores": { "buyer_demand": 1, "credibility": 5, "differentiation": 2, "sustainability": 4, "pipeline_proximity": 1 }, "reasoning": "Rejected as a pillar, kept as a secondary: it performs on engagement but reaches founders, not buyers. Capped at roughly one post a month." }
+    {
+      "name": "Why customers quit in week one",
+      "chosen": true,
+      "scores": {
+        "buyer_demand": 5,
+        "credibility": 5,
+        "differentiation": 5,
+        "sustainability": 4,
+        "pipeline_proximity": 4
+      },
+      "reasoning": "Four of your ten buyer questions point here, you have cohort data nobody else has, and today's answers are all vendor marketing.",
+      "incumbent": "Three vendors' content teams \u2014 SEO-shaped, no numbers"
+    },
+    {
+      "name": "Saying the price out loud",
+      "chosen": true,
+      "scores": {
+        "buyer_demand": 4,
+        "credibility": 5,
+        "differentiation": 4,
+        "sustainability": 4,
+        "pipeline_proximity": 4
+      },
+      "reasoning": "You already argue this in comment threads and you have a first-person result. Contested \u2014 an individual is already cited \u2014 so we take share rather than take over.",
+      "incumbent": "A named pricing consultant posting 3x/week"
+    },
+    {
+      "name": "The people we build with",
+      "chosen": true,
+      "scores": {
+        "buyer_demand": 3,
+        "credibility": 4,
+        "differentiation": 3,
+        "sustainability": 3,
+        "pipeline_proximity": 3
+      },
+      "reasoning": "Borrowed reach and reciprocity. Smallest share of the mix, and it needs one thing from you: the list of people you want to amplify.",
+      "incumbent": "n/a"
+    },
+    {
+      "name": "AI in customer success",
+      "chosen": false,
+      "scores": {
+        "buyer_demand": 4,
+        "credibility": 2,
+        "differentiation": 1,
+        "sustainability": 5,
+        "pipeline_proximity": 2
+      },
+      "reasoning": "Rejected: enormous supply, nothing you can say that ten thousand others aren't, and it would eat slots from topics you can win."
+    },
+    {
+      "name": "Building the team",
+      "chosen": false,
+      "scores": {
+        "buyer_demand": 1,
+        "credibility": 5,
+        "differentiation": 2,
+        "sustainability": 4,
+        "pipeline_proximity": 1
+      },
+      "reasoning": "Rejected as a pillar, kept as a secondary: it performs on engagement but reaches founders, not buyers. Capped at roughly one post a month."
+    }
   ],
   "pillars": [
-    { "id": "week-one-churn", "name": "Why customers quit in week one", "weight": 0.4,
+    {
+      "id": "week-one-churn",
+      "name": "Why customers quit in week one",
+      "weight": 0.4,
       "definition": "The first 30 days of a customer relationship: what actually causes a new account to disengage, how to see it coming in the data, and what a good week-one looks like.",
       "why_now": "Every answer AI gives to this question today is a vendor blog post. No practitioner is cited. It is the cheapest kind of topic to take.",
-      "in_scope": ["activation metrics", "week-one onboarding design", "churn post-mortems", "sales-to-CS handoff"],
-      "out_of_scope": ["enterprise procurement", "pricing strategy", "hiring"],
-      "buyer_questions": ["q-01", "q-03", "q-07"],
-      "key_terms": ["first-30-days retention", "activation", "week-one churn", "onboarding handoff"],
-      "proof_assets": [ { "name": "Cohort study across 40 implementations", "link": "https://example.co/research/cohorts" }, { "name": "Ridgeline customer story", "link": "https://example.co/customers/ridgeline" } ],
-      "gaps": ["Clearance on which cohort numbers beyond the 18% figure we can publish"],
-      "incumbent": "Three onboarding vendors' content teams — generic, no numbers" },
-    { "id": "honest-pricing", "name": "Saying the price out loud", "weight": 0.35,
-      "definition": "Your standing argument that hiding pricing costs more than it protects — what happened when you published yours, and what buyers do when they can't find a number.",
+      "in_scope": [
+        "activation metrics",
+        "week-one onboarding design",
+        "churn post-mortems",
+        "sales-to-CS handoff"
+      ],
+      "out_of_scope": [
+        "enterprise procurement",
+        "pricing strategy",
+        "hiring"
+      ],
+      "buyer_questions": [
+        "q-01",
+        "q-03",
+        "q-07"
+      ],
+      "key_terms": [
+        "first-30-days retention",
+        "activation",
+        "week-one churn",
+        "onboarding handoff"
+      ],
+      "proof_assets": [
+        {
+          "name": "Cohort study across 40 implementations",
+          "link": "https://example.co/research/cohorts"
+        },
+        {
+          "name": "Ridgeline customer story",
+          "link": "https://example.co/customers/ridgeline"
+        }
+      ],
+      "gaps": [
+        "Clearance on which cohort numbers beyond the 18% figure we can publish"
+      ],
+      "incumbent": "Three onboarding vendors' content teams \u2014 generic, no numbers"
+    },
+    {
+      "id": "honest-pricing",
+      "name": "Saying the price out loud",
+      "weight": 0.35,
+      "definition": "Your standing argument that hiding pricing costs more than it protects \u2014 what happened when you published yours, and what buyers do when they can't find a number.",
       "why_now": "This is the topic you argue about unprompted and the one buyers raise on first calls. An individual already gets cited here, so we're taking share on specifics.",
-      "in_scope": ["published vs hidden pricing", "buyer behavior when pricing is hidden", "pricing conversations in the cycle"],
-      "out_of_scope": ["packaging and tier design", "discount policy mechanics"],
-      "buyer_questions": ["q-04"],
-      "key_terms": ["published pricing", "hidden pricing", "pricing transparency"],
-      "proof_assets": [ { "name": "Your 2025 pricing-publication before/after", "link": "" } ],
-      "gaps": ["Your OK on publishing the win-rate delta"],
-      "incumbent": "A named pricing consultant, 3x/week — strong and consistent" },
-    { "id": "partner-proof", "name": "The people we build with", "weight": 0.25,
-      "definition": "Partners, integrations, and the practitioners you learn from — reposts with a real point of view attached, plus partner spotlights.",
+      "in_scope": [
+        "published vs hidden pricing",
+        "buyer behavior when pricing is hidden",
+        "pricing conversations in the cycle"
+      ],
+      "out_of_scope": [
+        "packaging and tier design",
+        "discount policy mechanics"
+      ],
+      "buyer_questions": [
+        "q-04"
+      ],
+      "key_terms": [
+        "published pricing",
+        "hidden pricing",
+        "pricing transparency"
+      ],
+      "proof_assets": [
+        {
+          "name": "Your 2025 pricing-publication before/after",
+          "link": ""
+        }
+      ],
+      "gaps": [
+        "Your OK on publishing the win-rate delta"
+      ],
+      "incumbent": "A named pricing consultant, 3x/week \u2014 strong and consistent"
+    },
+    {
+      "id": "partner-proof",
+      "name": "The people we build with",
+      "weight": 0.25,
+      "definition": "Partners, integrations, and the practitioners you learn from \u2014 reposts with a real point of view attached, plus partner spotlights.",
       "why_now": "Employee and partner networks reach multiples of a company page's audience. This is how you borrow reach you don't have yet.",
-      "in_scope": ["partner and integration spotlights", "reposts with your own take", "joint webinars"],
-      "out_of_scope": ["generic congratulations", "reposting without a point of view"],
-      "buyer_questions": ["q-06"],
-      "key_terms": ["onboarding partners", "integration"],
+      "in_scope": [
+        "partner and integration spotlights",
+        "reposts with your own take",
+        "joint webinars"
+      ],
+      "out_of_scope": [
+        "generic congratulations",
+        "reposting without a point of view"
+      ],
+      "buyer_questions": [
+        "q-06"
+      ],
+      "key_terms": [
+        "onboarding partners",
+        "integration"
+      ],
       "proof_assets": [],
-      "gaps": ["The list of people whose posts you want to amplify — we cannot guess this"],
-      "incumbent": "n/a" }
+      "gaps": [
+        "The list of people whose posts you want to amplify \u2014 we cannot guess this"
+      ],
+      "incumbent": "n/a"
+    }
   ],
-  "cadence": { "posts_per_week": 3, "days": ["Tue", "Wed", "Thu"], "month_example": "3 posts/week over 4 weeks is 12 posts: roughly 5 on week-one churn, 4 on pricing, 3 partner proof — with one secondary (team/hiring) post substituting in a month where you want it." },
+  "cadence": {
+    "posts_per_week": 3,
+    "days": [
+      "Tue",
+      "Wed",
+      "Thu"
+    ],
+    "month_example": "3 posts/week over 4 weeks is 12 posts: roughly 5 on week-one churn, 4 on pricing, 3 partner proof \u2014 with one secondary (team/hiring) post substituting in a month where you want it."
+  },
   "measurement": {
     "metrics": [
       "How often you or your people get named in AI answers to these five questions (measured monthly against today's baseline)",
       "Your share of those answers versus the competitors named above, per pillar",
       "Whether those mentions are favorable, neutral, or cautionary",
-      "What new customers say when asked how they found you — the cheapest ground truth there is"
+      "What new customers say when asked how they found you \u2014 the cheapest ground truth there is"
     ],
-    "judgment_floor": "Profound measured a median of 6.81 days for a new post to earn its first citation, with 90% cited within 37 days. So we re-measure at day 30, not day 14 — a pillar with three weeks of posts and no citations is on schedule, not failing."
+    "judgment_floor": "Profound measured a median of 6.81 days for a new post to earn its first citation, with 90% cited within 37 days. So we re-measure at day 30, not day 14 \u2014 a pillar with three weeks of posts and no citations is on schedule, not failing."
   },
   "asks": [
-    { "what": "The list of practitioners and partners you want to amplify", "pillar": "The people we build with", "why_now": "This pillar cannot produce a single post without it, and it is 25% of the plan." },
-    { "what": "Clearance on which cohort numbers we can publish beyond the 18% figure", "pillar": "Why customers quit in week one", "why_now": "Specific numbers are the entire reason this pillar beats the vendor blogs." },
-    { "what": "20 minutes on the pricing decision, recorded", "pillar": "Saying the price out loud", "why_now": "One conversation gives us four posts in your own words instead of our paraphrase." }
+    {
+      "what": "The list of practitioners and partners you want to amplify",
+      "pillar": "The people we build with",
+      "why_now": "This pillar cannot produce a single post without it, and it is 25% of the plan."
+    },
+    {
+      "what": "Clearance on which cohort numbers we can publish beyond the 18% figure",
+      "pillar": "Why customers quit in week one",
+      "why_now": "Specific numbers are the entire reason this pillar beats the vendor blogs."
+    },
+    {
+      "what": "20 minutes on the pricing decision, recorded",
+      "pillar": "Saying the price out loud",
+      "why_now": "One conversation gives us four posts in your own words instead of our paraphrase."
+    }
   ],
   "sources": [
-    { "title": "AI quotes your personal LinkedIn posts, not your company website — Ordinal, Social Systems #3", "url": "https://ordinal.beehiiv.com/p/ai-quotes-your-personal-linkedin-posts-not-your-company-website", "dated": "2026-08-18" },
-    { "title": "Answer-surface observation for Example Co (10 questions)", "url": "", "dated": "2026-08-18" }
+    {
+      "title": "AI quotes your personal LinkedIn posts, not your company website \u2014 Ordinal, Social Systems #3",
+      "url": "https://ordinal.beehiiv.com/p/ai-quotes-your-personal-linkedin-posts-not-your-company-website",
+      "dated": "2026-08-18"
+    },
+    {
+      "title": "Answer-surface observation for Example Co (10 questions)",
+      "url": "",
+      "dated": "2026-08-18"
+    }
   ]
 }

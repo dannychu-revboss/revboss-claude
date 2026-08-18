@@ -13,7 +13,10 @@ runs the WEEKLY MONITOR loop for each pilot client.
 3. **A dry run has been done manually** for at least one client: run the loop, look at the report,
    look at the ideas *before* they're written, and confirm the digest reads the way you'd want it to
    land in `#content-team-ops`.
-4. **`run-receipts.md` in the canonical workspace copy** (`CoS/config/run-receipts.md`) has the
+4. **Someone owns the weekly two-minute query pack.** The answer-surface reading is human-run by
+   design (`references/query-harness.md` §2) — name that person before arming, or the trend metric
+   will quietly become fiction. Default: Danny.
+5. **`run-receipts.md` in the canonical workspace copy** (`CoS/config/run-receipts.md`) has the
    `content-pillar-research-run` registry row, so `cos-daily-digest` knows to expect a Monday
    receipt and doesn't report the agent as "not run." The bundled copy here already has it.
 
@@ -45,8 +48,12 @@ For each client listed in config.json → pilot.clients:
   2. Follow the WEEKLY MONITOR loop in SKILL.md, honoring the spend caps in config.json.
   3. Write idea seeds to Ordinal as IDEAS ONLY. Confirm every write returns status "ToDo".
      Never schedule, never date, never flip a post to Scheduled.
-  4. Render the weekly report and post the digest to #content-team-ops.
-  5. Update radar-state.json.
+  4. Build the 2-question answer-surface query pack (rotating cursor) and put it at the TOP of
+     that client's digest block, paste-ready. Do NOT run it yourself as the reading — a human runs
+     it in ChatGPT/Claude. If last week's pack came back unrun, increment human_checks_skipped;
+     at 4 consecutive skips raise answer-surface-blind.
+  5. Render the weekly report and post the digest to #content-team-ops.
+  6. Update radar-state.json.
 
 Then write ONE Dashboard State receipt for the run (Section Key: content-pillar-research-run),
 Summary prefixed CLEAN — / FLAGS(n) — / FAILED —, and write any flags to the Ops Backlog.
@@ -74,7 +81,7 @@ Treat the first month as supervised rollout, not steady state:
 | 1 | Do the ideas actually read as postable? Is the coverage math tagging content to the right pillars? Fix `match.terms` where it isn't. |
 | 2 | Is the ask list specific enough that a client can answer it in two minutes? Is the digest too long? |
 | 3 | Is dedupe working — are last week's signals staying out of this week's report? |
-| 4 | Re-run the full answer-surface sweep and compare to the baseline. This is the first honest read on whether the pillars are landing (day 30 is the judgment floor, per `references/methodology.md` §4). |
+| 4 | Run the **full** answer-surface sweep yourself in ChatGPT/Claude and paste it back — this is the monthly one that matters. First honest read on whether the pillars are landing (day 30 is the judgment floor, per `references/methodology.md` §4). |
 
 Widen the pilot only after a month where the team used the output without rewriting it.
 
@@ -95,3 +102,4 @@ Widen the pilot only after a month where the team used the output without rewrit
 | Thin reports week after week | Pillars too narrow, or the client's market genuinely quiet | Two thin weeks on one pillar is `pillar-drifting` → REFRESH |
 | A pillar produces nothing ever | Missing input (e.g. a repost pillar with no named-person list) | It's an ask, not a research failure — escalate to the account owner |
 | Digest reads like a news alert | Signals kept without an `our_angle` | Enforce the field: no angle, no idea |
+| Share-of-voice trend looks made up | Nobody has run a query pack in weeks | Check `human_checks_skipped`; the flag fires at 4. Two questions, two minutes — or drop the metric rather than reporting fiction |
