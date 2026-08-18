@@ -1,0 +1,16 @@
+{
+  "_note": "Normalized Ordinal dump for pillar_coverage.py. Produce this from ordinal_search_content: published posts in the trailing window plus every live idea/To-Do.",
+  "items": [
+    {"id": "p1", "title": "The 18% number nobody wants to publish", "copy": "We looked at 40 implementations and week one is where it breaks. Activation in the first 30 days...", "status": "Published", "publish_date": "2026-08-12"},
+    {"id": "p2", "title": "Ridgeline cut week-one drop-off in half", "copy": "A customer story about onboarding handoff and time to value.", "status": "Published", "publish_date": "2026-08-06"},
+    {"id": "p3", "title": "We published our pricing. Here is what happened.", "copy": "Published pricing changed our win rate. Hidden pricing costs more than it protects.", "status": "Published", "publish_date": "2026-07-29"},
+    {"id": "p4", "title": "What buyers do when they cannot find a price", "copy": "On pricing transparency and what happens in the dark.", "status": "Published", "publish_date": "2026-08-14"},
+    {"id": "p5", "title": "Congratulations to our new VP", "copy": "We are hiring and building the team.", "status": "Published", "publish_date": "2026-08-04"},
+    {"id": "i1", "title": "Three failure modes in the sales-to-CS handoff", "copy": "Onboarding handoff goes wrong in three specific ways...", "status": "ToDo", "labels": ["text-only"]},
+    {"id": "i2", "title": "Activation metrics that actually predict churn", "copy": "Leading indicators for first 30 days retention.", "status": "ToDo", "publish_date": "2026-08-25"},
+    {"id": "i3", "title": "The discount conversation you are avoiding", "copy": "Pricing conversations without discounting.", "status": "ToDo"},
+    {"id": "i4", "title": "Shelved idea about procurement", "copy": "Enterprise procurement cycles are long.", "status": "ToDo", "labels": ["HOLD"]},
+    {"id": "i5", "title": "Something about remote work", "copy": "Unrelated musing with no pillar terms in it whatsoever.", "status": "ToDo"},
+    {"id": "i6", "title": "Archived pricing rant", "copy": "Old pricing take.", "status": "Archived"}
+  ]
+}

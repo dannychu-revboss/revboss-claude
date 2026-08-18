@@ -1,0 +1,61 @@
+{
+  "agent": "content-pillar-research",
+  "receiptSectionKey": "content-pillar-research-run",
+  "autonomy": "research-and-propose",
+  "slack": {
+    "digestChannelName": "content-team-ops",
+    "digestChannelId": "C09E1RLEGRF",
+    "failureChannelName": "activation-automated-updates",
+    "failureChannelId": "C0B52B5AZCM"
+  },
+  "airtable": {
+    "note": "IDs live in shared-config.md — listed here only as the set this agent touches.",
+    "base": "appVwdsrrutdDh24z",
+    "reads": {
+      "Clients": "tblKhLOUG8B2XtwNL",
+      "Resources": "tblzrBGaSXlftvZBa",
+      "Projects": "tblr9ZvUVnFGCyrxD",
+      "Call Transcripts": "tblLPiELBfXA2pGkb"
+    },
+    "writes": {
+      "Dashboard State": "tblfl5N3deLclgBuh",
+      "Ops Backlog": "tbl8ntYb3YWdHAO06",
+      "Resources": "tblzrBGaSXlftvZBa"
+    }
+  },
+  "schedule": {
+    "cadence": "weekly",
+    "day": "Monday",
+    "localTime": "07:00",
+    "timezone": "America/Chicago",
+    "cronUtc": "0 12 * * 1",
+    "note": "Monday morning so the week's asks land before the client's weekly email goes out and before the team sync. Adjust cronUtc for CST (0 13 * * 1) when DST ends."
+  },
+  "thresholds": {
+    "coverage_window_days": 30,
+    "forward_window_days": 21,
+    "ideas_per_week_min": 5,
+    "ideas_per_week_max": 8,
+    "starved_weeks_flag": 3,
+    "no_signal_weeks_flag": 2,
+    "no_client_input_weeks": 3,
+    "refresh_interval_days": 90,
+    "judgment_floor_days": 30,
+    "dedupe_ttl_days": 45
+  },
+  "spendCaps": {
+    "weekly": { "searches_per_client": 6, "fetches_per_client": 12, "answer_surface_questions": 2 },
+    "baseline": { "searches_per_client": 24, "fetches_per_client": 48, "answer_surface_questions": 12 }
+  },
+  "guardrails": {
+    "ordinalWrites": "ideas-only",
+    "neverSchedule": true,
+    "neverContactClient": true,
+    "pillarChangesRequireHumanApproval": true,
+    "everyClaimNeedsASource": true
+  },
+  "pilot": {
+    "note": "Start with 2–3 clients who already have voice bundles and an active Ordinal queue, then widen. Each entry needs clients/<slug>/pillars.json before its first weekly run.",
+    "clients": []
+  }
+}

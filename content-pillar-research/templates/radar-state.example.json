@@ -1,0 +1,22 @@
+{
+  "slug": "example-co-dana",
+  "last_run": "2026-08-18",
+  "last_full_answer_surface": "2026-08-01",
+  "question_cursor": 4,
+  "last_client_input": "2026-08-05",
+  "seen": {
+    "example.co/blog/onboarding-benchmarks::onboarding benchmark report 2026": "2026-08-18",
+    "news.example/pricing-transparency-rule::eu pricing disclosure rule": "2026-08-11"
+  },
+  "starved_weeks": {
+    "week-one-churn": 0,
+    "honest-pricing": 0,
+    "partner-proof": 2
+  },
+  "no_signal_weeks": {
+    "week-one-churn": 0,
+    "honest-pricing": 0,
+    "partner-proof": 1
+  },
+  "notes": "Agent-owned file — do not hand-edit except to clear a bad seen-key. `seen` keys are canonical-URL::normalized-title so the same story doesn't resurface for weeks; entries older than dedupe_ttl_days (45) can be pruned."
+}

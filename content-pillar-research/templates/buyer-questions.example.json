@@ -1,0 +1,90 @@
+{
+  "client": "Example Co - Dana",
+  "slug": "example-co-dana",
+  "version": 1,
+  "reviewed_at": "2026-08-18",
+  "approved_by": "Danny Chu (client call 2026-08-18)",
+  "method_note": "Phrasing lifted from sales-call transcripts and two community threads. Where a question is our wording rather than a buyer's, `source` says so — those are the weakest rows and should be replaced as real phrasing turns up.",
+  "questions": [
+    {
+      "id": "q-01",
+      "text": "why do new customers stop logging in after the first week",
+      "stage": "problem",
+      "source": "sales call 2026-07-22 — buyer's own phrasing",
+      "pillars": ["week-one-churn"],
+      "priority": 1
+    },
+    {
+      "id": "q-02",
+      "text": "how do you measure whether onboarding is working",
+      "stage": "problem",
+      "source": "sales call 2026-06-30",
+      "pillars": ["week-one-churn"],
+      "priority": 2
+    },
+    {
+      "id": "q-03",
+      "text": "why do new b2b saas customers churn in the first month",
+      "stage": "problem",
+      "source": "r/CustomerSuccess thread 2026-07-11",
+      "pillars": ["week-one-churn"],
+      "priority": 1
+    },
+    {
+      "id": "q-04",
+      "text": "should b2b saas companies publish pricing on their website",
+      "stage": "evaluate",
+      "source": "LinkedIn comment thread on Dana's post 2026-08-04",
+      "pillars": ["honest-pricing"],
+      "priority": 1
+    },
+    {
+      "id": "q-05",
+      "text": "best customer onboarding tools for a 200 person saas company",
+      "stage": "compare",
+      "source": "our wording — needs replacing with real buyer phrasing",
+      "pillars": ["week-one-churn"],
+      "priority": 1
+    },
+    {
+      "id": "q-06",
+      "text": "who should own onboarding, sales or customer success",
+      "stage": "implement",
+      "source": "onboarding call 2026-05-19 — asked twice by different stakeholders",
+      "pillars": ["week-one-churn", "partner-proof"],
+      "priority": 2
+    },
+    {
+      "id": "q-07",
+      "text": "what does good time to value look like for b2b software",
+      "stage": "implement",
+      "source": "sales call 2026-07-22",
+      "pillars": ["week-one-churn"],
+      "priority": 1
+    },
+    {
+      "id": "q-08",
+      "text": "alternatives to [incumbent onboarding vendor]",
+      "stage": "evaluate",
+      "source": "inbound email 2026-08-01",
+      "pillars": ["week-one-churn"],
+      "priority": 2
+    },
+    {
+      "id": "q-09",
+      "text": "how do buyers react when a vendor won't share pricing",
+      "stage": "evaluate",
+      "source": "Dana's own comment thread 2026-08-04",
+      "pillars": ["honest-pricing"],
+      "priority": 2
+    },
+    {
+      "id": "q-10",
+      "text": "how do you roll out a new onboarding process without breaking the current one",
+      "stage": "implement",
+      "source": "sales call 2026-08-12",
+      "pillars": ["week-one-churn"],
+      "priority": 2
+    }
+  ]
+}

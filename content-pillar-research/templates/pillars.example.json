@@ -1,0 +1,198 @@
+{
+  "client": "Example Co - Dana",
+  "client_record_id": "recEXAMPLE0000000",
+  "slug": "example-co-dana",
+  "person": {
+    "name": "Dana Reyes",
+    "role": "Co-founder & CEO",
+    "linkedin_url": "https://www.linkedin.com/in/example-dana/"
+  },
+  "organization": {
+    "name": "Example Co",
+    "website": "https://example.co",
+    "category": "Customer onboarding software for B2B SaaS",
+    "icp_summary": "VP Customer Success / Head of Onboarding at 50–500 person B2B SaaS companies with a self-serve + sales-assisted motion."
+  },
+  "version": 1,
+  "created_at": "2026-08-18",
+  "reviewed_at": "2026-08-18",
+  "refresh_interval_days": 90,
+  "approved_by": "Danny Chu (client call 2026-08-18)",
+  "cadence": {
+    "posts_per_week": 3,
+    "days": ["Tue", "Wed", "Thu"],
+    "timezone": "America/New_York"
+  },
+  "off_pillar_policy": "Log it. Dana will happily post about hiring all day — it draws founders, not buyers. Three weeks of the same off-pillar theme goes to REFRESH, not straight to the calendar.",
+  "pillars": [
+    {
+      "id": "week-one-churn",
+      "name": "Why customers quit in week one",
+      "tier": "primary",
+      "weight": 0.4,
+      "status": "active",
+      "definition": "The first 30 days of a customer relationship: what actually causes a new account to disengage, how to see it coming in the data, and what a good week-one looks like. Practitioner-level specifics — cohort numbers, real failure modes, what Dana has watched break across 40 implementations.",
+      "in_scope": [
+        "activation metrics and leading indicators",
+        "week-one onboarding design",
+        "churn post-mortems and what the data showed",
+        "handoff from sales to onboarding"
+      ],
+      "out_of_scope": [
+        "enterprise procurement cycles",
+        "pricing and packaging strategy",
+        "hiring and team structure"
+      ],
+      "why_now": "Baseline 2026-08-18: for 'why do new B2B SaaS customers churn in the first month', every source the answer used was a vendor blog post. No practitioner was cited. The topic is being answered badly by people with an incentive, which is the cheapest kind of pillar to take.",
+      "buyer_questions": ["q-01", "q-02", "q-03", "q-05", "q-07", "q-08", "q-10"],
+      "key_terms": ["first-30-days retention", "activation", "week-one churn", "onboarding handoff"],
+      "proof_assets": [
+        {
+          "type": "data",
+          "name": "Cohort study across 40 implementations",
+          "link": "https://example.co/research/cohorts",
+          "notes": "Dana has clearance to quote the 18% figure; check before quoting anything else from it"
+        },
+        {
+          "type": "customer-story",
+          "name": "Ridgeline — cut week-one drop-off by half",
+          "link": "https://example.co/customers/ridgeline",
+          "notes": "Named, approved for public use"
+        }
+      ],
+      "incumbent": {
+        "who": "Three onboarding-software vendors' content teams",
+        "where": "Company blogs, syndicated to LinkedIn company pages",
+        "cadence": "weekly-ish",
+        "strength": "SEO-shaped, generic, no numbers",
+        "how_we_differ": "Dana can publish real cohort numbers and name the failure modes; none of them will."
+      },
+      "formats": ["text-only", "text + image", "case study"],
+      "match": {
+        "terms": ["onboarding", "activation", "week one", "first 30 days", "churn", "drop-off", "time to value"],
+        "negative_terms": ["procurement", "pricing page"]
+      },
+      "search_queries": [
+        "B2B SaaS week-one churn 2026",
+        "activation metrics practitioner LinkedIn",
+        "onboarding handoff sales to CS failure"
+      ],
+      "metrics": {
+        "baseline_share_of_voice": 0.0,
+        "target_share_of_voice": 0.3,
+        "first_measured": "2026-08-18"
+      }
+    },
+    {
+      "id": "honest-pricing",
+      "name": "Saying the price out loud",
+      "tier": "primary",
+      "weight": 0.35,
+      "status": "active",
+      "definition": "Dana's standing argument that hiding pricing costs more than it protects — what happened when Example Co published theirs, what buyers do when they can't find a number, and how to talk about price without discounting.",
+      "in_scope": [
+        "published vs. hidden pricing",
+        "what buyers do when pricing is hidden",
+        "pricing conversations in the sales cycle"
+      ],
+      "out_of_scope": [
+        "packaging and tier design",
+        "discount policy mechanics",
+        "billing implementation"
+      ],
+      "why_now": "This is the topic Dana argues about in comment threads unprompted, and the one buyers raise on first calls. It is also the one where she has a first-person result to report.",
+      "buyer_questions": ["q-04", "q-09"],
+      "key_terms": ["published pricing", "hidden pricing", "pricing transparency"],
+      "proof_assets": [
+        {
+          "type": "experience",
+          "name": "Published Example Co's pricing in 2025 — inbound and win-rate effect",
+          "link": "",
+          "notes": "Dana has the before/after numbers; needs her OK to publish specifics"
+        }
+      ],
+      "incumbent": {
+        "who": "A named pricing consultant with a large following",
+        "where": "LinkedIn, 3×/week",
+        "cadence": "3x weekly",
+        "strength": "strong and consistent — expensive to displace outright",
+        "how_we_differ": "He advises; Dana did it and has the P&L consequence. First-person beats framework."
+      },
+      "formats": ["text-only", "repost + POV"],
+      "match": {
+        "terms": ["pricing", "price", "published pricing", "hidden pricing", "discount"],
+        "negative_terms": ["packaging tiers", "billing system"]
+      },
+      "search_queries": [
+        "B2B SaaS hidden pricing buyer behavior 2026",
+        "published pricing win rate"
+      ],
+      "metrics": {
+        "baseline_share_of_voice": 0.0,
+        "target_share_of_voice": 0.15,
+        "first_measured": "2026-08-18"
+      }
+    },
+    {
+      "id": "partner-proof",
+      "name": "The people we build with",
+      "tier": "primary",
+      "weight": 0.25,
+      "status": "active",
+      "definition": "Partners, integrations, and the practitioners Dana learns from — reposts with a real point of view attached, plus partner spotlights. Borrowed credibility and reciprocal reach, not filler.",
+      "in_scope": [
+        "partner and integration spotlights",
+        "reposting named practitioners with Dana's own take",
+        "joint webinars and co-authored work"
+      ],
+      "out_of_scope": [
+        "generic congratulations posts",
+        "reposting without a point of view"
+      ],
+      "why_now": "Employee and partner networks reach multiples of a company page's audience; this pillar is how Dana borrows reach she doesn't have yet.",
+      "buyer_questions": ["q-06"],
+      "key_terms": ["onboarding partners", "integration"],
+      "proof_assets": [
+        {
+          "type": "person",
+          "name": "Named repost list — REQUIRED, currently empty",
+          "link": "",
+          "notes": "The agent cannot guess whose posts Dana respects. Until this list exists, every ask-list run should request it."
+        }
+      ],
+      "formats": ["repost + POV", "text + image"],
+      "match": {
+        "terms": ["partner", "integration", "webinar with", "co-authored", "repost"],
+        "negative_terms": ["congratulations on the new role"]
+      },
+      "search_queries": [],
+      "metrics": {
+        "baseline_share_of_voice": 0.0,
+        "target_share_of_voice": 0.05,
+        "first_measured": "2026-08-18"
+      }
+    },
+    {
+      "id": "founder-hiring",
+      "name": "Building the team",
+      "tier": "secondary",
+      "weight": 0,
+      "status": "active",
+      "definition": "Hiring, culture, and founder life. Dana enjoys this and it performs, but it reaches founders rather than buyers. Kept as a secondary for rotation — no more than one post a month.",
+      "in_scope": ["hiring decisions", "team structure", "founder lessons"],
+      "out_of_scope": ["anything that displaces a primary pillar slot"],
+      "why_now": "Performs on engagement, does not move pipeline. Capped on purpose.",
+      "buyer_questions": [],
+      "key_terms": ["hiring"],
+      "proof_assets": [
+        { "type": "experience", "name": "Dana's own hiring history", "link": "", "notes": "" }
+      ],
+      "match": {
+        "terms": ["hiring", "we're hiring", "culture", "first engineer"],
+        "negative_terms": []
+      },
+      "search_queries": []
+    }
+  ],
+  "notes": "v1 from the 2026-08-18 BASELINE. Weights assume 3 posts/week: ~5 week-one-churn, ~4 pricing, ~3 partner proof per month. Partner-proof cannot produce ideas until Dana supplies the repost list — that ask is standing."
+}

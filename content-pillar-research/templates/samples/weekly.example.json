@@ -1,0 +1,81 @@
+{
+  "kind": "weekly",
+  "client": "Example Co - Dana",
+  "person": { "name": "Dana Reyes", "role": "Co-founder & CEO" },
+  "week_of": "2026-08-17",
+  "run_id": "content-pillar-research-2026-08-18",
+  "summary": "Coverage is healthy on churn and pricing and empty on partner proof for the third week running — that pillar is 25% of the plan and has produced nothing because we still don't have Dana's amplify list. Two strong signals this week: a benchmark report she can argue with, and an EU pricing-disclosure rule that makes her pricing argument suddenly time-bound.",
+  "coverage": {
+    "window_days": 30,
+    "forward_window_days": 21,
+    "rows": [
+      { "pillar": "Why customers quit in week one", "pillar_id": "week-one-churn", "weight": 0.4, "published": 2, "forward": 2, "days_since_last": 6, "weeks_starved": 0, "deficit": 0, "status": "ok" },
+      { "pillar": "Saying the price out loud", "pillar_id": "honest-pricing", "weight": 0.35, "published": 2, "forward": 1, "days_since_last": 4, "weeks_starved": 0, "deficit": 0, "status": "ok" },
+      { "pillar": "The people we build with", "pillar_id": "partner-proof", "weight": 0.25, "published": 0, "forward": 0, "days_since_last": null, "weeks_starved": 3, "deficit": 1.2, "status": "starved" },
+      { "pillar": "Building the team", "pillar_id": "founder-hiring", "weight": 0, "published": 1, "forward": 0, "days_since_last": 14, "weeks_starved": 0, "deficit": 0, "status": "secondary" }
+    ],
+    "next_batch": { "size": 8, "allocation": { "week-one-churn": 3, "honest-pricing": 2, "partner-proof": 3 } }
+  },
+  "signals": [
+    { "pillar": "Why customers quit in week one", "pillar_id": "week-one-churn",
+      "what": "A widely-shared onboarding benchmark report claims median time-to-value of 14 days across B2B SaaS — a figure that doesn't match what Dana sees in her own cohort data.",
+      "source_url": "https://example-analyst.com/benchmarks-2026", "dated": "2026-08-14", "source_type": "data",
+      "why_buyers_care": "Heads of onboarding are already being handed this number by their boards as a target.",
+      "our_angle": "Dana has 40 implementations' worth of data saying the median is meaningfully worse and the average hides the failure mode. Disagreeing with a number in public, with your own number, is the most citable thing you can do.",
+      "proof": "Cohort study across 40 implementations (18% figure cleared)",
+      "evidence_strength": "strong", "score": 0.86, "suggested_format": "text + image" },
+    { "pillar": "Saying the price out loud", "pillar_id": "honest-pricing",
+      "what": "An EU disclosure rule taking effect in Q1 forces published price ranges for a class of software contracts.",
+      "source_url": "https://news.example/pricing-disclosure-rule", "dated": "2026-08-11", "source_type": "news",
+      "why_buyers_care": "Anyone selling into the EU has a deadline now, and most of them hide pricing today.",
+      "our_angle": "Dana already did this voluntarily and has the before/after. 'We did this two years ago and here's what actually happened' is the post every one of those companies will search for.",
+      "proof": "2025 pricing publication — needs her OK on the win-rate delta",
+      "evidence_strength": "strong", "score": 0.81, "suggested_format": "text-only" },
+    { "pillar": "Why customers quit in week one", "pillar_id": "week-one-churn",
+      "what": "A long r/CustomerSuccess thread this week: 'our activation numbers look fine but customers churn at month three' — 90+ comments, no good answer.",
+      "source_url": "https://reddit.example/r/CustomerSuccess/thread", "dated": "2026-08-16", "source_type": "community",
+      "why_buyers_care": "It is her exact buyer asking her exact question in public, in their own words.",
+      "our_angle": "Dana's view that vanity activation metrics mask the real leading indicator — she can name the three that actually predict it.",
+      "proof": "Cohort study; her own post-mortems",
+      "evidence_strength": "moderate", "score": 0.74, "suggested_format": "text-only" },
+    { "pillar": "Saying the price out loud", "pillar_id": "honest-pricing",
+      "what": "The pricing consultant who owns this topic posted a framework for 'when not to publish pricing' that got heavy engagement.",
+      "source_url": "https://linkedin.example/posts/consultant-pricing", "dated": "2026-08-13", "source_type": "peer-post",
+      "why_buyers_care": "It's the counter-argument her buyers will have read before they read her.",
+      "our_angle": "Not a rebuttal — a concession post. Where he's right, where her own data disagreed, and what she'd do differently. Steelmanning the other side is what makes a practitioner citable rather than partisan.",
+      "proof": "First-person experience",
+      "evidence_strength": "moderate", "score": 0.66, "suggested_format": "repost + POV" },
+    { "pillar": "Why customers quit in week one", "pillar_id": "week-one-churn",
+      "what": "A competitor shipped an 'onboarding health score' feature and is posting about it from the company page only.",
+      "source_url": "https://vendor-a.example/blog/health-score", "dated": "2026-08-12", "source_type": "peer-post",
+      "why_buyers_care": "Buyers will ask whether a score is a real signal or a dashboard ornament.",
+      "our_angle": "Dana's opinion on what a health score gets wrong when nobody owns the follow-up. Their post is on a company page; hers would be on a profile — that's the citation gap.",
+      "proof": "Her own implementations",
+      "evidence_strength": "moderate", "score": 0.61, "suggested_format": "text-only" }
+  ],
+  "ideas_written": [
+    { "title": "The 14-day median is wrong, and here's our data", "pillar": "Why customers quit in week one", "format": "text + image", "ordinal_status": "ToDo", "idea_id": "idea_a1" },
+    { "title": "We published our pricing two years before anyone made us", "pillar": "Saying the price out loud", "format": "text-only", "ordinal_status": "ToDo", "idea_id": "idea_a2" },
+    { "title": "Your activation numbers look fine. Month three won't.", "pillar": "Why customers quit in week one", "format": "text-only", "ordinal_status": "ToDo", "idea_id": "idea_a3" },
+    { "title": "Where the 'don't publish pricing' argument is actually right", "pillar": "Saying the price out loud", "format": "repost + POV", "ordinal_status": "ToDo", "idea_id": "idea_a4" },
+    { "title": "A health score nobody owns is a dashboard ornament", "pillar": "Why customers quit in week one", "format": "text-only", "ordinal_status": "ToDo", "idea_id": "idea_a5" }
+  ],
+  "asks": [
+    { "what": "The 8–10 people whose posts you want to amplify", "pillar": "The people we build with", "unblocks": "All three partner-proof posts in the next batch", "why_now": "Third week at zero. We cannot invent whose work you respect, and this pillar is a quarter of the plan." },
+    { "what": "Your OK on publishing the win-rate delta from the pricing change", "pillar": "Saying the price out loud", "unblocks": "The EU-rule post, which is time-bound", "why_now": "The deadline story is live now; in six weeks it's old news." }
+  ],
+  "answer_surface": {
+    "observed_at": "2026-08-18",
+    "checked": [
+      { "question": "best customer onboarding tools for a 200 person saas company", "named": ["Vendor A", "Vendor B"], "client_present": false, "vs_baseline": "unchanged — day 12 of posting, inside the 30-day window" },
+      { "question": "how do buyers react when a vendor won't share pricing", "named": ["A named pricing consultant"], "client_present": false, "vs_baseline": "incumbent still sole individual cited" }
+    ]
+  },
+  "flags": [
+    { "flag": "pillar-starved", "detail": "partner-proof — 0 forward coverage, 3 consecutive weeks", "action": "Escalate the amplify-list ask to Danny; if it doesn't land this week, propose reweighting to two pillars at the next check-in rather than carrying a dead 25%." }
+  ],
+  "off_pillar": [
+    { "what": "Dana's hiring post outperformed everything else this month by 3x engagement", "source_url": "https://linkedin.example/posts/dana-hiring", "note": "Second week of strong off-pillar performance on hiring. Engagement, not buyers — but note it; three weeks makes it REFRESH evidence." }
+  ],
+  "notes": "Partner-proof produced no signals again because it has no named-person list to search against — that's a missing input, not a quiet market."
+}
