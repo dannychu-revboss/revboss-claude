@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Content Plan · RevBoss</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <div id="teambar" class="teambar hidden">
+    <b>TEAM VIEW</b>
+    <span id="tbStatus"></span>
+    <span class="spacer"></span>
+    <button class="btn sm" id="tbSync">Sync with Ordinal</button>
+    <button class="btn sm hidden" id="tbSimulate" title="Demo mode: play a client approving the next post">Simulate client approval</button>
+    <button class="btn sm" id="tbCopy">Copy client link</button>
+    <button class="btn sm primary hidden" id="tbPublish">Publish to client</button>
+    <a class="btn sm" href="/">All plans</a>
+  </div>
+
+  <header class="topbar">
+    <img src="/revboss-logo.png" alt="RevBoss">
+    <span class="live off" id="live"><i></i><span>Connecting…</span></span>
+    <span class="eyebrow" id="framework"></span>
+  </header>
+
+  <div class="shell">
+    <main class="main" id="main">
+      <div class="note" style="padding:40px 0">Loading your plan…</div>
+    </main>
+    <aside class="side" id="side">
+      <section class="chat" aria-label="Ask about this plan">
+        <div class="chat-head">
+          <div class="dot">R</div>
+          <div>
+            <h3>Ask about your plan</h3>
+            <div class="note" id="chatMode">Answers come from your live plan and Ordinal.</div>
+          </div>
+          <button class="close" id="chatClose" aria-label="Close chat">×</button>
+        </div>
+        <div class="msgs" id="msgs"></div>
+        <div class="suggest" id="suggest"></div>
+        <form class="composer" id="composer">
+          <textarea id="input" rows="1" placeholder="e.g. How did last week's posts do?" aria-label="Message"></textarea>
+          <button type="submit" id="send">Send</button>
+        </form>
+      </section>
+    </aside>
+  </div>
+
+  <button class="chat-fab" id="chatFab"><i>●</i> Ask about your plan</button>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true"></aside>
+  <div class="toasts" id="toasts"></div>
+
+  <script type="module" src="/plan.js"></script>
+</body>
+</html>

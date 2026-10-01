@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Content Plans · RevBoss</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <img src="/revboss-logo.png" alt="RevBoss">
+    <span class="eyebrow">Content plans · team</span>
+  </header>
+  <div class="admin">
+    <div class="section-head">
+      <div>
+        <h1>Client content plans</h1>
+        <div class="note" id="mode">Loading…</div>
+      </div>
+      <div class="filters">
+        <select id="month"></select>
+        <button class="btn sm" id="syncAll">Sync all with Ordinal</button>
+      </div>
+    </div>
+    <div class="kpis" id="totals"></div>
+    <div id="groups"></div>
+  </div>
+  <div class="toasts" id="toasts"></div>
+  <script type="module" src="/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+{
+  "id": "shyftoff-trevor-clark-2026-10",
+  "client": "ShyftOff",
+  "person": "Trevor Clark",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 30, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: two to three posts a week, with extra posts around CCW Nashville. Your most recent interview is slated for November's posts.",
+  "waitingOn": [
+    {
+      "when": "Oct 1, 5 and 8",
+      "ask": "Approve the first three posts in Ordinal so they can go out on time.",
+      "done": false
+    },
+    {
+      "when": "Oct 14, 21, 28 and 29",
+      "ask": "Four more posts are waiting for your approval in Ordinal.",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 1,
+      "why": "One carousel walking through interval attainment step by step.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "The mechanics behind flexible staffing that a WFM team can apply this week, starting with interval attainment."
+    },
+    {
+      "name": "Proof",
+      "target": 1,
+      "why": "The benefits-provider result: lower rates and 60% lower cost.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "A named result from a ShyftOff customer, with the numbers left in."
+    },
+    {
+      "name": "Stance",
+      "target": 8,
+      "why": "Your strongest angle, carried by the June and July interview clips.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "Your staffing-math argument: AI shifts cost rather than removing it, fixed schedules waste hours, and the flexible layer is where savings live."
+    },
+    {
+      "name": "Human",
+      "target": 2,
+      "why": "Two: the CCW invite and a look at your own math.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "The team behind ShyftOff: showing up at CCW and what surprised you in your own numbers."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Stance",
+      "topicTag": "post-AI agents cost more",
+      "title": "The Post-AI Wage Premium",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_overdue",
+      "statusLabel": "Approval overdue",
+      "ordinalUrl": "https://app.tryordinal.com/shyftoff/posts/a38f26a7-0bc8-4e8c-834a-dda2a1fefe22",
+      "ordinalPostId": "a38f26a7-0bc8-4e8c-834a-dda2a1fefe22"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-05",
+      "dateLabel": "Mon Oct 5",
+      "angle": "Human",
+      "topicTag": "see you at CCW",
+      "title": "See You at CCW Nashville",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/shyftoff/posts/8815bdbd-e33c-45cc-8ac8-fa69f6191ac4",
+      "ordinalPostId": "8815bdbd-e33c-45cc-8ac8-fa69f6191ac4"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Playbook",
+      "topicTag": "interval attainment, not flex",
+      "title": "Interval Attainment, Not Flex",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/shyftoff/posts/f9475a80-eaac-4f89-86a5-f67cf0a14fa2",
+      "ordinalPostId": "f9475a80-eaac-4f89-86a5-f67cf0a14fa2"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Stance",
+      "topicTag": "the wedding cake schedule",
+      "title": "The Wedding Cake Schedule",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/shyftoff/posts/30574e94-156a-44da-aa7e-f74abb3d9b00",
+      "ordinalPostId": "30574e94-156a-44da-aa7e-f74abb3d9b00"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Proof",
+      "topicTag": "benefits provider cuts 60%",
+      "title": "Benefits Provider Cuts Cost 60%",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/shyftoff/posts/0af1ad85-b739-4ca3-b342-32e89f2d002a",
+      "ordinalPostId": "0af1ad85-b739-4ca3-b342-32e89f2d002a"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-14",
+      "dateLabel": "Wed Oct 14",
+      "angle": "Stance",
+      "topicTag": "AI raises cost 18%",
+      "title": "Why AI Raises Cost 18%",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/shyftoff/posts/f074b4cc-ed3e-4283-91c1-03f459c8b7eb",
+      "ordinalPostId": "f074b4cc-ed3e-4283-91c1-03f459c8b7eb"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Stance",
+      "topicTag": "understaffing spirals",
+      "title": "The Understaffing Spiral",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/shyftoff/posts/58b4fc7b-7672-40f1-be61-5b490982a014",
+      "ordinalPostId": "58b4fc7b-7672-40f1-be61-5b490982a014"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Stance",
+      "topicTag": "hire for care, give choice",
+      "title": "Hire for Care, Give Choice",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/shyftoff/posts/c57c8f19-de82-4364-867b-496ea8224d5e",
+      "ordinalPostId": "c57c8f19-de82-4364-867b-496ea8224d5e"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-21",
+      "dateLabel": "Wed Oct 21",
+      "angle": "Stance",
+      "topicTag": "staffing is options trading",
+      "title": "Staffing Is Options Trading",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/shyftoff/posts/e5f4b746-69fd-4b81-bfb0-6b66734fa707",
+      "ordinalPostId": "e5f4b746-69fd-4b81-bfb0-6b66734fa707"
+    },
+    {
+      "id": "p10",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Stance",
+      "topicTag": "scared vs. smart BPOs",
+      "title": "Scared BPO vs. Smart BPO",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/shyftoff/posts/4282d76d-e174-4969-be2e-3fa41c13ac5f",
+      "ordinalPostId": "4282d76d-e174-4969-be2e-3fa41c13ac5f"
+    },
+    {
+      "id": "p11",
+      "date": "2026-10-28",
+      "dateLabel": "Wed Oct 28",
+      "angle": "Human",
+      "topicTag": "our math surprised us",
+      "title": "When Our Own Math Surprised Us",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/shyftoff/posts/ebf95661-836c-4194-b7c4-acf6a21bc48c",
+      "ordinalPostId": "ebf95661-836c-4194-b7c4-acf6a21bc48c"
+    },
+    {
+      "id": "p12",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Stance",
+      "topicTag": "containment isn't savings",
+      "title": "Containment Isn't Savings",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/shyftoff/posts/72bb3d57-94f4-4ce1-83a4-a143c8b54850",
+      "ordinalPostId": "72bb3d57-94f4-4ce1-83a4-a143c8b54850"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "",
+  "ordinalWorkspace": "shyftoff",
+  "waitingLabel": "Waiting On You"
+}

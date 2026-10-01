@@ -1,0 +1,215 @@
+{
+  "id": "davinci-direct-steve-maggio-2026-10",
+  "client": "DaVinci Direct",
+  "person": "Steve Maggio",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 30, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: two posts a week, Tuesday and Thursday. The Bridge Table moved to Tue Nov 3 so it isn't rushed; Woven In Over a Lifetime took its Oct 6 slot.",
+  "waitingOn": [
+    {
+      "when": "Approve in Ordinal",
+      "ask": "Seven posts need your OK before their dates: Oct 8 The Commitment Gap, Oct 13 “I Was Unable to Feel My Feet,” Oct 15 We Just Know, Oct 20 Recalibrate the Response Rate, Oct 22 The Debt the Donor Already Feels, Oct 27 Call the Floor, Oct 29 Teaching My Son Luke. Start with Oct 8.",
+      "done": false
+    },
+    {
+      "when": "Send photos",
+      "ask": "A picture of the St. Francis House envelope or letter (Oct 13), a SOAR photo (Oct 22), and a photo of you and Luke working together (Oct 29).",
+      "done": false
+    },
+    {
+      "when": "Confirm",
+      "ask": "We can name and tag St. Francis House (Oct 13), SOAR (Oct 22) and Catholic Charities Boston (Oct 6).",
+      "done": false
+    },
+    {
+      "when": "By late October",
+      "ask": "Send your two biggest lessons from the Bridge table. They finish “The Bridge Table,” now on Tue Nov 3.",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 3,
+      "why": "Three, one each in the first, middle and last weeks.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "How DaVinci actually runs direct response: hiring an agency, deciding which story runs when, and calling the field before writing."
+    },
+    {
+      "name": "Proof",
+      "target": 3,
+      "why": "Three: faith-based giving, then the St. Francis House and SOAR appeals.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "Real appeals and what moves donors, from the Cardinal's Appeal to St. Francis House and SOAR."
+    },
+    {
+      "name": "Stance",
+      "target": 2,
+      "why": "Two, early and late in the month.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "What you believe about direct mail: mail donors commit more, and response-rate benchmarks need resetting."
+    },
+    {
+      "name": "Human",
+      "target": 1,
+      "why": "One this month. The Bridge Table moves to Nov 3 so your lessons can go in.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "The person behind DaVinci: working side by side with your son Luke."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Playbook",
+      "topicTag": "hiring a DR agency",
+      "title": "How to Hire a Direct Response Agency",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/davinci-direct/posts/8a13658f-2e3d-4b57-b4d3-1c0866f68961",
+      "ordinalPostId": "8a13658f-2e3d-4b57-b4d3-1c0866f68961"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Proof",
+      "topicTag": "faith giving is identity",
+      "title": "Woven In Over a Lifetime",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/davinci-direct/posts/fbd89de1-5868-481c-b2d0-c34ef878b897",
+      "ordinalPostId": "fbd89de1-5868-481c-b2d0-c34ef878b897"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Stance",
+      "topicTag": "mail donors commit more",
+      "title": "The Commitment Gap",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/davinci-direct/posts/0587c984-f7c6-48f6-85f6-a228b4eb3bdd",
+      "ordinalPostId": "0587c984-f7c6-48f6-85f6-a228b4eb3bdd"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Proof",
+      "topicTag": "St. Francis House appeal",
+      "title": "“I Was Unable to Feel My Feet”",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/davinci-direct/posts/e678ea3e-005d-451e-a895-e54506bde788",
+      "ordinalPostId": "e678ea3e-005d-451e-a895-e54506bde788"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Playbook",
+      "topicTag": "which story runs when",
+      "title": "We Just Know",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/davinci-direct/posts/0280418c-4d07-4591-9ed2-bbb7962f5547",
+      "ordinalPostId": "0280418c-4d07-4591-9ed2-bbb7962f5547"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Stance",
+      "topicTag": "recalibrate response rates",
+      "title": "Recalibrate the Response Rate",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/davinci-direct/posts/8c0e05b9-41e0-40ac-a5d5-4ecff399d233",
+      "ordinalPostId": "8c0e05b9-41e0-40ac-a5d5-4ecff399d233"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Proof",
+      "topicTag": "SOAR repaying a debt",
+      "title": "The Debt the Donor Already Feels",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/davinci-direct/posts/29c30987-c82d-4332-a15c-57db935f3462",
+      "ordinalPostId": "29c30987-c82d-4332-a15c-57db935f3462"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Playbook",
+      "topicTag": "call the field first",
+      "title": "Call the Floor",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/davinci-direct/posts/81156edb-e685-464c-9255-10649ac02d41",
+      "ordinalPostId": "81156edb-e685-464c-9255-10649ac02d41"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Human",
+      "topicTag": "teaching my son Luke",
+      "title": "Teaching My Son Luke",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/davinci-direct/posts/c7081966-688b-475c-9cd1-aa9cd6e8d9b4",
+      "ordinalPostId": "c7081966-688b-475c-9cd1-aa9cd6e8d9b4"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "davinci-direct",
+  "waitingLabel": "Waiting On You"
+}

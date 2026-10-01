@@ -1,0 +1,269 @@
+{
+  "id": "amoeba-ai-tooba-durraze-2026-10",
+  "client": "Amoeba AI",
+  "person": "Tooba Durraze",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 30, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: three a week. Each post goes out on the Amoeba AI company page, and you repost it from your profile about 30 minutes later.",
+  "waitingOn": [
+    {
+      "when": "Oct 21–29",
+      "ask": "Approve four posts in Ordinal before their dates: Hunter 6 (Oct 21), Hunter 4 (Oct 27), Kenny Lee 4 (Oct 28), Hunter 5 (Oct 29).",
+      "done": false
+    },
+    {
+      "when": "Proof + November",
+      "ask": "Clear the approvals on the four product stories, and tell us the next guest.",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 5,
+      "why": "Five guest methods spread across the month.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "Methods your Decision Pioneers guests use that readers can copy: patience, shared decisions, the decision ladder, earning time to think, and peer circles."
+    },
+    {
+      "name": "Proof",
+      "target": 0,
+      "why": "None this month; the product stories are still waiting on approval.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "Amoeba's own customer stories. The four product stories are waiting on your approval, so none run in October."
+    },
+    {
+      "name": "Stance",
+      "target": 6,
+      "why": "Six guest views, the heart of the series.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "Where your guests push back on how decisions get made: flattening, peers, human judgment, pipeline over MQLs, and short-term thinking."
+    },
+    {
+      "name": "Human",
+      "target": 2,
+      "why": "Two, to open the month and introduce the guests.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "The people behind the series: Hunter's early career decision and Kenny's introduction."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Human",
+      "topicTag": "what you don't want",
+      "title": "Hunter 2: Knowing What You Don't Want",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/amoeba/posts/472804d4-4549-4603-8b78-aa1d0a270c91",
+      "ordinalPostId": "472804d4-4549-4603-8b78-aa1d0a270c91"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Human",
+      "topicTag": "Kenny Lee intro",
+      "title": "Kenny Lee 1: I Thought I Knew (Intro)",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/amoeba/posts/d2c67962-746b-4119-92e7-316f481d7243",
+      "ordinalPostId": "d2c67962-746b-4119-92e7-316f481d7243"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Stance",
+      "topicTag": "flattening",
+      "title": "Levi Worts 5: Flattening",
+      "type": "Video",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/amoeba/posts/5c50190b-1aaa-49f9-b9f8-6f3b5dbe2d2e",
+      "ordinalPostId": "5c50190b-1aaa-49f9-b9f8-6f3b5dbe2d2e"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-09",
+      "dateLabel": "Fri Oct 9",
+      "angle": "Playbook",
+      "topicTag": "patience and input",
+      "title": "Hunter 3: Nobody Has Every Scenario",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/amoeba/posts/e349590c-04b4-4648-9b1b-97e270d1437c",
+      "ordinalPostId": "e349590c-04b4-4648-9b1b-97e270d1437c"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Playbook",
+      "topicTag": "shared decisions",
+      "title": "Don Bulmer 2: Why Teams Disagree",
+      "type": "Video",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/amoeba/posts/ac7c600c-76e1-4ca9-af92-6d76bc13a0a2",
+      "ordinalPostId": "ac7c600c-76e1-4ca9-af92-6d76bc13a0a2"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-14",
+      "dateLabel": "Wed Oct 14",
+      "angle": "Stance",
+      "topicTag": "peers show their work",
+      "title": "Kenny Lee 3: Under Your Hood",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/amoeba/posts/89514e0f-ab68-4dd3-9ece-72eb7367f3b5",
+      "ordinalPostId": "89514e0f-ab68-4dd3-9ece-72eb7367f3b5"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Stance",
+      "topicTag": "human judgment",
+      "title": "Don Bulmer 4: Human Judgment",
+      "type": "Video",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/amoeba/posts/bdba33fc-459f-4f79-8995-4dd5d82afc8a",
+      "ordinalPostId": "bdba33fc-459f-4f79-8995-4dd5d82afc8a"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Playbook",
+      "topicTag": "decision ladder",
+      "title": "Don Bulmer 3: The Decision Ladder",
+      "type": "Video",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/amoeba/posts/585c30e3-8f18-4cc7-bc51-646264d0a4a5",
+      "ordinalPostId": "585c30e3-8f18-4cc7-bc51-646264d0a4a5"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-21",
+      "dateLabel": "Wed Oct 21",
+      "angle": "Stance",
+      "topicTag": "pipeline, not MQLs",
+      "title": "Hunter 6: Pipeline, Not MQLs",
+      "type": "Video",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/amoeba/posts/838b6ada-5f8f-439b-a48d-2ca908c20673",
+      "ordinalPostId": "838b6ada-5f8f-439b-a48d-2ca908c20673"
+    },
+    {
+      "id": "p10",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Stance",
+      "topicTag": "decide on the room",
+      "title": "Kenny Lee 2: A Two-Year Plan, 25 Years",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/amoeba/posts/e9b1eef9-88e1-4520-8317-792e0d3b89a0",
+      "ordinalPostId": "e9b1eef9-88e1-4520-8317-792e0d3b89a0"
+    },
+    {
+      "id": "p11",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Playbook",
+      "topicTag": "time to think",
+      "title": "Hunter 4: Time to Think",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/amoeba/posts/456b2d5e-f3f6-4992-b27c-19934645e6f7",
+      "ordinalPostId": "456b2d5e-f3f6-4992-b27c-19934645e6f7"
+    },
+    {
+      "id": "p12",
+      "date": "2026-10-28",
+      "dateLabel": "Wed Oct 28",
+      "angle": "Playbook",
+      "topicTag": "peer trust circles",
+      "title": "Kenny Lee 4: What You'd Tell a Stranger",
+      "type": "Video",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/amoeba/posts/c0d13b83-1ab6-4cf0-9627-7ba0f88f904c",
+      "ordinalPostId": "c0d13b83-1ab6-4cf0-9627-7ba0f88f904c"
+    },
+    {
+      "id": "p13",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Stance",
+      "topicTag": "short-term thinking",
+      "title": "Hunter 5: Short-Term Gains Fade",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/amoeba/posts/9174c516-1257-4101-9517-9ec4018479df",
+      "ordinalPostId": "9174c516-1257-4101-9517-9ec4018479df"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "amoeba",
+  "waitingLabel": "Waiting On You"
+}

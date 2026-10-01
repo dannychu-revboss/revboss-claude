@@ -1,0 +1,253 @@
+{
+  "id": "agp-whitney-norman-2026-10",
+  "client": "AGP",
+  "person": "Whitney Norman",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 30, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: Tuesday and Thursday, plus three Wednesday posts.",
+  "waitingOn": [
+    {
+      "when": "Oct 8–29",
+      "ask": "Approve the October posts in Ordinal before their dates, starting with Oct 8 and Oct 13.",
+      "done": false
+    },
+    {
+      "when": "Thu Oct 15",
+      "ask": "Optional: a Bridge photo (ideally with Ren) for “AI Is Already in the Door.”",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 1,
+      "why": "One how-to, pulled forward from November.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "A practical check you can run on your own program: the signs a donor program is merely running rather than alive."
+    },
+    {
+      "name": "Proof",
+      "target": 2,
+      "why": "Two client stories to close the month.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "Anonymized client stories from your Aug 13 interview: behavioral benchmarking and a gradual shift to audience-first."
+    },
+    {
+      "name": "Stance",
+      "target": 7,
+      "why": "Seven, including three Wednesday posts brought back from November.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "What you believe about where giving is going: the fading nonprofit halo, AI already inside the door, confidence over resources, names over numbers, and visible finish lines."
+    },
+    {
+      "name": "Human",
+      "target": 2,
+      "why": "Two personal posts to open the month.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "The person behind the work: lessons from your time as an MGO and making generosity visible to the next generation."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Human",
+      "topicTag": "never my donor",
+      "title": "That Was Never My Donor",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/335444b0-0987-482a-bed3-209e99e68728",
+      "ordinalPostId": "335444b0-0987-482a-bed3-209e99e68728"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Human",
+      "topicTag": "visible generosity",
+      "title": "If Giving Becomes Invisible",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/cab2b54f-2472-46fd-8271-a1974a35d4fa",
+      "ordinalPostId": "cab2b54f-2472-46fd-8271-a1974a35d4fa"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Stance",
+      "topicTag": "pain, no diagnosis",
+      "title": "Clear Pain Point, No Obvious Diagnosis",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/8a900780-8cbe-4915-bfe1-a9dab8bf7c66",
+      "ordinalPostId": "8a900780-8cbe-4915-bfe1-a9dab8bf7c66"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Stance",
+      "topicTag": "fading halo",
+      "title": "Three Numbers, One Fading Halo",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/a450cfc4-c9d4-46a7-9dae-8eeb7332f1f4",
+      "ordinalPostId": "a450cfc4-c9d4-46a7-9dae-8eeb7332f1f4"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-14",
+      "dateLabel": "Wed Oct 14",
+      "angle": "Stance",
+      "topicTag": "sustainers and AI",
+      "title": "Sustainers, AI, and Staying Human",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/14403d52-94f5-4fe8-86ba-95d9f642b130",
+      "ordinalPostId": "14403d52-94f5-4fe8-86ba-95d9f642b130"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Stance",
+      "topicTag": "AI already inside",
+      "title": "AI Is Already in the Door",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/70988753-6c5c-4a90-886e-340dc3b6b919",
+      "ordinalPostId": "70988753-6c5c-4a90-886e-340dc3b6b919"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Playbook",
+      "topicTag": "alive vs running",
+      "title": "Is Your Donor Program Alive?",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/459f5f80-885e-4081-87f9-4b087335bc33",
+      "ordinalPostId": "459f5f80-885e-4081-87f9-4b087335bc33"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-21",
+      "dateLabel": "Wed Oct 21",
+      "angle": "Stance",
+      "topicTag": "open with a name",
+      "title": "Open With a Name, Not a Number",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/04d53e76-0b93-41d5-b721-f2af9502a904",
+      "ordinalPostId": "04d53e76-0b93-41d5-b721-f2af9502a904"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Stance",
+      "topicTag": "confidence",
+      "title": "Giving Is Limited by Confidence",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/72230b7d-5422-4351-a13f-8f0f96c75405",
+      "ordinalPostId": "72230b7d-5422-4351-a13f-8f0f96c75405"
+    },
+    {
+      "id": "p10",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Proof",
+      "topicTag": "behavioral benchmarks",
+      "title": "The Benchmark That's Behavioral",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/d6641baa-3d94-4292-890f-a9addce45dd7",
+      "ordinalPostId": "d6641baa-3d94-4292-890f-a9addce45dd7"
+    },
+    {
+      "id": "p11",
+      "date": "2026-10-28",
+      "dateLabel": "Wed Oct 28",
+      "angle": "Stance",
+      "topicTag": "visible finish lines",
+      "title": "Donors Give to Visible Finish Lines",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/254127f3-ea98-4de8-b141-8b077abc1e07",
+      "ordinalPostId": "254127f3-ea98-4de8-b141-8b077abc1e07"
+    },
+    {
+      "id": "p12",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Proof",
+      "topicTag": "gradual transformation",
+      "title": "Nobody Boiled the Ocean",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/819ed3b1-5e95-42ee-9a51-1bd482a1ecd5",
+      "ordinalPostId": "819ed3b1-5e95-42ee-9a51-1bd482a1ecd5"
+    }
+  ],
+  "sections": [],
+  "cta": "Book a session with Danny: 30 minutes on what you're hearing from clients this fall. That becomes November's posts.",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "agp",
+  "waitingLabel": "Waiting On You"
+}

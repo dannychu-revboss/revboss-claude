@@ -1,0 +1,242 @@
+{
+  "id": "justfund-iara-peng-2026-10",
+  "client": "JustFund",
+  "person": "Iara Peng",
+  "month": "2026-10",
+  "framework": "The Five Pillars",
+  "angleWord": "Pillar",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "OCTOBER 1, 2026",
+  "intro": "",
+  "waitingOn": [
+    {
+      "when": "Wed Oct 7",
+      "ask": "Approve “Thrive Opportunity” and send the year-one participant count to replace “XXXX”.",
+      "done": false
+    },
+    {
+      "when": "Tue Oct 13",
+      "ask": "Confirm you're comfortable mentioning JustFund's own investment-readiness process.",
+      "done": false
+    },
+    {
+      "when": "Thu Oct 15",
+      "ask": "Confirm we can tag the Black Migrant Power Fund and Jonathan Jayes-Green.",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Thought Leadership",
+      "target": 3,
+      "why": "Your strongest summer topic, risk capital, returns here.",
+      "description": "Where philanthropy needs to go, said plainly enough to be argued with.",
+      "forYou": "Money that moves, risk capital that takes risks, and the hidden cost of how grants get made."
+    },
+    {
+      "name": "Playbook",
+      "target": 2,
+      "why": "Both back the Oct 29 Thrive session.",
+      "description": "How the work actually gets done, broken down so others can run it.",
+      "forYou": "Thrive, and what it takes to keep capacity building free for most nonprofits."
+    },
+    {
+      "name": "Influencers",
+      "target": 1,
+      "why": "Sadé Dozan's essay opens the month.",
+      "description": "Lifting up the people shaping the field, in their words.",
+      "forYou": "Leaders whose work names what philanthropy usually avoids."
+    },
+    {
+      "name": "FOMO",
+      "target": 2,
+      "why": "Warms up social justice funders ahead of North Star outreach.",
+      "description": "Funders and communities already moving money differently, the ones others will want to follow.",
+      "forYou": "Committees that chose to share power, and everyday donors who pool what they have."
+    },
+    {
+      "name": "Product Marketing",
+      "target": 2,
+      "why": "Two platform posts: the disaster wrap-up and community data.",
+      "description": "What the JustFund platform makes possible, shown through real use.",
+      "forYou": "Shared data in a disaster, and owning your community's data instead of experimenting on it."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Influencers",
+      "topicTag": "naming what's avoided",
+      "title": "The Names We Carry",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/justfundus/posts/cef96b28-cd70-4a4f-9506-e36c90b27fad",
+      "ordinalPostId": "cef96b28-cd70-4a4f-9506-e36c90b27fad"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-07",
+      "dateLabel": "Wed Oct 7",
+      "angle": "Playbook",
+      "topicTag": "why Thrive costs $49",
+      "title": "Thrive Opportunity",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/justfundus/posts/86170761-53ee-407d-9be1-e3cd5e26ae12",
+      "ordinalPostId": "86170761-53ee-407d-9be1-e3cd5e26ae12"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Thought Leadership",
+      "topicTag": "money is meant to move",
+      "title": "The Money Isn't Here to Sit",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/justfundus/posts/809e8372-165a-4666-a478-816afd3583ea",
+      "ordinalPostId": "809e8372-165a-4666-a478-816afd3583ea"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Thought Leadership",
+      "topicTag": "capital needs ready groups",
+      "title": "The Capital Has a Mandate. The Field Isn't Ready.",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/justfundus/posts/41a9746d-6de2-493a-8d19-7c6f3ef7d212",
+      "ordinalPostId": "41a9746d-6de2-493a-8d19-7c6f3ef7d212"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "FOMO",
+      "topicTag": "chose smaller grants",
+      "title": "The Committee That Voted Itself Smaller Grants",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/justfundus/posts/a221e417-831f-4c64-8aae-a355a596b2a1",
+      "ordinalPostId": "a221e417-831f-4c64-8aae-a355a596b2a1"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Product Marketing",
+      "topicTag": "shared disaster data",
+      "title": "Disaster Philanthropy, Reimagined: Module 4 Wrap-Up",
+      "type": "Carousel",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/justfundus/posts/cabce57e-e3a6-4a71-bd85-69c404981f45",
+      "ordinalPostId": "cabce57e-e3a6-4a71-bd85-69c404981f45"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Thought Leadership",
+      "topicTag": "invisible grants labor",
+      "title": "The Invisible Labor of Grants Teams",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/justfundus/posts/1854f851-ac97-4254-ac8c-1ccd82e08cbc",
+      "ordinalPostId": "1854f851-ac97-4254-ac8c-1ccd82e08cbc"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Product Marketing",
+      "topicTag": "community data, not AI",
+      "title": "We Don't Need AI to Know Our Communities",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/justfundus/posts/b5f77b0c-53d7-4d72-9e74-b7b0656967d5",
+      "ordinalPostId": "b5f77b0c-53d7-4d72-9e74-b7b0656967d5"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-28",
+      "dateLabel": "Wed Oct 28",
+      "angle": "Playbook",
+      "topicTag": "session reminder",
+      "title": "GivingTuesday Session: Reminder",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/justfundus/posts/43d85e88-1a73-4ae5-8f04-ac4dff56d62e",
+      "ordinalPostId": "43d85e88-1a73-4ae5-8f04-ac4dff56d62e"
+    },
+    {
+      "id": "p10",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "FOMO",
+      "topicTag": "stone soup giving",
+      "title": "The Empty Pot",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/justfundus/posts/1f87630c-a61c-4143-9d5e-75fbbe7cfe1e",
+      "ordinalPostId": "1f87630c-a61c-4143-9d5e-75fbbe7cfe1e"
+    }
+  ],
+  "sections": [
+    {
+      "title": "What October Is Working On",
+      "body": "Several things are running for you at once this month. These are the posts lined up behind each one.\nCampaign or objective Posts that back it\nRisk Capital campaign Oct 8 · The Money Isn't Here to Sit\nEngagers of your Aug 18 post, offered the Oct 13 · The Capital Has a Mandate. The Field Isn't Ready.\nBeyond Gilded Philanthropy guide\nDisaster Philanthropy, Reimagined Oct 20 · Module 4 wrap-up, as a pull-quote carousel\nPIO/PSO outreach and the gated module page\nThrive GivingTuesday session Oct 7 · Thrive Opportunity (why the session now costs $49)\nOct 29, 12pm PT, $49, with Mary Grace Wolf Oct 28 · Reminder the day before\nSocial justice funders Oct 15 · The Committee That Voted Itself Smaller Grants\nWarming the audience before the North Star Oct 29 · The Empty Pot\nFund outreach\nThe JustFund platform Oct 22 · The Invisible Labor of Grants Teams\nShowing what the product makes possible Oct 27 · We Don't Need AI to Know Our Communities"
+    },
+    {
+      "title": "Building On What Worked",
+      "body": "You asked us to come back to the topics that landed. Two from the summer are back in October.\nWhat worked Where it returns in October\nSociety's Risk Capital (Aug 18) Oct 13 · The Capital Has a Mandate. The Field Isn't Ready. Takes the same argument a\nYour best-performing post of the summer step further: the capital is ready to take risks, but the field isn't set up to receive it.\nOct 8 sets it up.\nThe 40-Hour application (Aug 13) Oct 22 · The Invisible Labor of Grants Teams. Same cost, seen from the funder side:\nYour strongest post in the grant-burden series the work that leaves no record."
+    }
+  ],
+  "cta": "Book your next interview with Danny: 30 minutes on what you're hearing from funders this fall. That becomes November's posts.",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "justfundus",
+  "waitingLabel": "Pending Your Feedback"
+}

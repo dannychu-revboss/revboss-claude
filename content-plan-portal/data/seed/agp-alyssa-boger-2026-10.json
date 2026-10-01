@@ -1,0 +1,193 @@
+{
+  "id": "agp-alyssa-boger-2026-10",
+  "client": "AGP",
+  "person": "Alyssa Boger",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 29, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: two posts a week, Tuesday and Thursday.",
+  "waitingOn": [],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 3,
+      "why": "Front-loaded for year-end planning season.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "Moves a foundation team can make this month: fixing acquisition creative before blaming the channel, five year-end steps to take in October, and engaging younger donors early."
+    },
+    {
+      "name": "Proof",
+      "target": 0,
+      "why": "None in October.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "Named AGP client results. None in October; the check-in is a good place to surface one for November."
+    },
+    {
+      "name": "Stance",
+      "target": 5,
+      "why": "Your strongest angle, carrying the second half of the month.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "Your core argument: fear-driven budget cuts shrink the donor file, ROI can hide churn, and fundraising needs the teamwork and tools the rest of the organization already uses."
+    },
+    {
+      "name": "Human",
+      "target": 1,
+      "why": "One personal post mid-month.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "Why the leaders who care most are the ones who burn out, and what the steadiest ones do differently."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Playbook",
+      "topicTag": "acquisition story fixes",
+      "title": "Acquisition Isn't the Channel's Fault (Clip 12)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_overdue",
+      "statusLabel": "Approval overdue",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/6ffca054-d503-4731-aa6b-2915dd5f3e1c",
+      "ordinalPostId": "6ffca054-d503-4731-aa6b-2915dd5f3e1c"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Playbook",
+      "topicTag": "five year-end moves",
+      "title": "Five Year-End Moves to Make Now (#4)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/899abc35-07cc-4e9f-9d20-fe292e6315f6",
+      "ordinalPostId": "899abc35-07cc-4e9f-9d20-fe292e6315f6"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Playbook",
+      "topicTag": "younger donors, legacy giving",
+      "title": "Younger Donors and Legacy Giving (#1, Feb)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/05599833-7f03-48f1-94a4-3e2700733e97",
+      "ordinalPostId": "05599833-7f03-48f1-94a4-3e2700733e97"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Stance",
+      "topicTag": "five CDO tensions",
+      "title": "Five Tensions Every CDO Holds (#1)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/992f14ae-ec13-48cb-b885-ac934229a537",
+      "ordinalPostId": "992f14ae-ec13-48cb-b885-ac934229a537"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Human",
+      "topicTag": "emotion in budget calls",
+      "title": "Caring Deeply, Then Closing the Door (Clip 4)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/756ca235-8650-4a56-aebb-94ec98f97a34",
+      "ordinalPostId": "756ca235-8650-4a56-aebb-94ec98f97a34"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Stance",
+      "topicTag": "ROI hides donor churn",
+      "title": "ROI Hides Donor Churn (#1, Apr)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/21b0019c-5dbf-4993-a295-4dd4840a49e6",
+      "ordinalPostId": "21b0019c-5dbf-4993-a295-4dd4840a49e6"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Stance",
+      "topicTag": "team fundraising for cancer",
+      "title": "Team Science, Team Fundraising (Clip 2)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/351aa526-43f6-4d51-8718-63cf3c801d7a",
+      "ordinalPostId": "351aa526-43f6-4d51-8718-63cf3c801d7a"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Stance",
+      "topicTag": "AI missing from fundraising",
+      "title": "AI Is Missing from Fundraising (Clip 6)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/19016c66-5ef2-4b49-a993-d711a3c4075b",
+      "ordinalPostId": "19016c66-5ef2-4b49-a993-d711a3c4075b"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Stance",
+      "topicTag": "what boards cut first",
+      "title": "What Boards Cut When They're Afraid (Clip 3)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/bda25c61-80f7-4f04-8c6f-5418b5207c9c",
+      "ordinalPostId": "bda25c61-80f7-4f04-8c6f-5418b5207c9c"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "agp"
+}

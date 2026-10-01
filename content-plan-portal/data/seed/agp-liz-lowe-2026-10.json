@@ -1,0 +1,210 @@
+{
+  "id": "agp-liz-lowe-2026-10",
+  "client": "AGP",
+  "person": "Liz Lowe",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 30, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: two posts a week, Tuesday and Thursday. Thu Oct 15 is the post announcing your monthly newsletter, Fueled by Purpose, so it goes out alongside the newsletter.",
+  "waitingOn": [
+    {
+      "when": "Thu Oct 15",
+      "ask": "Newsletter post: it announces Fueled by Purpose and asks readers to DM you to join. Let us know the first send date so the two line up.",
+      "done": false
+    },
+    {
+      "when": "Oct 8–29",
+      "ask": "Approve the six Finalized posts in Ordinal before their dates, starting with the October audit (Oct 8) and the mid-level guide (Oct 13).",
+      "done": false
+    },
+    {
+      "when": "Next few weeks",
+      "ask": "Book an interview with Danny so we can get more of your insights into November's posts (link at the end).",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 4,
+      "why": "Four how-tos, weighted toward year-end prep.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "What food banks can do before year-end: test what strategy is anchored to, audit the donor file, build mid-level giving, and tell stories ethically."
+    },
+    {
+      "name": "Proof",
+      "target": 1,
+      "why": "One client result, mid-month.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "Results from AGP's food bank partners, with the numbers left in: Philabundance tripled new monthly sustainers."
+    },
+    {
+      "name": "Stance",
+      "target": 3,
+      "why": "Three views, to open, middle and close the month.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "What you believe about food bank fundraising: keep the human first, 2027 growth won't come from new donors, and donors aren't tired, the message is."
+    },
+    {
+      "name": "Human",
+      "target": 1,
+      "why": "One personal post, tied to the newsletter.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "The person behind the work: launching your monthly newsletter, Fueled by Purpose."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Stance",
+      "topicTag": "keep the human first",
+      "title": "Keep the Human First",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/65d8c78b-be1d-4d21-abe5-e7d5b8c5d3a3",
+      "ordinalPostId": "65d8c78b-be1d-4d21-abe5-e7d5b8c5d3a3"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Playbook",
+      "topicTag": "program vs donor anchor",
+      "title": "Is Your Strategy Anchored to Programs or Donors?",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/06fbaef5-efa2-4e17-8985-3687ac01024f",
+      "ordinalPostId": "06fbaef5-efa2-4e17-8985-3687ac01024f"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Playbook",
+      "topicTag": "six weeks to year-end",
+      "title": "The October Audit Before Year-End",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/7eb6978a-212d-4414-be45-da1002bd0e58",
+      "ordinalPostId": "7eb6978a-212d-4414-be45-da1002bd0e58"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Playbook",
+      "topicTag": "mid-level giving guide",
+      "title": "The Urgent Case for Mid-Level Giving",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/5cda800b-0224-4150-bfcd-a21c148b13b6",
+      "ordinalPostId": "5cda800b-0224-4150-bfcd-a21c148b13b6"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Human",
+      "topicTag": "Fueled by Purpose newsletter",
+      "title": "Newsletter Push: Fueled by Purpose",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/b01a15c7-6d30-434b-83a6-e1b78ba40e89",
+      "ordinalPostId": "b01a15c7-6d30-434b-83a6-e1b78ba40e89"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Proof",
+      "topicTag": "Philabundance monthly sustainers",
+      "title": "Philabundance Tripled Its Monthly Sustainers",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/516b0f95-7bd7-49be-bf8a-e25d4fbf5854",
+      "ordinalPostId": "516b0f95-7bd7-49be-bf8a-e25d4fbf5854"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Stance",
+      "topicTag": "where growth comes from",
+      "title": "Growth in 2027 Won't Come From New Donors",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/0f493a71-fa39-46aa-ace3-6ced9c924c99",
+      "ordinalPostId": "0f493a71-fa39-46aa-ace3-6ced9c924c99"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Playbook",
+      "topicTag": "ethical storytelling test",
+      "title": "Tell the Story With Them, Not About Them",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/50b62885-acd6-47f9-a05d-c3389eba81b6",
+      "ordinalPostId": "50b62885-acd6-47f9-a05d-c3389eba81b6"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Stance",
+      "topicTag": "messaging fatigue, not donors",
+      "title": "Your Donors Aren't Tired. Your Message Is.",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/40807db7-b7fb-43e8-aafe-9dd588483a55",
+      "ordinalPostId": "40807db7-b7fb-43e8-aafe-9dd588483a55"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "agp",
+  "waitingLabel": "Waiting On You"
+}

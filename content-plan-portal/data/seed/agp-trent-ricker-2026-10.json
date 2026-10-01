@@ -1,0 +1,209 @@
+{
+  "id": "agp-trent-ricker-2026-10",
+  "client": "AGP",
+  "person": "Trent Ricker",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 29, 2026",
+  "intro": "Keep you the clearest voice on donor retention, the shrinking donor base and leading through change. All ten October posts are written and on the Ordinal calendar. Update: we're turning your most recent interview into November content now. Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: about two posts a week.",
+  "waitingOn": [],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 3,
+      "why": "Three hands-on tests to close out the month.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "Quick tests a leader can run this week: whether automation makes donors feel known or processed, whether a campaign was built for reach or relevance, and whether a messaging problem is really a trust problem."
+    },
+    {
+      "name": "Proof",
+      "target": 0,
+      "why": "None in October. Your latest interview feeds November.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "Named AGP client results. None in October; your latest interview feeds November."
+    },
+    {
+      "name": "Stance",
+      "target": 6,
+      "why": "Your strongest angle, carrying the first three weeks.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "Your core argument about the donor file: record dollars hide a shrinking base, the middle and sustainers get neglected, and lapsed donors leave because they stop feeling seen."
+    },
+    {
+      "name": "Human",
+      "target": 1,
+      "why": "One personal post early in the month.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "Why you stepped back from LinkedIn during the merger, and what coming back taught you about your team."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Stance",
+      "topicTag": "donor sombrero",
+      "title": "The Donor Sombrero (#530-1)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/agp-trent-ricker/posts/db2ece7c-2531-4eb1-a665-3ee6ba89d848",
+      "ordinalPostId": "db2ece7c-2531-4eb1-a665-3ee6ba89d848"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-05",
+      "dateLabel": "Mon Oct 5",
+      "angle": "Stance",
+      "topicTag": "record giving, shrinking base",
+      "title": "Record Giving, Shrinking Base (#18)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp-trent-ricker/posts/bce1c65b-a569-495e-9fbd-ff7ff7112eba",
+      "ordinalPostId": "bce1c65b-a569-495e-9fbd-ff7ff7112eba"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Human",
+      "topicTag": "why I went quiet",
+      "title": "Why I Went Quiet (#10)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp-trent-ricker/posts/1b10ea39-d16d-4d32-a048-df2d98e802f1",
+      "ordinalPostId": "1b10ea39-d16d-4d32-a048-df2d98e802f1"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-07",
+      "dateLabel": "Wed Oct 7",
+      "angle": "Stance",
+      "topicTag": "lapsed donors feel unseen",
+      "title": "Lapsed Donors Feel Unseen (#22)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-trent-ricker/posts/3df44805-d0fc-41ca-8d53-d7c4d0585d63",
+      "ordinalPostId": "3df44805-d0fc-41ca-8d53-d7c4d0585d63"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Stance",
+      "topicTag": "mid-level half a job",
+      "title": "Mid-Level Is Half a Job (#530-3)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-trent-ricker/posts/78dc3c6c-620c-4823-aeac-95f9269cad48",
+      "ordinalPostId": "78dc3c6c-620c-4823-aeac-95f9269cad48"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Stance",
+      "topicTag": "generosity scattered",
+      "title": "Generosity Scattered: Five Fault Lines (#5)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-trent-ricker/posts/aad734f3-8616-4cab-b1bb-1126606ba7f7",
+      "ordinalPostId": "aad734f3-8616-4cab-b1bb-1126606ba7f7"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Stance",
+      "topicTag": "sustainers as afterthought",
+      "title": "Sustainers Aren't an Afterthought (#491-2)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-trent-ricker/posts/2979049e-73ff-4557-b436-f417ab8e580b",
+      "ordinalPostId": "2979049e-73ff-4557-b436-f417ab8e580b"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-21",
+      "dateLabel": "Wed Oct 21",
+      "angle": "Playbook",
+      "topicTag": "known vs processed test",
+      "title": "Known vs. Processed Test (#17)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-trent-ricker/posts/aa32ad86-14d2-4281-ab4e-6560095f196e",
+      "ordinalPostId": "aa32ad86-14d2-4281-ab4e-6560095f196e"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Playbook",
+      "topicTag": "reach vs relevance",
+      "title": "Reach vs. Relevance (#14)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-trent-ricker/posts/c5a5528d-50fe-47ac-9565-0f40079c6cee",
+      "ordinalPostId": "c5a5528d-50fe-47ac-9565-0f40079c6cee"
+    },
+    {
+      "id": "p10",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Playbook",
+      "topicTag": "trust before messaging",
+      "title": "Trust Before Messaging (#6)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-trent-ricker/posts/46ec0f12-8a38-4249-9ed2-c9f6fb490542",
+      "ordinalPostId": "46ec0f12-8a38-4249-9ed2-c9f6fb490542"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "",
+  "ordinalWorkspace": "agp-trent-ricker"
+}

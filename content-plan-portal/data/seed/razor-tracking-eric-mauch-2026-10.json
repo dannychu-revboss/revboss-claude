@@ -1,0 +1,189 @@
+{
+  "id": "razor-tracking-eric-mauch-2026-10",
+  "client": "Razor Tracking",
+  "person": "Eric Mauch",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 29, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: two posts a week, Tuesday and Thursday. October is a little fuller than usual because it includes two short demo videos, one on Dashcam View and one on the custom dashboard.",
+  "waitingOn": [
+    {
+      "when": "Thu Oct 8",
+      "ask": "Approve “Sell to the person with the problem” in Ordinal. The request has been open since August.",
+      "done": false
+    },
+    {
+      "when": "Oct 13, 22 and 29",
+      "ask": "Confirm Rich and Mike are happy to be tagged, and whether we can name the spraying operation in “I didn't miss any spots.”",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 4,
+      "why": "Four this month, two of them the new feature demo videos.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "How fleets actually get value from the platform: selling to the person with the problem, pulling proof fast when a claim lands, a first screen built for your morning, and pricing that matches the season."
+    },
+    {
+      "name": "Proof",
+      "target": 1,
+      "why": "One customer story from Rich's session.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "Customers using Razor in ways the team didn't plan for, told through Rich's stories from the field."
+    },
+    {
+      "name": "Stance",
+      "target": 2,
+      "why": "Two, one early and one late in the month.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "Your read on AI and software: most of the buzz fades, and the fastest releases come from slowing down to rebuild first."
+    },
+    {
+      "name": "Human",
+      "target": 1,
+      "why": "One, timed for harvest.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "The people behind Razor and the standard they set for customers."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Stance",
+      "topicTag": "the AI buzz round",
+      "title": "The Buzz Round",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/razor-tracking/posts/c7dd7b89-cc7a-4db4-bbbc-f32200dc4c55",
+      "ordinalPostId": "c7dd7b89-cc7a-4db4-bbbc-f32200dc4c55"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Playbook",
+      "topicTag": "sell to the problem owner",
+      "title": "Sell to the person with the problem",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/razor-tracking/posts/16571b09-f6e4-4e35-b1bb-dce32e890279",
+      "ordinalPostId": "16571b09-f6e4-4e35-b1bb-dce32e890279"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Proof",
+      "topicTag": "proof we were there",
+      "title": "\"I didn't miss any spots\"",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/razor-tracking/posts/b9198981-eee3-4624-8b1f-ba3d22c10531",
+      "ordinalPostId": "b9198981-eee3-4624-8b1f-ba3d22c10531"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Playbook",
+      "topicTag": "claim call proof",
+      "title": "When the claim call comes, the clock starts (Dashcam View video)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/razor-tracking/posts/80e56ba8-63af-49b9-b8fa-342f3a34188f",
+      "ordinalPostId": "80e56ba8-63af-49b9-b8fa-342f3a34188f"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Playbook",
+      "topicTag": "build your own dashboard",
+      "title": "The screen you log into should be yours (dashboard video)",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/razor-tracking/posts/5718ba28-0317-4e16-85c5-8e2ac165e13f",
+      "ordinalPostId": "5718ba28-0317-4e16-85c5-8e2ac165e13f"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Human",
+      "topicTag": "answering at 7 PM",
+      "title": "Seven o'clock at night, in the middle of harvest",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/razor-tracking/posts/21680967-8d0f-4c83-8adb-38110486b059",
+      "ordinalPostId": "21680967-8d0f-4c83-8adb-38110486b059"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Stance",
+      "topicTag": "rebuild before speed",
+      "title": "The Knock in the Engine",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/razor-tracking/posts/6164e06f-d463-47c5-bcb2-125f53b8e815",
+      "ordinalPostId": "6164e06f-d463-47c5-bcb2-125f53b8e815"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Playbook",
+      "topicTag": "seasonal tracking pricing",
+      "title": "Your combine sits half the year. Your tracking bill doesn't have to",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/razor-tracking/posts/3e9ba288-7d72-4ac5-8ed8-fdb264dd4ab2",
+      "ordinalPostId": "3e9ba288-7d72-4ac5-8ed8-fdb264dd4ab2"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "razor-tracking",
+  "waitingLabel": "Waiting On You"
+}

@@ -1,0 +1,215 @@
+{
+  "id": "david-rosenheim-executive-coaching-david-rosenheim-2026-10",
+  "client": "David Rosenheim Executive Coaching",
+  "person": "David Rosenheim",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 30, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: two posts a week, Tuesday and Thursday. October has a few more posts than usual so we can use some of the strong posts from earlier this summer. From November we go back to one post a week, built on your most recent interview.",
+  "waitingOn": [
+    {
+      "when": "Tue Oct 6",
+      "ask": "Approve “When They Fail Big, Look Up” in Ordinal (you and Paula). The request has been open since July, and the post won't go out without it.",
+      "done": false
+    },
+    {
+      "when": "Oct 8–29",
+      "ask": "Approve the other seven October posts in Ordinal before their dates. Each one needs you and Paula.",
+      "done": false
+    },
+    {
+      "when": "Thu Oct 22",
+      "ask": "Send a photo from the 2016 Paris delegation or a JamBase-era team shot for “Small Teams, Out-of-Scale Outcomes.”",
+      "done": false
+    },
+    {
+      "when": "Next few weeks",
+      "ask": "Book another interview with Danny so November's weekly posts come from what you're working on now (link at the end).",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 3,
+      "why": "Three how-tos, early and mid-month.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "How you coach leaders through the hard parts: difficult conversations, big failures, and turning a conference into a decision."
+    },
+    {
+      "name": "Proof",
+      "target": 1,
+      "why": "One client story, late in the month.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "What changes for the leaders you coach, told through one client's shift."
+    },
+    {
+      "name": "Stance",
+      "target": 2,
+      "why": "Two, mid-month.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "What you believe about leadership and coaching: the weight of the CEO title, and whether a leader is ready to be coached."
+    },
+    {
+      "name": "Human",
+      "target": 3,
+      "why": "Three personal stories, capped at three.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "The person behind the coaching: fusion over balance, the small teams you've loved, and the calls you've put off."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Playbook",
+      "topicTag": "what AI can't do",
+      "title": "What AI Can't Do for Leaders",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/david-rosenheim-executive-coaching/posts/676f4523-a406-4ac7-a0a3-129bdca0938e",
+      "ordinalPostId": "676f4523-a406-4ac7-a0a3-129bdca0938e"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Playbook",
+      "topicTag": "big failure points up",
+      "title": "When They Fail Big, Look Up",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/david-rosenheim-executive-coaching/posts/b9145053-0c34-4eb7-b593-0bf5b6a696a2",
+      "ordinalPostId": "b9145053-0c34-4eb7-b593-0bf5b6a696a2"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Human",
+      "topicTag": "fusion, not balance",
+      "title": "Fusion, Not Balance",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/david-rosenheim-executive-coaching/posts/4c2b13b9-7ca5-4b62-8e5b-e8f00b1ae11f",
+      "ordinalPostId": "4c2b13b9-7ca5-4b62-8e5b-e8f00b1ae11f"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Stance",
+      "topicTag": "weight of the hat",
+      "title": "The Weight of the Hat",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/david-rosenheim-executive-coaching/posts/14fcd1ff-b6b3-4c93-9372-6a6028ad37c0",
+      "ordinalPostId": "14fcd1ff-b6b3-4c93-9372-6a6028ad37c0"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Playbook",
+      "topicTag": "decide after conferences",
+      "title": "Turn Conference Noise Into Decisions",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/david-rosenheim-executive-coaching/posts/c0038f70-4771-4894-99d9-40ebafc85346",
+      "ordinalPostId": "c0038f70-4771-4894-99d9-40ebafc85346"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Stance",
+      "topicTag": "are you coachable",
+      "title": "Are You Coachable Right Now?",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/david-rosenheim-executive-coaching/posts/c65b406b-0809-40b7-81d8-ecfedde06224",
+      "ordinalPostId": "c65b406b-0809-40b7-81d8-ecfedde06224"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Human",
+      "topicTag": "small teams, big outcomes",
+      "title": "Small Teams, Out-of-Scale Outcomes",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/david-rosenheim-executive-coaching/posts/7fbf4ea5-5a3a-4d2b-ae12-af4c56e36492",
+      "ordinalPostId": "7fbf4ea5-5a3a-4d2b-ae12-af4c56e36492"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Proof",
+      "topicTag": "beginner's mind, a client's shift",
+      "title": "Beginner's Mind in the Big Seat",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/david-rosenheim-executive-coaching/posts/7e6d4877-e406-4ba1-ba29-5eeddbd278d5",
+      "ordinalPostId": "7e6d4877-e406-4ba1-ba29-5eeddbd278d5"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Human",
+      "topicTag": "the gray zone tax",
+      "title": "The Gray Zone Tax",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/david-rosenheim-executive-coaching/posts/87d32e77-c276-4182-a47e-4724f23b5e83",
+      "ordinalPostId": "87d32e77-c276-4182-a47e-4724f23b5e83"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "david-rosenheim-executive-coaching",
+  "waitingLabel": "Waiting On You"
+}

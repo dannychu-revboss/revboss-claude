@@ -1,0 +1,193 @@
+{
+  "id": "marlo-marketing-marlo-fogelman-2026-10",
+  "client": "Marlo Marketing",
+  "person": "Marlo Fogelman",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 30, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: two posts a week, Tuesday and Thursday. This is a quick reminder of what's scheduled for October: all nine posts are approved and queued. Four of them also promote your \"Are You Invisible?\" GEO webinar series, with a P.S. and the registration link (marlomarketing.com/geo-webinars) in the first comment: Oct 6, Oct 13 (the day of a session), Oct 20 and Oct 27 (the hotel session).",
+  "waitingOn": [],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 3,
+      "why": "Three, each with a one-sheeter or carousel already built.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "GEO how-tos a brand team can run this month: the questions a website has to answer, a monthly AI prompt audit, and why many placements beat one."
+    },
+    {
+      "name": "Proof",
+      "target": 1,
+      "why": "One to open the month: the fast-casual differentiation story.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "A client story told from the brief forward."
+    },
+    {
+      "name": "Stance",
+      "target": 3,
+      "why": "Three, spread across the month.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "Where AI discovery is headed: the funnel without tabs, discovery moving off search, and agents that book for you."
+    },
+    {
+      "name": "Human",
+      "target": 2,
+      "why": "Two personal posts in the back half of the month.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "How you search now, and the newsletter you started in 2005."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Proof",
+      "topicTag": "find the real differentiator",
+      "title": "One of Twenty",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/marlo-marketing-marlo/posts/d4e80e7e-15c5-41ad-ac7c-535a47c7bec6",
+      "ordinalPostId": "d4e80e7e-15c5-41ad-ac7c-535a47c7bec6"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Stance",
+      "topicTag": "the funnel lost its tabs",
+      "title": "The Funnel Had Tabs. This Doesn't. · webinar CTA",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/marlo-marketing-marlo/posts/11dbb641-8baf-4df1-bb9f-2df53a44de9e",
+      "ordinalPostId": "11dbb641-8baf-4df1-bb9f-2df53a44de9e"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Playbook",
+      "topicTag": "four website questions",
+      "title": "The Questions Your Website Has to Answer Now",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/marlo-marketing-marlo/posts/f7b09cc4-d750-494e-a8b6-81ed556b9ebc",
+      "ordinalPostId": "f7b09cc4-d750-494e-a8b6-81ed556b9ebc"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Stance",
+      "topicTag": "discovery moved, search stayed",
+      "title": "Search Didn't Die. Discovery Moved. · webinar CTA",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/marlo-marketing-marlo/posts/190a35a5-169d-4aaa-9d80-4ff00e799d4b",
+      "ordinalPostId": "190a35a5-169d-4aaa-9d80-4ff00e799d4b"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Playbook",
+      "topicTag": "monthly AI prompt audit",
+      "title": "When the Machine Gets You Wrong",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/marlo-marketing-marlo/posts/564e40ac-8d8f-4217-a0ca-f4950cca52f5",
+      "ordinalPostId": "564e40ac-8d8f-4217-a0ca-f4950cca52f5"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Human",
+      "topicTag": "how I search now",
+      "title": "LLMs Changed How I Search · webinar CTA",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/marlo-marketing-marlo/posts/d7b6fbb2-d719-4bf1-8a50-e30cfc8a53d5",
+      "ordinalPostId": "d7b6fbb2-d719-4bf1-8a50-e30cfc8a53d5"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Playbook",
+      "topicTag": "many placements beat one",
+      "title": "You Are Not Getting Into the Times",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/marlo-marketing-marlo/posts/569ac10e-0260-4c9e-8673-3f1de70c5342",
+      "ordinalPostId": "569ac10e-0260-4c9e-8673-3f1de70c5342"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Stance",
+      "topicTag": "agents will book for you",
+      "title": "I'm Going to Milwaukee. Book It. · webinar CTA",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/marlo-marketing-marlo/posts/89650292-b4da-4064-84fc-4c3a0ba19aca",
+      "ordinalPostId": "89650292-b4da-4064-84fc-4c3a0ba19aca"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Human",
+      "topicTag": "newsletter since 2005",
+      "title": "The Newsletter I Started in 2005",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/marlo-marketing-marlo/posts/a0b38745-f736-483c-827f-498771e6d721",
+      "ordinalPostId": "a0b38745-f736-483c-827f-498771e6d721"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "",
+  "ordinalWorkspace": "marlo-marketing-marlo"
+}

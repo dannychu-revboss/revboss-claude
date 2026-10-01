@@ -1,0 +1,200 @@
+{
+  "id": "atlas-dev-shop-job-goshi-2026-10",
+  "client": "Atlas Dev Shop",
+  "person": "Job Goshi",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 30, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: two posts a week, Tuesday and Thursday. All nine October posts are approved and scheduled.",
+  "waitingOn": [
+    {
+      "when": "Next couple of weeks",
+      "ask": "Nothing to approve for October. Book another session with Danny so we can keep building on what you've been learning (link at the end).",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 2,
+      "why": "Two how-tos, mid-month: AI readiness and the hidden giving lists.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "How nonprofits actually get ready for better systems: the four things AI readiness takes, and the giving lists hiding in their own data."
+    },
+    {
+      "name": "Proof",
+      "target": 2,
+      "why": "Two customer stories from your Aug 24 interview.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "What changes for the organizations Atlas works with: owning their data, and a customer coming back to ask what AI can do next."
+    },
+    {
+      "name": "Stance",
+      "target": 3,
+      "why": "Three, to open and close the month.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "What you believe about nonprofit systems: a rebuild is a requirements document, AI agents need the new architecture, and trust is built by answering the fear list."
+    },
+    {
+      "name": "Human",
+      "target": 2,
+      "why": "Two honest lessons, back to back.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "The person behind Atlas: honest lessons from a migration that surprised a customer and a deal you lost on trust."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Stance",
+      "topicTag": "rebuild as requirements doc",
+      "title": "The Requirements Document You Didn't Know You Had",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/atlas-dev-shop/posts/4492e0a4-c830-4727-8e86-98338e1317e9",
+      "ordinalPostId": "4492e0a4-c830-4727-8e86-98338e1317e9"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Stance",
+      "topicTag": "agents need new architecture",
+      "title": "Built for the New Architecture",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/atlas-dev-shop/posts/a78bc32c-9156-4d17-99cd-e1dfd0627cc6",
+      "ordinalPostId": "a78bc32c-9156-4d17-99cd-e1dfd0627cc6"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Proof",
+      "topicTag": "own your data copy",
+      "title": "When the Database Isn't Yours",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/atlas-dev-shop/posts/70ff50de-f0af-4527-ab41-cb673b81da15",
+      "ordinalPostId": "70ff50de-f0af-4527-ab41-cb673b81da15"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Playbook",
+      "topicTag": "four AI readiness requirements",
+      "title": "Four Things AI Readiness Actually Requires",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/atlas-dev-shop/posts/15fc36e8-e0e0-4ebe-8ed6-825d99351058",
+      "ordinalPostId": "15fc36e8-e0e0-4ebe-8ed6-825d99351058"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Playbook",
+      "topicTag": "unasked gifts and pledges",
+      "title": "The Money You Never Asked For",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/atlas-dev-shop/posts/d84d8e2e-acc2-47a7-b7fb-5ceab0c8b2ce",
+      "ordinalPostId": "d84d8e2e-acc2-47a7-b7fb-5ceab0c8b2ce"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Human",
+      "topicTag": "no keys in new car",
+      "title": "There Are No Keys in the New Car",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/atlas-dev-shop/posts/efb5de53-1a66-4802-84dd-d557c6bd73c5",
+      "ordinalPostId": "efb5de53-1a66-4802-84dd-d557c6bd73c5"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Human",
+      "topicTag": "lost the deal on trust",
+      "title": "We Lost the Deal, and I Couldn't Argue",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/atlas-dev-shop/posts/56547903-c75a-440c-a9cf-728632682240",
+      "ordinalPostId": "56547903-c75a-440c-a9cf-728632682240"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Stance",
+      "topicTag": "answering the fear list",
+      "title": "The Fear List",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/atlas-dev-shop/posts/fc2ee650-6f45-41a0-bd61-66f9cc4197a6",
+      "ordinalPostId": "fc2ee650-6f45-41a0-bd61-66f9cc4197a6"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Proof",
+      "topicTag": "customer asked for AI",
+      "title": "The Call Where the Customer Did the Asking",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/atlas-dev-shop/posts/8ee4bea8-9d8f-40aa-a4d5-2cd01497167b",
+      "ordinalPostId": "8ee4bea8-9d8f-40aa-a4d5-2cd01497167b"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "atlas-dev-shop",
+  "waitingLabel": "Waiting On You"
+}

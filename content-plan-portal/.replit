@@ -1,0 +1,16 @@
+run = "npm start"
+modules = ["nodejs-20"]
+entrypoint = "server/index.js"
+
+[env]
+PORT = "3000"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
+
+# Live updates (Server-Sent Events), the sync timer and file storage need one
+# always-on process: deploy as a Reserved VM, not Autoscale.
+[deployment]
+deploymentTarget = "vm"
+run = ["sh", "-c", "npm start"]

@@ -1,0 +1,246 @@
+{
+  "id": "agp-cara-ferraro-2026-10",
+  "client": "AGP",
+  "person": "Cara Ferraro",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 29, 2026",
+  "intro": "Make you the clearest voice on what nonprofit websites and digital programs need to become now. All twelve October posts are written, and ten are waiting on your approval. Next step: a short case-study interview. Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: two posts a week to start, three a week from October 13.",
+  "waitingOn": [],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 3,
+      "why": "Hands-on posts spread across the month.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "Practical moves a nonprofit team can make this week: running a free site audit, the sticky-note exercise that closes the conversion gap, and the first low-cost steps to connect direct mail and digital."
+    },
+    {
+      "name": "Proof",
+      "target": 0,
+      "why": "None until we have case studies. The interview opens it in November.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "Named AGP website and digital projects: what the client had, what changed, and what happened a year later. Your posts keep pointing at patterns from real projects. A case-study interview turns those into stories we can tell."
+    },
+    {
+      "name": "Stance",
+      "target": 8,
+      "why": "Most of what's written is Stance; Proof takes some of this share later.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "Your core argument, from several angles: a website is a product you keep improving, not a project you finish; AI raises the bar for strategy instead of lowering fees; and visibility now depends on content structure."
+    },
+    {
+      "name": "Human",
+      "target": 1,
+      "why": "One for October; more can come from the interview.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "The one project that almost broke you, and what it taught you about partners and vendors. It's personal, and it earns attention for the other three angles."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Stance",
+      "topicTag": "same problems, new tools",
+      "title": "25 years in. Same problems, new tools.",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_overdue",
+      "statusLabel": "Approval overdue",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/1c8f39c3-5957-4486-91ec-f59d22dfb6ca",
+      "ordinalPostId": "1c8f39c3-5957-4486-91ec-f59d22dfb6ca"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Stance",
+      "topicTag": "AI raises the bar",
+      "title": "AI raises the bar",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/d419ce5b-e562-4f4f-b1e6-4faadaa9b62b",
+      "ordinalPostId": "d419ce5b-e562-4f4f-b1e6-4faadaa9b62b"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Playbook",
+      "topicTag": "free website audit",
+      "title": "SitePilot: Free Website Audit Tool",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/a8d4c582-234e-4cfd-a071-360668dd4e01",
+      "ordinalPostId": "a8d4c582-234e-4cfd-a071-360668dd4e01"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Stance",
+      "topicTag": "the code isn't the value",
+      "title": "The code was never the point",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/f865ba55-9be1-4bc7-b4b1-2f377cbbffc2",
+      "ordinalPostId": "f865ba55-9be1-4bc7-b4b1-2f377cbbffc2"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-14",
+      "dateLabel": "Wed Oct 14",
+      "angle": "Human",
+      "topicTag": "partner, not vendor",
+      "title": "Partner vs. vendor",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/94227b87-0da3-4ab4-89e1-a5987e3a4784",
+      "ordinalPostId": "94227b87-0da3-4ab4-89e1-a5987e3a4784"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Playbook",
+      "topicTag": "what visitors actually want",
+      "title": "The sticky-note question",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/a2b86021-4a30-42ea-9e61-d8b9b7e4dab2",
+      "ordinalPostId": "a2b86021-4a30-42ea-9e61-d8b9b7e4dab2"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Stance",
+      "topicTag": "launch is the beginning",
+      "title": "We've watched dozens of nonprofits redesign",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/ea8b6e72-ee88-4d8f-b00f-f907826e96db",
+      "ordinalPostId": "ea8b6e72-ee88-4d8f-b00f-f907826e96db"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-21",
+      "dateLabel": "Wed Oct 21",
+      "angle": "Stance",
+      "topicTag": "websites are never finished",
+      "title": "The $300K website project is over",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/41258d1a-43e7-4eb0-9e9e-d0480cbc6ed0",
+      "ordinalPostId": "41258d1a-43e7-4eb0-9e9e-d0480cbc6ed0"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Stance",
+      "topicTag": "content for AI visibility",
+      "title": "Traffic is dropping, rankings aren't",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/29c2dd57-a141-4458-b116-9e037876aa16",
+      "ordinalPostId": "29c2dd57-a141-4458-b116-9e037876aa16"
+    },
+    {
+      "id": "p10",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Stance",
+      "topicTag": "mail vs digital retention",
+      "title": "#493-2: Why mail donors retain better",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/c26bd0b8-f218-4e45-a2d8-8c4ed788cdb9",
+      "ordinalPostId": "c26bd0b8-f218-4e45-a2d8-8c4ed788cdb9"
+    },
+    {
+      "id": "p11",
+      "date": "2026-10-28",
+      "dateLabel": "Wed Oct 28",
+      "angle": "Playbook",
+      "topicTag": "integration first moves",
+      "title": "#493-1: Connecting mail and digital",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/349f89eb-a2f3-42ae-ad59-5414fea45577",
+      "ordinalPostId": "349f89eb-a2f3-42ae-ad59-5414fea45577"
+    },
+    {
+      "id": "p12",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Stance",
+      "topicTag": "website as infrastructure",
+      "title": "From destination to infrastructure",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/f1d88b34-d379-4a52-bac9-c0cf2bd615f3",
+      "ordinalPostId": "f1d88b34-d379-4a52-bac9-c0cf2bd615f3"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Content Opportunities",
+      "body": "What we need / next interview\nOctober is strong on your point of view: eight Stance posts about websites as products, AI and visibility. What's missing is\nProof : case studies from real AGP projects with the before, the after, and what changed a year later. Case studies are\nwhat make the Stance posts believable, and we can't write them without you. One 30-minute interview about two or\nthree projects should give us Proof posts for November and December.\nTo-dos Why it matters\n\u0000 Book a 30-minute case-study interview We can't write Proof posts until we've heard the project stories from you.\nThis is the one thing October's plan is missing.\n\u0000 Pick 2-3 projects to talk through A redesign, a post-launch program, or a mail-and-digital campaign. Each\nbecomes one case-study post.\n\u0000 Approve the ten posts waiting in Ordinal They've been waiting since the summer. Each needs your OK before its\nOctober date or it won't publish.\n\u0000 Confirm which clients can be named A case study needs a real client. Tell us who has to say yes first.\nBook the case-study interview: pick any 30-minute slot that works for you.\nhttps://calendly.com/danny-chu-fcxv/interview-session-30\nQuestions for the next interview\nGrouped by angle. The note under each one says why we're asking and what post it could become."
+    }
+  ],
+  "cta": "",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "agp"
+}

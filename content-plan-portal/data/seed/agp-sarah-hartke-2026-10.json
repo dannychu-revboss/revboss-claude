@@ -1,0 +1,198 @@
+{
+  "id": "agp-sarah-hartke-2026-10",
+  "client": "AGP",
+  "person": "Sarah Hartke",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 29, 2026",
+  "intro": "Make you the plain-spoken, experienced voice on how nonprofits raise money and measure it. All nine October posts are written and on the calendar, most of them from your August 18 interview. October has no Proof posts yet, so we'd like to book a 30-minute interview to collect client stories for November. The Four Angles are the four kinds of post we write. Each post belongs to one angle and carries a short topic tag. The budget is how many of October's posts each angle gets. Cadence: two posts a week, Tuesday and Thursday.",
+  "waitingOn": [],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 4,
+      "why": "Your most practical material, and a good fit for year-end planning season.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "Checks and formulas a development team can run this week: auditing the giving path, questions to ask an agency, the donor coverage ratio, and where to put a tight budget. Everything is sized so a small shop can use it."
+    },
+    {
+      "name": "Proof",
+      "target": 0,
+      "why": "None in October because we don't have client stories yet. The interview on the last page is how Proof",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "Named AGP clients, with the before, the after, and the number that moved. October has none yet. A 30-minute interview with you is how we fill this angle for November and December."
+    },
+    {
+      "name": "Stance",
+      "target": 4,
+      "why": "Your August interview was full of views you'll defend, and four of them are ready to go.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "Views a nonprofit leader could argue with: say the plain thing, overhead is the wrong measure, a great website nobody finds isn't doing its job, and timing and audience matter more than the channel."
+    },
+    {
+      "name": "Human",
+      "target": 1,
+      "why": "One is enough for October. It needs a photo of you before it runs.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "Three decades in fundraising, and still explaining what you do in one plain sentence. This is the post that earns attention for the other three."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Playbook",
+      "topicTag": "giving path audit",
+      "title": "The Giving Path Audit",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/agp-ii/posts/7c70e6c3-0707-4af0-8fa1-b8210c4a77ed",
+      "ordinalPostId": "7c70e6c3-0707-4af0-8fa1-b8210c4a77ed"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Playbook",
+      "topicTag": "agency questions",
+      "title": "What to Ask Your Agency",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-ii/posts/79905524-43f1-47a7-a55a-268621ad2ab8",
+      "ordinalPostId": "79905524-43f1-47a7-a55a-268621ad2ab8"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Stance",
+      "topicTag": "plain language",
+      "title": "Say It Plain",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-ii/posts/bffdcc4e-31ce-4fce-9d69-85ab8579de09",
+      "ordinalPostId": "bffdcc4e-31ce-4fce-9d69-85ab8579de09"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Stance",
+      "topicTag": "overhead measurement",
+      "title": "The Overhead Math",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-ii/posts/d7fd2d48-aee2-4338-be2d-ca188588cc2e",
+      "ordinalPostId": "d7fd2d48-aee2-4338-be2d-ca188588cc2e"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Stance",
+      "topicTag": "website findability",
+      "title": "A Great Website Nobody Finds",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-ii/posts/0490d140-ff01-44af-9cd8-7f6f67432bf2",
+      "ordinalPostId": "0490d140-ff01-44af-9cd8-7f6f67432bf2"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Human",
+      "topicTag": "explaining her job",
+      "title": "The Plain Version",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-ii/posts/626003b9-a69e-4888-bc00-18d9117d4e03",
+      "ordinalPostId": "626003b9-a69e-4888-bc00-18d9117d4e03"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Playbook",
+      "topicTag": "donor coverage ratio",
+      "title": "Content Draft #497-1: the donor coverage ratio",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-ii/posts/4f15dcf4-2dce-4eb7-9a5d-bc0df63f07fc",
+      "ordinalPostId": "4f15dcf4-2dce-4eb7-9a5d-bc0df63f07fc"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Stance",
+      "topicTag": "channel timing audience",
+      "title": "When Telemarketing Came Back",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-ii/posts/b60f9083-ac74-4f59-b7cf-a37e2b72e345",
+      "ordinalPostId": "b60f9083-ac74-4f59-b7cf-a37e2b72e345"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Playbook",
+      "topicTag": "invest smarter, not more",
+      "title": "Content Draft #497-2: invest smarter, not more",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp-ii/posts/a1bad0ab-e520-405f-bf20-947a693679ab",
+      "ordinalPostId": "a1bad0ab-e520-405f-bf20-947a693679ab"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Content Opportunities",
+      "body": "What we need / next interview\nOctober covers three of the four angles well. What's missing is Proof : posts built on a named AGP client, with the before,\nthe after and the number that moved. It's the angle that turns agreement into conversations, and it's the one we can't\nwrite without you. One 30-minute interview should give us enough for two or three Proof posts in November and\nDecember.\nTo-dos Why it matters\n\u0000 Book a 30-minute Proof interview No Proof posts are possible until we hear client stories from you. This is the\none thing October's plan is missing.\n\u0000 Bring 2-3 client wins that moved a number Retention, coverage ratio, response rate or revenue. Each usable win\nbecomes one Proof post.\n\u0000 Confirm which clients can be named Proof posts need a real client. Tell us who has to say yes before we can name\nthem.\n\u0000 Send a recent photo for Oct 20 The Plain Version (Human) can't be sent for approval until the photo is in.\nBook the interview: pick any 30-minute slot that works for you.\nhttps://calendly.com/danny-chu-fcxv/interview-session-30\nQuestions for the next interview\nGrouped by angle. The note under each one says why we're asking and what post it could become."
+    }
+  ],
+  "cta": "",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "agp-ii"
+}

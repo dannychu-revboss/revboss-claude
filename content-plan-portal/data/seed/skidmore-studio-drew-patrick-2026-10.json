@@ -1,0 +1,205 @@
+{
+  "id": "skidmore-studio-drew-patrick-2026-10",
+  "client": "Skidmore Studio",
+  "person": "Drew Patrick",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 29, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: two posts a week, Tuesday and Thursday.",
+  "waitingOn": [
+    {
+      "when": "Thu Oct 1",
+      "ask": "Send a photo of you and Shawn for “17 years of making this place smaller.” You can upload it right under the post copy in Ordinal.",
+      "done": false
+    },
+    {
+      "when": "Oct 1, 6 and 8",
+      "ask": "Approve the first three posts in Ordinal. They're scheduled and can't go out until you approve them.",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 3,
+      "why": "One every ten days or so, spread across the month.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "Exercises a brand team can run without you in the room: reading five claims out loud, designing every panel for the store that stacks it sideways, and what a first call tells you about fit."
+    },
+    {
+      "name": "Proof",
+      "target": 2,
+      "why": "Two case studies from your session with Shawn. More would come from another interview.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "Real Skidmore projects told from the brief forward: Little Ghost's bag as a billboard and Oh My Goof moving Goof Off from the garage to the kitchen."
+    },
+    {
+      "name": "Stance",
+      "target": 3,
+      "why": "Your strongest angle, one post in each of the first three full weeks.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "Your core argument: different beats better, a package can break too many category cues, and \"reach a younger audience\" is a demographic, not a position."
+    },
+    {
+      "name": "Human",
+      "target": 1,
+      "why": "One personal post to open the month.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "Seventeen years at Skidmore spent narrowing the studio's focus, and why getting smaller is the plan."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Human",
+      "topicTag": "17 years getting smaller",
+      "title": "17 years of making this place smaller",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/skidmore-studio-drew/posts/1713216b-5505-4e46-be78-516293fdc06a",
+      "ordinalPostId": "1713216b-5505-4e46-be78-516293fdc06a"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Stance",
+      "topicTag": "keep the category cues",
+      "title": "You can stand out too hard",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/skidmore-studio-drew/posts/11e74b51-5e3a-4763-bdc7-a4d9609133d8",
+      "ordinalPostId": "11e74b51-5e3a-4763-bdc7-a4d9609133d8"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Playbook",
+      "topicTag": "read claims out loud",
+      "title": "You can't hear your own sameness",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/skidmore-studio-drew/posts/788d4ba2-7bba-4623-9a39-4488cb4f5392",
+      "ordinalPostId": "788d4ba2-7bba-4623-9a39-4488cb4f5392"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Proof",
+      "topicTag": "Little Ghost bag brief",
+      "title": "Drew & Shawn 2: \"Point at the bag and say, what is that?\"",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/skidmore-studio-drew/posts/926af528-98b5-4cdd-b3be-593ddd3ff35f",
+      "ordinalPostId": "926af528-98b5-4cdd-b3be-593ddd3ff35f"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Stance",
+      "topicTag": "different beats better",
+      "title": "Drew & Shawn 1: What Goodles, Graza, and Gruns have in common",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/skidmore-studio-drew/posts/8e1f6a13-7240-4b0f-974c-dbd62ba16703",
+      "ordinalPostId": "8e1f6a13-7240-4b0f-974c-dbd62ba16703"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Playbook",
+      "topicTag": "design every panel",
+      "title": "Your box will get stacked on its side",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/skidmore-studio-drew/posts/71d34b81-0f13-4b12-b8ff-8c8e292713aa",
+      "ordinalPostId": "71d34b81-0f13-4b12-b8ff-8c8e292713aa"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Stance",
+      "topicTag": "position before audience",
+      "title": "\"We want to reach a younger audience\" is the wrong brief",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/skidmore-studio-drew/posts/a686dfdc-2004-459c-aec3-a82fd2d1ee33",
+      "ordinalPostId": "a686dfdc-2004-459c-aec3-a82fd2d1ee33"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Proof",
+      "topicTag": "Oh My Goof reframe",
+      "title": "Drew & Shawn 5: Goof Off lived in the garage",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/skidmore-studio-drew/posts/9f529890-f966-4ba4-9207-20f2e1433007",
+      "ordinalPostId": "9f529890-f966-4ba4-9207-20f2e1433007"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Playbook",
+      "topicTag": "five first-call signals",
+      "title": "5 things prospects say on a first call",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/skidmore-studio-drew/posts/9b426ae7-ee39-49ed-be41-446d740978d8",
+      "ordinalPostId": "9b426ae7-ee39-49ed-be41-446d740978d8"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "skidmore-studio-drew",
+  "waitingLabel": "Waiting On You"
+}

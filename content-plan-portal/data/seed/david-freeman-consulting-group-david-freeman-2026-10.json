@@ -1,0 +1,200 @@
+{
+  "id": "david-freeman-consulting-group-david-freeman-2026-10",
+  "client": "David Freeman Consulting Group",
+  "person": "David Freeman",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 30, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: two posts a week, Tuesday and Thursday.",
+  "waitingOn": [
+    {
+      "when": "Thu Oct 8",
+      "ask": "Approve “400 Hours for AI, None for Building a Practice” in Ordinal. Everything else is approved and scheduled.",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 2,
+      "why": "Two, both in the second half of the month.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "How firms actually grow rainmakers: the beliefs underneath the behavior, and the choice to build talent rather than only buy it."
+    },
+    {
+      "name": "Proof",
+      "target": 2,
+      "why": "Two coaching-client stories to open the month.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "What lawyers you coach actually did and what it got them: one small step at a time, and showing up in person."
+    },
+    {
+      "name": "Stance",
+      "target": 3,
+      "why": "Three, spread across early, middle and late October.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "Where law firms are getting it wrong: what they fund, how laterals get integrated, and what AI does to the billable hour."
+    },
+    {
+      "name": "Human",
+      "target": 2,
+      "why": "Two personal posts, mid-month and to close the month.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "The person behind the coaching: how you prepped for your September conference and where your best ideas show up."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Proof",
+      "topicTag": "micro actions for busy lawyers",
+      "title": "One Micro Action This Week",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/david-freeman-consulting-group-david/posts/35ba339c-ff0d-4f45-a070-63c9959ce2d9",
+      "ordinalPostId": "35ba339c-ff0d-4f45-a070-63c9959ce2d9"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Proof",
+      "topicTag": "in-person client visits",
+      "title": "The Empty Chair in the Client's Office",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/david-freeman-consulting-group-david/posts/4fadb34e-2b67-4993-8198-12bb9cde6020",
+      "ordinalPostId": "4fadb34e-2b67-4993-8198-12bb9cde6020"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Stance",
+      "topicTag": "firms fund AI, not practice-building",
+      "title": "400 Hours for AI, None for Building a Practice",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/david-freeman-consulting-group-david/posts/56488878-51b6-4640-a0d0-17b9681f5ac2",
+      "ordinalPostId": "56488878-51b6-4640-a0d0-17b9681f5ac2"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Human",
+      "topicTag": "conference prep before arriving",
+      "title": "A Conference Runs on Two Calendars",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/david-freeman-consulting-group-david/posts/db1fedeb-e35a-4ecc-a9df-88c4363e8a14",
+      "ordinalPostId": "db1fedeb-e35a-4ecc-a9df-88c4363e8a14"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Stance",
+      "topicTag": "laterals own their integration",
+      "title": "Laterals Own Their Integration",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/david-freeman-consulting-group-david/posts/5a91c43e-9195-4a3e-83d3-ac917f88df30",
+      "ordinalPostId": "5a91c43e-9195-4a3e-83d3-ac917f88df30"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Playbook",
+      "topicTag": "nine rainmaker beliefs",
+      "title": "The Nine Things a Rainmaker Believes",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/david-freeman-consulting-group-david/posts/f42a1961-ff4b-424a-a5dd-ab24cb6c0f4b",
+      "ordinalPostId": "f42a1961-ff4b-424a-a5dd-ab24cb6c0f4b"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Playbook",
+      "topicTag": "build rainmakers, don't buy",
+      "title": "Build Rainmakers, Don't Just Buy Them",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/david-freeman-consulting-group-david/posts/af287634-446e-4d20-a1d2-9658ae0c80bd",
+      "ordinalPostId": "af287634-446e-4d20-a1d2-9658ae0c80bd"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Stance",
+      "topicTag": "lawyer as AI-era sherpa",
+      "title": "The Lawyer as Sherpa",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/david-freeman-consulting-group-david/posts/c9dbb577-cd44-429e-8be0-eec437c26a40",
+      "ordinalPostId": "c9dbb577-cd44-429e-8be0-eec437c26a40"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Human",
+      "topicTag": "treadmill thinking time",
+      "title": "Ideas on a Treadmill",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/david-freeman-consulting-group-david/posts/23e3b801-1177-4d7f-9f68-04c739428cd5",
+      "ordinalPostId": "23e3b801-1177-4d7f-9f68-04c739428cd5"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "david-freeman-consulting-group-david",
+  "waitingLabel": "Waiting On You"
+}

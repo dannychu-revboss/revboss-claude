@@ -1,0 +1,205 @@
+{
+  "id": "naya-software-matthew-basile-2026-10",
+  "client": "Naya Software",
+  "person": "Matthew Basile",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 30, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: two posts a week, Tuesday and Thursday. Our latest interview feeds November's posts.",
+  "waitingOn": [
+    {
+      "when": "Oct 2, 6 and 8",
+      "ask": "Approve the first three posts in Ordinal so they can go out on time. All nine October posts are waiting on your approval.",
+      "done": false
+    },
+    {
+      "when": "Thu Oct 29",
+      "ask": "Send a photo of the Naya merch, and confirm the Possible Law podcast link for “Naya Merch: My Kids Asked About Margins.”",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 3,
+      "why": "Three, one in each of the middle weeks.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "How a tech-first firm actually runs the work: review playbooks, the AI habits that pay off, and who to hire."
+    },
+    {
+      "name": "Proof",
+      "target": 0,
+      "why": "None this month. A lender result from our interview would open November.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "A named lender and what their legal spend or closing time looked like before and after Naya."
+    },
+    {
+      "name": "Stance",
+      "target": 4,
+      "why": "Your strongest angle, four posts spread across the month.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "Your read on the business of law: AI sameness, the upside-down pyramid, rate-driven growth, and what big-law fees are really paying for."
+    },
+    {
+      "name": "Human",
+      "target": 2,
+      "why": "Two personal posts, mid-month and to close.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "The person behind Naya: starting a firm you never planned to, and the lessons your kids brought to the merch."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-02",
+      "dateLabel": "Fri Oct 2",
+      "angle": "Stance",
+      "topicTag": "AI monoculture risk",
+      "title": "The AI Monoculture Trap",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/naya-software-inc/posts/ea8f6fa6-c767-4daa-8d9e-5cd6ba50cf24",
+      "ordinalPostId": "ea8f6fa6-c767-4daa-8d9e-5cd6ba50cf24"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Stance",
+      "topicTag": "the pyramid flipped",
+      "title": "The Pyramid Is Running Upside Down",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/naya-software-inc/posts/9b1a2024-0a73-40a4-af72-d68eac59ceee",
+      "ordinalPostId": "9b1a2024-0a73-40a4-af72-d68eac59ceee"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Stance",
+      "topicTag": "growth by rate hikes",
+      "title": "Name Another Business That Doesn't Want New Clients",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/naya-software-inc/posts/207cd607-7cd7-4ede-8b8c-6209fea440f2",
+      "ordinalPostId": "207cd607-7cd7-4ede-8b8c-6209fea440f2"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Playbook",
+      "topicTag": "playbooks beat compare prompts",
+      "title": "Two Reviews, Two Results",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/naya-software-inc/posts/671cbf58-85eb-45a0-9e72-a71ab0bcda98",
+      "ordinalPostId": "671cbf58-85eb-45a0-9e72-a71ab0bcda98"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Human",
+      "topicTag": "a firm I didn't plan",
+      "title": "Didn't Want to Start a Law Firm",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/naya-software-inc/posts/477f5683-a07e-40db-a9ed-ed0b5d4d7d46",
+      "ordinalPostId": "477f5683-a07e-40db-a9ed-ed0b5d4d7d46"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Stance",
+      "topicTag": "what the fee feeds",
+      "title": "What the Fee Is Feeding",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/naya-software-inc/posts/7004bc6c-ec53-4fc7-8ee1-163e4bfe5c6d",
+      "ordinalPostId": "7004bc6c-ec53-4fc7-8ee1-163e4bfe5c6d"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Playbook",
+      "topicTag": "AI do's and don'ts",
+      "title": "There Is No AI Playbook",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/naya-software-inc/posts/2296d2c8-2775-4a09-bc6d-979d0756f457",
+      "ordinalPostId": "2296d2c8-2775-4a09-bc6d-979d0756f457"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Playbook",
+      "topicTag": "hire the right lawyer",
+      "title": "The Right Lawyer",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/naya-software-inc/posts/4de0baf4-d000-4e71-919d-1874fab46ec4",
+      "ordinalPostId": "4de0baf4-d000-4e71-919d-1874fab46ec4"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Human",
+      "topicTag": "kids asked about margins",
+      "title": "Naya Merch: My Kids Asked About Margins",
+      "type": "",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/naya-software-inc/posts/6171d8bf-1793-4e15-b0bd-91517ed4de6d",
+      "ordinalPostId": "6171d8bf-1793-4e15-b0bd-91517ed4de6d"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "",
+  "ordinalWorkspace": "naya-software-inc",
+  "waitingLabel": "Waiting On You"
+}

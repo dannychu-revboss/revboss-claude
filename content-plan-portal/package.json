@@ -1,0 +1,22 @@
+{
+  "name": "revboss-content-plan-portal",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Interactive, live client content plans for RevBoss — replaces the monthly PDF.",
+  "type": "module",
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "express": "^5.2.1",
+    "zod": "^4.6.5"
+  }
+}

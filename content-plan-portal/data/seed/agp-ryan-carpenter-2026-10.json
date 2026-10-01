@@ -1,0 +1,269 @@
+{
+  "id": "agp-ryan-carpenter-2026-10",
+  "client": "AGP",
+  "person": "Ryan Carpenter",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 29 OCT 2026",
+  "preparedOn": "SEPTEMBER 30, 2026",
+  "intro": "Each post belongs to one of four angles and carries a short topic tag. The budget is how many posts each angle gets. Cadence: three posts a week, Tuesday through Thursday.",
+  "waitingOn": [
+    {
+      "when": "Thu Oct 29",
+      "ask": "Send a childhood photo for “The Billboard at Twelve,” and confirm you're comfortable with the health detail as written.",
+      "done": false
+    },
+    {
+      "when": "Before each date",
+      "ask": "Approve the open posts in Ordinal, starting with Giving Has Seasons (Oct 8), the Idaho Public Television story (Oct 14) and The Expensive Way to Hum Along (Oct 15).",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 5,
+      "why": "Five mid-level how-tos, the core of the month.",
+      "description": "How you actually do the work, broken down so a reader could run it tomorrow.",
+      "forYou": "How to build a mid-level program: where it starts, treating upgraders differently, belonging over thanks, soft credit, and two hours a week."
+    },
+    {
+      "name": "Proof",
+      "target": 3,
+      "why": "Three client stories, one every other week.",
+      "description": "Specific outcomes and the story behind them, with the numbers and the messy middle left in.",
+      "forYou": "Mid-level programs that worked: Idaho Public Television, a donor migration led from the top, and NAMI's Compassion Collective."
+    },
+    {
+      "name": "Stance",
+      "target": 4,
+      "why": "Four views spread through the month.",
+      "description": "What you believe about where your industry is going, stated plainly enough to be disagreed with.",
+      "forYou": "What you believe about mid-level giving: stewardship isn't seasonal, 5% of the file is ready now, handwritten cards still win, and quiet churn is expensive."
+    },
+    {
+      "name": "Human",
+      "target": 1,
+      "why": "One origin story to close the month.",
+      "description": "The person behind the company: what you're learning, deciding, and getting wrong.",
+      "forYou": "The person behind the work: the billboard you saw at twelve and the path that brought you back to nonprofit data."
+    }
+  ],
+  "accounts": [],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Stance",
+      "topicTag": "5% ready for major",
+      "title": "5% of Your Mid-Level File Is Ready",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/fb28b3ed-d6ef-4d33-b657-72a95236e940",
+      "ordinalPostId": "fb28b3ed-d6ef-4d33-b657-72a95236e940"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Stance",
+      "topicTag": "handwritten cards",
+      "title": "Handwritten Cards Still Win",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/c38a210b-2c5b-4a7f-a341-7f1f0c329651",
+      "ordinalPostId": "c38a210b-2c5b-4a7f-a341-7f1f0c329651"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-07",
+      "dateLabel": "Wed Oct 7",
+      "angle": "Proof",
+      "topicTag": "leaders own migration",
+      "title": "Donor Migration Is an Executive Decision",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/22627003-8f87-4f23-aca2-b901ba728cff",
+      "ordinalPostId": "22627003-8f87-4f23-aca2-b901ba728cff"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Stance",
+      "topicTag": "year-round stewardship",
+      "title": "Giving Has Seasons. The Work Doesn't.",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/94f9130a-57b4-48ed-8712-fcf691362b6b",
+      "ordinalPostId": "94f9130a-57b4-48ed-8712-fcf691362b6b"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Playbook",
+      "topicTag": "where mid-level starts",
+      "title": "Where Mid-Level Actually Starts",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/85054d02-0568-435b-a30b-2972a19fb8b1",
+      "ordinalPostId": "85054d02-0568-435b-a30b-2972a19fb8b1"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-14",
+      "dateLabel": "Wed Oct 14",
+      "angle": "Proof",
+      "topicTag": "hidden capacity",
+      "title": "The Capacity Hiding in Your Member File",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/fcb13c60-63f2-49f5-a8ed-850390dfa390",
+      "ordinalPostId": "fcb13c60-63f2-49f5-a8ed-850390dfa390"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Stance",
+      "topicTag": "quiet churn",
+      "title": "The Expensive Way to Hum Along",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/04caadc0-2820-4450-a1d0-990ed2a10fbc",
+      "ordinalPostId": "04caadc0-2820-4450-a1d0-990ed2a10fbc"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Proof",
+      "topicTag": "NAMI's giving society",
+      "title": "NAMI's Compassion Collective",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/bc0f779d-d90f-4664-a0c1-65c6809f38b6",
+      "ordinalPostId": "bc0f779d-d90f-4664-a0c1-65c6809f38b6"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-21",
+      "dateLabel": "Wed Oct 21",
+      "angle": "Playbook",
+      "topicTag": "treat upgraders",
+      "title": "Upgraders Get the $50 Treatment",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/fa203446-68c2-4930-a47b-09bfbeaf1ee0",
+      "ordinalPostId": "fa203446-68c2-4930-a47b-09bfbeaf1ee0"
+    },
+    {
+      "id": "p10",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Playbook",
+      "topicTag": "thanks vs belonging",
+      "title": "Thanks Isn't Belonging",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/4bf32629-a6d3-42c1-8806-57ee33131653",
+      "ordinalPostId": "4bf32629-a6d3-42c1-8806-57ee33131653"
+    },
+    {
+      "id": "p11",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Playbook",
+      "topicTag": "soft credit",
+      "title": "One Goal. Soft Credit Everything.",
+      "type": "Video",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/132378f5-00d8-4a3a-84b9-b154af324adf",
+      "ordinalPostId": "132378f5-00d8-4a3a-84b9-b154af324adf"
+    },
+    {
+      "id": "p12",
+      "date": "2026-10-28",
+      "dateLabel": "Wed Oct 28",
+      "angle": "Playbook",
+      "topicTag": "two hours a week",
+      "title": "Two Hours a Week for Mid-Level",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/c928c290-50d5-45ba-b59f-ab3aee143ff5",
+      "ordinalPostId": "c928c290-50d5-45ba-b59f-ab3aee143ff5"
+    },
+    {
+      "id": "p13",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Human",
+      "topicTag": "how Ryan got here",
+      "title": "The Billboard at Twelve",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/agp/posts/33075703-2ed6-4d96-a888-7392d51acb9d",
+      "ordinalPostId": "33075703-2ed6-4d96-a888-7392d51acb9d"
+    }
+  ],
+  "sections": [],
+  "cta": "",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "agp",
+  "waitingLabel": "Waiting On You"
+}

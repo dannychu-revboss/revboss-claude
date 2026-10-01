@@ -1,0 +1,702 @@
+{
+  "id": "sequence-consulting-chris-vaughan-2026-10",
+  "client": "Sequence Consulting",
+  "person": "Chris Vaughan",
+  "month": "2026-10",
+  "framework": "The Four Angles",
+  "angleWord": "Angle",
+  "periodLabel": "1 OCT – 30 OCT 2026",
+  "preparedOn": "OCTOBER 1, 2026",
+  "intro": "Three accounts, one month. Chris posts every weekday; the company page and Lisa pick up his ideas a week or so later in their own voice. Each post belongs to one of four angles and carries a short topic tag.",
+  "waitingOn": [
+    {
+      "when": "Tue Oct 6 & Wed Oct 7",
+      "ask": "Approve “Boards Shouldn't Gate AI Pilots” and “Sort Last Year's Budget Lines” in Ordinal.",
+      "done": false
+    },
+    {
+      "when": "Thu Oct 15",
+      "ask": "Confirm we can name APSHO and its $80K first-year result.",
+      "done": false
+    },
+    {
+      "when": "Wed Oct 21",
+      "ask": "Send the source for the employer-interference stats (over 50%, from under 30%) and AMA's 20% growth.",
+      "done": false
+    },
+    {
+      "when": "Wed Oct 21",
+      "ask": "Lisa: confirm 2026 is the 25th year of the firm.",
+      "done": false
+    }
+  ],
+  "angles": [
+    {
+      "name": "Playbook",
+      "target": 10,
+      "why": "Worksheets and tests a leader can run this week.",
+      "description": "",
+      "forYou": ""
+    },
+    {
+      "name": "Proof",
+      "target": 3,
+      "why": "Our thinnest angle: APSHO, the engineering society's login data,",
+      "description": "",
+      "forYou": ""
+    },
+    {
+      "name": "Stance",
+      "target": 21,
+      "why": "Chris's sharpest calls. The company page and Lisa reinforce them.",
+      "description": "",
+      "forYou": ""
+    },
+    {
+      "name": "Human",
+      "target": 1,
+      "why": "Chris's RevUP Summit talk (Nov 3–5).",
+      "description": "",
+      "forYou": ""
+    }
+  ],
+  "accounts": [
+    "Chris Vaughan",
+    "Sequence Consulting",
+    "Lisa Vaughan"
+  ],
+  "posts": [
+    {
+      "id": "p01",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Stance",
+      "topicTag": "community is the AI moat",
+      "title": "Community Is the AI Moat",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/d87f3cd9-79e5-4da2-a515-955a367219d0",
+      "ordinalPostId": "d87f3cd9-79e5-4da2-a515-955a367219d0",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p02",
+      "date": "2026-10-02",
+      "dateLabel": "Fri Oct 2",
+      "angle": "Stance",
+      "topicTag": "sell to non-members",
+      "title": "Sell to Non-Members",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "scheduled",
+      "statusLabel": "Scheduled",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/a7f692a4-0110-46e1-bc22-86e167a78611",
+      "ordinalPostId": "a7f692a4-0110-46e1-bc22-86e167a78611",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p03",
+      "date": "2026-10-05",
+      "dateLabel": "Mon Oct 5",
+      "angle": "Stance",
+      "topicTag": "permission to stop something",
+      "title": "Permission to Stop Something",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/e153373a-2804-499f-a610-183df8d24ab7",
+      "ordinalPostId": "e153373a-2804-499f-a610-183df8d24ab7",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p04",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Stance",
+      "topicTag": "boards gate AI pilots",
+      "title": "Boards Shouldn't Gate AI Pilots",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/4465e7c9-a479-4fd0-aa89-742dd988b1a7",
+      "ordinalPostId": "4465e7c9-a479-4fd0-aa89-742dd988b1a7",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p05",
+      "date": "2026-10-07",
+      "dateLabel": "Wed Oct 7",
+      "angle": "Playbook",
+      "topicTag": "sort the budget lines",
+      "title": "Sort Last Year's Budget Lines",
+      "type": "Image",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/fea53263-0517-4062-ba19-d198c0dfaa1a",
+      "ordinalPostId": "fea53263-0517-4062-ba19-d198c0dfaa1a",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p06",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Playbook",
+      "topicTag": "the awareness gap test",
+      "title": "The Awareness Gap Test",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/6eeabc15-091e-43f0-9704-c5ab623aedb3",
+      "ordinalPostId": "6eeabc15-091e-43f0-9704-c5ab623aedb3",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p07",
+      "date": "2026-10-09",
+      "dateLabel": "Fri Oct 9",
+      "angle": "Stance",
+      "topicTag": "workarounds cost your people",
+      "title": "Workarounds Cost Your People",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/17294f06-7907-454f-840e-c80cf70337dc",
+      "ordinalPostId": "17294f06-7907-454f-840e-c80cf70337dc",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p08",
+      "date": "2026-10-12",
+      "dateLabel": "Mon Oct 12",
+      "angle": "Playbook",
+      "topicTag": "partners buy relationships",
+      "title": "Partners Buy Relationships",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/4ec679d3-7861-4cc7-aa81-5f1b12ba49e4",
+      "ordinalPostId": "4ec679d3-7861-4cc7-aa81-5f1b12ba49e4",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p09",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Stance",
+      "topicTag": "non-dues has no owner",
+      "title": "Non-Dues Revenue Has No Owner",
+      "type": "Image",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/3649f996-a092-4f40-89a4-3b2389408722",
+      "ordinalPostId": "3649f996-a092-4f40-89a4-3b2389408722",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p10",
+      "date": "2026-10-14",
+      "dateLabel": "Wed Oct 14",
+      "angle": "Stance",
+      "topicTag": "budget isn't the explanation",
+      "title": "Budget Isn't the Explanation",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/cac946e1-6064-474b-a9ec-2cef246a535b",
+      "ordinalPostId": "cac946e1-6064-474b-a9ec-2cef246a535b",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p11",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Proof",
+      "topicTag": "test prices with buyers",
+      "title": "Price It in Front of a Buyer",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/11f35e1d-b9e5-43bd-bbde-333c99d8b95e",
+      "ordinalPostId": "11f35e1d-b9e5-43bd-bbde-333c99d8b95e",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p12",
+      "date": "2026-10-16",
+      "dateLabel": "Fri Oct 16",
+      "angle": "Stance",
+      "topicTag": "return what members give",
+      "title": "Return What Members Give",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/995d617c-a9b1-4241-8de8-ff9b9d147223",
+      "ordinalPostId": "995d617c-a9b1-4241-8de8-ff9b9d147223",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p13",
+      "date": "2026-10-19",
+      "dateLabel": "Mon Oct 19",
+      "angle": "Proof",
+      "topicTag": "dues are a flawed KPI",
+      "title": "Dues Are a Flawed KPI",
+      "type": "Image",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/ce8be2f5-af2e-4661-8a0b-0c26714bd9bc",
+      "ordinalPostId": "ce8be2f5-af2e-4661-8a0b-0c26714bd9bc",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p14",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Playbook",
+      "topicTag": "payer vs user interviews",
+      "title": "The Payer Isn't the User",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/743b0deb-2ee7-451c-97cf-e8369eebe241",
+      "ordinalPostId": "743b0deb-2ee7-451c-97cf-e8369eebe241",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p15",
+      "date": "2026-10-21",
+      "dateLabel": "Wed Oct 21",
+      "angle": "Proof",
+      "topicTag": "sell membership to employers",
+      "title": "Sell Membership to Employers",
+      "type": "Image",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/323b74db-3f66-4d7d-8a47-508ed3db46e9",
+      "ordinalPostId": "323b74db-3f66-4d7d-8a47-508ed3db46e9",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p16",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Stance",
+      "topicTag": "fundamentals before foresight",
+      "title": "Fundamentals Before Foresight",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/798fe765-6969-423c-ba1c-1c73937bb2ad",
+      "ordinalPostId": "798fe765-6969-423c-ba1c-1c73937bb2ad",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p17",
+      "date": "2026-10-23",
+      "dateLabel": "Fri Oct 23",
+      "angle": "Playbook",
+      "topicTag": "time, talent, treasure scoring",
+      "title": "Time, Talent, Treasure Scoring",
+      "type": "Image",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/1ada0e43-2617-4946-9a87-8f6bd489e8fa",
+      "ordinalPostId": "1ada0e43-2617-4946-9a87-8f6bd489e8fa",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p18",
+      "date": "2026-10-26",
+      "dateLabel": "Mon Oct 26",
+      "angle": "Playbook",
+      "topicTag": "dollar value per volunteer",
+      "title": "Dollar Value per Volunteer",
+      "type": "Image",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/d691c867-6393-4f60-adbf-eaa40dded550",
+      "ordinalPostId": "d691c867-6393-4f60-adbf-eaa40dded550",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p19",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Human",
+      "topicTag": "RevUP Summit talk",
+      "title": "Five Minutes at RevUP",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/1d3dc22e-831d-4513-b067-d7942d895146",
+      "ordinalPostId": "1d3dc22e-831d-4513-b067-d7942d895146",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p20",
+      "date": "2026-10-28",
+      "dateLabel": "Wed Oct 28",
+      "angle": "Stance",
+      "topicTag": "membership is people, not product",
+      "title": "Membership Is People, Not Product",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/9b704809-b7c4-4dd4-861b-a9262941eac2",
+      "ordinalPostId": "9b704809-b7c4-4dd4-861b-a9262941eac2",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p21",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Playbook",
+      "topicTag": "first-90-day engagement",
+      "title": "The First 90 Days",
+      "type": "Image",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/280ccaa7-96e8-4e2e-8ad2-8d7b3d9dc319",
+      "ordinalPostId": "280ccaa7-96e8-4e2e-8ad2-8d7b3d9dc319",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p22",
+      "date": "2026-10-30",
+      "dateLabel": "Fri Oct 30",
+      "angle": "Playbook",
+      "topicTag": "retail politics before votes",
+      "title": "Retail Politics Before the Vote",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/4926980d-1c39-481a-a156-9b3d68bebc99",
+      "ordinalPostId": "4926980d-1c39-481a-a156-9b3d68bebc99",
+      "account": "Chris Vaughan"
+    },
+    {
+      "id": "p23",
+      "date": "2026-10-01",
+      "dateLabel": "Thu Oct 1",
+      "angle": "Playbook",
+      "topicTag": "annual meeting as membership",
+      "title": "Rethink the Annual Meeting Chris's ASAE article",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X",
+        "FB"
+      ],
+      "status": "posted",
+      "statusLabel": "Posted",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/de1f1dbb-3d8b-4c86-b832-09110277045b",
+      "ordinalPostId": "de1f1dbb-3d8b-4c86-b832-09110277045b",
+      "account": "Sequence Consulting"
+    },
+    {
+      "id": "p24",
+      "date": "2026-10-06",
+      "dateLabel": "Tue Oct 6",
+      "angle": "Stance",
+      "topicTag": "community is the AI moat",
+      "title": "Community Is the AI Moat Reshares Chris, Oct 1",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X",
+        "FB"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/68d9a885-fbe5-4605-9bee-e6d8985b239c",
+      "ordinalPostId": "68d9a885-fbe5-4605-9bee-e6d8985b239c",
+      "account": "Sequence Consulting"
+    },
+    {
+      "id": "p25",
+      "date": "2026-10-08",
+      "dateLabel": "Thu Oct 8",
+      "angle": "Stance",
+      "topicTag": "awareness before the join page",
+      "title": "Awareness Before the Join Page",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X",
+        "FB"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/e6bee956-6ed7-4e76-a502-ebb3ab0609e3",
+      "ordinalPostId": "e6bee956-6ed7-4e76-a502-ebb3ab0609e3",
+      "account": "Sequence Consulting"
+    },
+    {
+      "id": "p26",
+      "date": "2026-10-13",
+      "dateLabel": "Tue Oct 13",
+      "angle": "Stance",
+      "topicTag": "permission to stop something",
+      "title": "Permission to Stop Something Pairs with Chris, Oct 5",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X",
+        "FB"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/a4c67c01-e712-4d5c-9a1c-2edcaff86bac",
+      "ordinalPostId": "a4c67c01-e712-4d5c-9a1c-2edcaff86bac",
+      "account": "Sequence Consulting"
+    },
+    {
+      "id": "p27",
+      "date": "2026-10-15",
+      "dateLabel": "Thu Oct 15",
+      "angle": "Stance",
+      "topicTag": "workarounds cost your people",
+      "title": "Workarounds Cost Your People Pairs with Chris, Oct 9",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "FB"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/fd53da32-4849-4f35-8f82-65f9c183e967",
+      "ordinalPostId": "fd53da32-4849-4f35-8f82-65f9c183e967",
+      "account": "Sequence Consulting"
+    },
+    {
+      "id": "p28",
+      "date": "2026-10-20",
+      "dateLabel": "Tue Oct 20",
+      "angle": "Playbook",
+      "topicTag": "sort the budget lines",
+      "title": "Sort Last Year's Budget Lines Pairs with Chris, Oct 7",
+      "type": "Image",
+      "channels": [
+        "LI",
+        "FB"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/b48ff6af-4efd-431d-98ce-fb5e35337b18",
+      "ordinalPostId": "b48ff6af-4efd-431d-98ce-fb5e35337b18",
+      "account": "Sequence Consulting"
+    },
+    {
+      "id": "p29",
+      "date": "2026-10-22",
+      "dateLabel": "Thu Oct 22",
+      "angle": "Stance",
+      "topicTag": "partners buy relationships",
+      "title": "Partners Buy Relationships Pairs with Chris, Oct 12",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X",
+        "FB"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/26907787-04a2-46b4-8e6b-7df7dc80c776",
+      "ordinalPostId": "26907787-04a2-46b4-8e6b-7df7dc80c776",
+      "account": "Sequence Consulting"
+    },
+    {
+      "id": "p30",
+      "date": "2026-10-27",
+      "dateLabel": "Tue Oct 27",
+      "angle": "Stance",
+      "topicTag": "budget isn't the explanation",
+      "title": "Budget Isn't the Explanation Pairs with Chris, Oct 14",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "X",
+        "FB"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/27013ade-b329-4fed-9516-a7343c2b80b4",
+      "ordinalPostId": "27013ade-b329-4fed-9516-a7343c2b80b4",
+      "account": "Sequence Consulting"
+    },
+    {
+      "id": "p31",
+      "date": "2026-10-29",
+      "dateLabel": "Thu Oct 29",
+      "angle": "Stance",
+      "topicTag": "fundamentals before foresight",
+      "title": "Fundamentals Before Foresight Pairs with Chris, Oct 22",
+      "type": "Text",
+      "channels": [
+        "LI",
+        "FB"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/d62fa4e4-8660-45ed-b985-47f48d19df97",
+      "ordinalPostId": "d62fa4e4-8660-45ed-b985-47f48d19df97",
+      "account": "Sequence Consulting"
+    },
+    {
+      "id": "p32",
+      "date": "2026-10-07",
+      "dateLabel": "Wed Oct 7",
+      "angle": "Stance",
+      "topicTag": "permission to stop something",
+      "title": "The People Behind the Strategy Pairs with Chris, Oct 5",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/83f547e8-2a7d-4b2d-8162-0d69384bf164",
+      "ordinalPostId": "83f547e8-2a7d-4b2d-8162-0d69384bf164",
+      "account": "Lisa Vaughan"
+    },
+    {
+      "id": "p33",
+      "date": "2026-10-14",
+      "dateLabel": "Wed Oct 14",
+      "angle": "Stance",
+      "topicTag": "partners buy relationships",
+      "title": "Two Days Seen, Twelve Months Useful Pairs with Chris, Oct 12",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/400f90be-fa09-4ecc-a2f3-aa4bc1ff38af",
+      "ordinalPostId": "400f90be-fa09-4ecc-a2f3-aa4bc1ff38af",
+      "account": "Lisa Vaughan"
+    },
+    {
+      "id": "p34",
+      "date": "2026-10-21",
+      "dateLabel": "Wed Oct 21",
+      "angle": "Stance",
+      "topicTag": "return what members give",
+      "title": "Twenty-Five Years In Pairs with Chris, Oct 16",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/fd5e244d-6bcb-4779-b068-212decad14f4",
+      "ordinalPostId": "fd5e244d-6bcb-4779-b068-212decad14f4",
+      "account": "Lisa Vaughan"
+    },
+    {
+      "id": "p35",
+      "date": "2026-10-28",
+      "dateLabel": "Wed Oct 28",
+      "angle": "Stance",
+      "topicTag": "fundamentals before foresight",
+      "title": "Decision Rights Before Foresight Pairs with Chris, Oct 22",
+      "type": "Text",
+      "channels": [
+        "LI"
+      ],
+      "status": "approval_waiting",
+      "statusLabel": "Approval waiting",
+      "ordinalUrl": "https://app.tryordinal.com/sequence-consulting/posts/dab5906b-7e6c-440c-b76c-6c2cca80e816",
+      "ordinalPostId": "dab5906b-7e6c-440c-b76c-6c2cca80e816",
+      "account": "Lisa Vaughan"
+    }
+  ],
+  "sections": [],
+  "cta": "Book your next interview with Danny: 30 minutes on a client win we can name. Proof is this month's thinnest angle, so that's where the next session should go.",
+  "bookingUrl": "https://calendly.com/danny-chu-fcxv/interview-session-30",
+  "ordinalWorkspace": "sequence-consulting",
+  "waitingLabel": "Waiting On You"
+}
