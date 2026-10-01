@@ -137,8 +137,12 @@ app.patch("/api/plans/:id/posts/:postId", requireTeam, withPlan, (req, res) => {
   const plan = store.updatePlan(req.plan.id, (p) => {
     const post = p.posts.find((x) => x.id === req.params.postId);
     if (!post) throw Object.assign(new Error("post not found"), { status: 404 });
+    const fromAngle = post.angle;
     for (const f of POST_FIELDS) if (f in req.body) post[f] = req.body[f];
-    return { kind: "edit", text: `Updated "${post.title}"` };
+    if ("angle" in req.body && req.body.angle !== fromAngle) {
+      return { kind: "edit", text: `Moved "${post.title}" from ${fromAngle} to ${post.angle}`, postId: post.id };
+    }
+    return { kind: "edit", text: `Updated "${post.title}"`, postId: post.id };
   });
   res.json({ plan: publicPlan(plan) });
 });

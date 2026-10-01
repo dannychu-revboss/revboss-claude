@@ -10,7 +10,21 @@ const planId = location.pathname.split("/").pop();
 const key = new URLSearchParams(location.search).get("k");
 const isTeamPath = location.pathname.startsWith("/team/");
 
-const state = { plan: null, viewer: "client", ordinal: "demo", chat: "offline", shareUrl: null, view: "list", angle: "", status: "", account: "" };
+const state = { plan: null, viewer: "client", ordinal: "demo", chat: "offline", shareUrl: null, view: pref("view", "list"), board: pref("board", "status"), angle: "", status: "", account: "" };
+
+// Remembered per viewer (view + board grouping); optional, so storage failures are ignored.
+function pref(k, dflt) {
+  try {
+    return localStorage.getItem(`pref:${k}`) || dflt;
+  } catch {
+    return dflt;
+  }
+}
+function setPref(k, v) {
+  try {
+    localStorage.setItem(`pref:${k}`, v);
+  } catch {}
+}
 let history = loadHistory();
 
 function api(path, opts = {}) {
@@ -138,10 +152,10 @@ function render() {
           ${p.accounts?.length ? `<select id="fAccount"><option value="">All accounts</option>${[p.person, ...p.accounts.filter((a) => a.toLowerCase() !== p.person.toLowerCase())].map((a) => `<option ${state.account === a ? "selected" : ""}>${esc(a)}</option>`).join("")}</select>` : ""}
           <select id="fAngle"><option value="">All ${esc(p.angleWord.toLowerCase())}s</option>${p.angles.map((a) => `<option ${state.angle === a.name ? "selected" : ""}>${esc(a.name)}</option>`).join("")}</select>
           <select id="fStatus"><option value="">Any status</option>${Object.entries(STATUS_TEXT).filter(([k]) => p.posts.some((x) => x.effectiveStatus === k)).map(([k, v]) => `<option value="${k}" ${state.status === k ? "selected" : ""}>${v}</option>`).join("")}</select>
-          <div class="seg"><button data-view="list" class="${state.view === "list" ? "on" : ""}">List</button><button data-view="calendar" class="${state.view === "calendar" ? "on" : ""}">Calendar</button></div>
+          <div class="seg">${[["list", "List"], ["board", "Board"], ["calendar", "Calendar"]].map(([v, l]) => `<button data-view="${v}" class="${state.view === v ? "on" : ""}">${l}</button>`).join("")}</div>
         </div>
       </div>
-      ${state.view === "list" ? renderList(p) : renderCalendar(p)}
+      ${state.view === "board" ? renderBoard(p) : state.view === "calendar" ? renderCalendar(p) : renderList(p)}
       <div class="status-key">${esc(p.statusHelp)} Click any post for details, numbers and feedback.</div>
     </section>
 
@@ -203,6 +217,93 @@ function renderList(p) {
   </table></div>`;
 }
 
+// Kanban: columns by status (where each post is in the approval flow) or by
+// angle. Status comes from Ordinal, so status columns are read-only; on the
+// team view, cards can be dragged between angle columns to re-file a post.
+const STATUS_COLUMNS = [
+  { key: "not_sent", title: "Not sent yet", statuses: ["todo", "approval_not_sent"], hint: "Written and on the calendar; the approval request goes out ahead of its date." },
+  { key: "waiting", title: "Waiting on you", statuses: ["approval_overdue", "approval_waiting"], hint: "Needs your OK in Ordinal before its date." },
+  { key: "scheduled", title: "Scheduled", statuses: ["scheduled"], hint: "Approved and queued." },
+  { key: "posted", title: "Posted", statuses: ["posted"], hint: "Live on LinkedIn." },
+];
+
+function renderBoard(p) {
+  const rows = filtered(p);
+  const byAngle = state.board === "angle";
+  const canDrag = byAngle && state.viewer === "team";
+  let cols;
+  if (byAngle) {
+    const names = [...p.angles.map((a) => a.name), ...new Set(rows.map((x) => x.angle).filter((n) => !p.angles.some((a) => a.name === n)))];
+    cols = names.map((name) => {
+      const a = p.summary.angles.find((x) => x.name === name);
+      return { key: name, title: name, items: rows.filter((x) => x.angle === name), meta: a ? `${a.planned} planned · budget ${a.target}` : "", hint: a?.why || "" };
+    });
+  } else {
+    cols = STATUS_COLUMNS.map((c) => ({ ...c, items: rows.filter((x) => c.statuses.includes(x.effectiveStatus)), meta: "" }))
+      // "Not sent yet" only matters when something is in it; the other three always show.
+      .filter((c) => c.key !== "not_sent" || c.items.length);
+  }
+  const today = todayISO();
+  return `
+    <div class="board-bar">
+      <span class="note">Group by</span>
+      <div class="seg sm">${[["status", "Status"], ["angle", esc(p.angleWord)]].map(([v, l]) => `<button data-board="${v}" class="${state.board === v ? "on" : ""}">${l}</button>`).join("")}</div>
+      ${canDrag ? `<span class="note">Drag a card to move it to another ${esc(p.angleWord.toLowerCase())}.</span>` : ""}
+    </div>
+    <div class="board" style="--cols:${cols.length}">
+      ${cols.map((c) => `<div class="col ${byAngle ? "" : `col-${c.key}`}" data-col="${esc(c.key)}">
+        <div class="col-head">
+          <div>${byAngle ? chip(c.title) : `<b>${esc(c.title)}</b>`}<span class="count">${c.items.length}</span></div>
+          ${c.meta ? `<div class="note">${esc(c.meta)}</div>` : ""}
+          ${c.hint ? `<div class="col-hint">${esc(c.hint)}</div>` : ""}
+        </div>
+        <div class="col-body">
+          ${c.items.map((x) => card(x, { byAngle, canDrag, today, p })).join("") || '<div class="col-empty">Nothing here</div>'}
+        </div>
+      </div>`).join("")}
+    </div>`;
+}
+
+function card(x, { byAngle, canDrag, today, p }) {
+  const m = x.metrics;
+  const waiting = x.effectiveStatus === "approval_waiting" || x.effectiveStatus === "approval_overdue";
+  return `<article class="kcard ${x.effectiveStatus === "approval_overdue" ? "overdue" : ""}" data-post="${x.id}" ${canDrag ? 'draggable="true"' : ""} tabindex="0">
+    <div class="kc-top"><span class="kc-date ${x.date === today ? "is-today" : ""}">${esc(fmtDay(x.date))}</span>${byAngle ? pill(x) : chip(x.angle)}</div>
+    <div class="kc-title">${esc(x.title)}</div>
+    <div class="kc-meta">${esc(x.type)}${x.topicTag ? ` · ${esc(x.topicTag)}` : ""}${x.account && x.account.toLowerCase() !== p.person.toLowerCase() ? ` · ${esc(x.account)}` : ""}</div>
+    ${m ? `<div class="kc-metrics"><span><b>${fmtN(m.impressions)}</b> impr.</span><span><b>${fmtN((m.reactions || 0) + (m.comments || 0) + (m.reposts || 0))}</b> eng.</span><span><b>${fmtPct(m.engagementRate)}</b></span></div>` : ""}
+    ${waiting && x.ordinalUrl ? `<a class="kc-cta" href="${esc(x.ordinalUrl)}" target="_blank" rel="noopener" data-stop>${x.effectiveStatus === "approval_overdue" ? "Past its date · " : ""}Approve in Ordinal ↗</a>` : ""}
+  </article>`;
+}
+
+function bindBoard() {
+  document.querySelectorAll("[data-board]").forEach((b) => b.addEventListener("click", () => { state.board = b.dataset.board; setPref("board", state.board); render(); }));
+  document.querySelectorAll(".kcard [data-stop]").forEach((a) => a.addEventListener("click", (e) => e.stopPropagation()));
+  document.querySelectorAll(".kcard").forEach((c) => c.addEventListener("keydown", (e) => e.key === "Enter" && openPost(c.dataset.post)));
+  if (!(state.board === "angle" && state.viewer === "team")) return;
+  let dragId = null;
+  document.querySelectorAll(".kcard[draggable]").forEach((c) => {
+    c.addEventListener("dragstart", (e) => { dragId = c.dataset.post; c.classList.add("dragging"); e.dataTransfer.effectAllowed = "move"; });
+    c.addEventListener("dragend", () => { c.classList.remove("dragging"); document.querySelectorAll(".col.drop").forEach((x) => x.classList.remove("drop")); });
+  });
+  document.querySelectorAll(".col").forEach((col) => {
+    col.addEventListener("dragover", (e) => { if (dragId) { e.preventDefault(); col.classList.add("drop"); } });
+    col.addEventListener("dragleave", () => col.classList.remove("drop"));
+    col.addEventListener("drop", async (e) => {
+      e.preventDefault();
+      col.classList.remove("drop");
+      const post = state.plan.posts.find((x) => x.id === dragId);
+      const angle = col.dataset.col;
+      dragId = null;
+      if (!post || post.angle === angle) return;
+      post.angle = angle; // optimistic; the server's change event re-renders with the saved plan
+      render();
+      const res = await api(`/posts/${post.id}`, { method: "PATCH", body: JSON.stringify({ angle }) });
+      if (!res.ok) { toast("Couldn't move that post"); load(); }
+    });
+  });
+}
+
 function renderCalendar(p) {
   const rows = filtered(p);
   const [y, m] = p.month.split("-").map(Number);
@@ -235,7 +336,8 @@ function renderFeedback(p) {
 
 function bindMain() {
   document.querySelectorAll("[data-post]").forEach((el) => el.addEventListener("click", () => openPost(el.dataset.post)));
-  document.querySelectorAll("[data-view]").forEach((b) => b.addEventListener("click", () => { state.view = b.dataset.view; render(); }));
+  document.querySelectorAll("[data-view]").forEach((b) => b.addEventListener("click", () => { state.view = b.dataset.view; setPref("view", state.view); render(); }));
+  if (state.view === "board") bindBoard();
   $("#fAngle")?.addEventListener("change", (e) => { state.angle = e.target.value; render(); });
   $("#fStatus")?.addEventListener("change", (e) => { state.status = e.target.value; render(); });
   $("#fAccount")?.addEventListener("change", (e) => { state.account = e.target.value; render(); });
