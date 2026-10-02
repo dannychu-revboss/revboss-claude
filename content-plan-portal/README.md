@@ -2,7 +2,8 @@
 
 An interactive, live version of the monthly client content plan PDF. Each client gets a private link to their month:
 
-- **The plan:** waiting-on-you asks, the angle/pillar budget, and every post as a list or a calendar. All 19 October plans are imported from the PDFs.
+- **The plan:** waiting-on-you asks, the angle/pillar budget, and every post as a list, a kanban board (by status or by angle), or a calendar. All 19 October plans are imported from the PDFs.
+- **Angle changes:** the team drags a card to another angle to move it. A client's drag sends a request that waits for the team's Move it / Keep.
 - **Live status:** statuses come from Ordinal, including approvals. When a post is approved, every open copy of the page updates at once.
 - **Metrics:** LinkedIn impressions and engagement per post, plus month totals, from Ordinal analytics.
 - **Chat:** Claude answers from the live plan ("what's waiting on me?", "how did last week's posts do?"). It also passes change requests to the team.
@@ -11,6 +12,8 @@ An interactive, live version of the monthly client content plan PDF. Each client
 A team dashboard lists every plan with its status mix and open feedback. It also builds next month's plan from the Ordinal calendar.
 
 It runs with **no keys at all**. In that case it uses demo data and the chat answers a few questions offline, so you can click through it before connecting anything.
+
+**Handing off to someone with Replit?** Start with [`REPLIT_PROMPTS.md`](REPLIT_PROMPTS.md): copy-paste Replit Agent prompts for importing, securing, deploying and connecting it. `dist/content-plan-demo.html` is a no-install, single-file demo (rebuild it with `npm run build:demo`).
 
 ## Run it on Replit
 
@@ -58,6 +61,7 @@ Locally it's `npm install && npm start`, then open http://localhost:3000. Run `n
 | `server/chat/tools.js` | The chat's tools: overview, list/get posts, performance, leave feedback, complete an ask |
 | `public/` | No-build front end: `plan.html`/`plan.js` (client + team view), `index.html`/`admin.js` (dashboard) |
 | `scripts/import_pdfs.py` | One-time import of existing plan PDFs, including the Ordinal post links embedded in their titles |
+| `scripts/build-demo.mjs` | Builds `dist/content-plan-demo.html`, a single-file demo that runs with no server |
 | `data/seed/` | The 19 October plans imported from the PDFs (215 posts, all linked to Ordinal) |
 
 ## Access model
@@ -84,7 +88,7 @@ Locally it's `npm install && npm start`, then open http://localhost:3000. Run `n
 
 ## Before going live: what still needs checking
 
-- **Ordinal endpoint and auth.** `server/ordinal/live.js` calls the same Ordinal tools RevBoss already uses through Claude, and their response shapes were checked against real AGP data. What I could not confirm is the MCP server URL and whether Ordinal accepts a bearer token there or only OAuth. Get both from Ordinal. If they offer a REST API instead, re-implement the five methods in `live.js` against it; nothing else changes.
+- **Ordinal endpoint and auth.** `server/ordinal/live.js` calls the same Ordinal tools RevBoss already uses through Claude, and their response shapes were checked against real AGP data. What I could not confirm is the MCP server URL and whether Ordinal accepts a bearer token there or only OAuth. Get both from Ordinal. If they offer a REST API instead, re-implement the six methods in `live.js` against it; nothing else changes.
 - **Claude chat with a real key.** The tool schemas build and the request reaches the API. It hasn't been run end to end with a real key.
 - **Storage.** The JSON file store is fine for one Reserved VM. For several instances, or if you want history and backups, move `server/store.js` to Postgres. Its six functions are the only place data is read or written.
 - **Narrative fields.** "Why this number", the angle descriptions and the campaign sections (e.g. JustFund's "What October is working on") come from the PDFs for October. For new months they start blank or carried over, so a team member, or a later "draft the narrative with Claude" step, still has to fill them in.
