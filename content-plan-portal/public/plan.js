@@ -230,7 +230,8 @@ const STATUS_COLUMNS = [
 function renderBoard(p) {
   const rows = filtered(p);
   const byAngle = state.board === "angle";
-  const canDrag = byAngle && state.viewer === "team";
+  const canDrag = byAngle; // team: moves the post; client: asks RevBoss to move it
+  const pending = (p.angleRequests || []).filter((r) => r.status === "pending");
   let cols;
   if (byAngle) {
     const names = [...p.angles.map((a) => a.name), ...new Set(rows.map((x) => x.angle).filter((n) => !p.angles.some((a) => a.name === n)))];
@@ -248,7 +249,9 @@ function renderBoard(p) {
     <div class="board-bar">
       <span class="note">Group by</span>
       <div class="seg sm">${[["status", "Status"], ["angle", esc(p.angleWord)]].map(([v, l]) => `<button data-board="${v}" class="${state.board === v ? "on" : ""}">${l}</button>`).join("")}</div>
-      ${canDrag ? `<span class="note">Drag a card to move it to another ${esc(p.angleWord.toLowerCase())}.</span>` : ""}
+      ${canDrag ? `<span class="note">${state.viewer === "team"
+        ? `Drag a card to move it to another ${esc(p.angleWord.toLowerCase())}.`
+        : `Drag a card to ask us to move it to another ${esc(p.angleWord.toLowerCase())}. Nothing changes until RevBoss approves.`}</span>` : ""}
     </div>
     <div class="board" style="--cols:${cols.length}">
       ${cols.map((c) => `<div class="col ${byAngle ? "" : `col-${c.key}`}" data-col="${esc(c.key)}">
@@ -258,13 +261,25 @@ function renderBoard(p) {
           ${c.hint ? `<div class="col-hint">${esc(c.hint)}</div>` : ""}
         </div>
         <div class="col-body">
-          ${c.items.map((x) => card(x, { byAngle, canDrag, today, p })).join("") || '<div class="col-empty">Nothing here</div>'}
+          ${c.items.map((x) => card(x, { byAngle, canDrag, today, p, request: pending.find((r) => r.postId === x.id) })).join("")}
+          ${byAngle ? pending.filter((r) => r.toAngle === c.key).map((r) => `<div class="kghost" data-post="${r.postId}" title="Waiting on RevBoss">
+            <b>${esc(r.postTitle)}</b><span>Requested from ${esc(r.fromAngle)} · waiting on RevBoss</span></div>`).join("") : ""}
+          ${c.items.length || (byAngle && pending.some((r) => r.toAngle === c.key)) ? "" : '<div class="col-empty">Nothing here</div>'}
         </div>
       </div>`).join("")}
     </div>`;
 }
 
-function card(x, { byAngle, canDrag, today, p }) {
+function requestBlock(r) {
+  if (!r) return "";
+  if (state.viewer === "team") {
+    return `<div class="kc-req team">${esc(r.author)} asked to move this to <b>${esc(r.toAngle)}</b>${r.note ? `: “${esc(r.note)}”` : ""}
+      <div class="kc-req-actions"><button class="btn sm blue" data-decide="approve" data-rid="${r.id}" data-stop>Move it</button><button class="btn sm" data-decide="decline" data-rid="${r.id}" data-stop>Keep</button></div></div>`;
+  }
+  return `<div class="kc-req">Requested: move to <b>${esc(r.toAngle)}</b> · waiting on RevBoss</div>`;
+}
+
+function card(x, { byAngle, canDrag, today, p, request }) {
   const m = x.metrics;
   const waiting = x.effectiveStatus === "approval_waiting" || x.effectiveStatus === "approval_overdue";
   return `<article class="kcard ${x.effectiveStatus === "approval_overdue" ? "overdue" : ""}" data-post="${x.id}" ${canDrag ? 'draggable="true"' : ""} tabindex="0">
@@ -272,6 +287,7 @@ function card(x, { byAngle, canDrag, today, p }) {
     <div class="kc-title">${esc(x.title)}</div>
     <div class="kc-meta">${esc(x.type)}${x.topicTag ? ` · ${esc(x.topicTag)}` : ""}${x.account && x.account.toLowerCase() !== p.person.toLowerCase() ? ` · ${esc(x.account)}` : ""}</div>
     ${m ? `<div class="kc-metrics"><span><b>${fmtN(m.impressions)}</b> impr.</span><span><b>${fmtN((m.reactions || 0) + (m.comments || 0) + (m.reposts || 0))}</b> eng.</span><span><b>${fmtPct(m.engagementRate)}</b></span></div>` : ""}
+    ${requestBlock(request)}
     ${waiting && x.ordinalUrl ? `<a class="kc-cta" href="${esc(x.ordinalUrl)}" target="_blank" rel="noopener" data-stop>${x.effectiveStatus === "approval_overdue" ? "Past its date · " : ""}Approve in Ordinal ↗</a>` : ""}
   </article>`;
 }
@@ -280,7 +296,11 @@ function bindBoard() {
   document.querySelectorAll("[data-board]").forEach((b) => b.addEventListener("click", () => { state.board = b.dataset.board; setPref("board", state.board); render(); }));
   document.querySelectorAll(".kcard [data-stop]").forEach((a) => a.addEventListener("click", (e) => e.stopPropagation()));
   document.querySelectorAll(".kcard").forEach((c) => c.addEventListener("keydown", (e) => e.key === "Enter" && openPost(c.dataset.post)));
-  if (!(state.board === "angle" && state.viewer === "team")) return;
+  document.querySelectorAll("[data-decide]").forEach((b) => b.addEventListener("click", (e) => {
+    e.stopPropagation();
+    decideRequest(b.dataset.rid, b.dataset.decide);
+  }));
+  if (state.board !== "angle") return;
   let dragId = null;
   document.querySelectorAll(".kcard[draggable]").forEach((c) => {
     c.addEventListener("dragstart", (e) => { dragId = c.dataset.post; c.classList.add("dragging"); e.dataTransfer.effectAllowed = "move"; });
@@ -296,12 +316,52 @@ function bindBoard() {
       const angle = col.dataset.col;
       dragId = null;
       if (!post || post.angle === angle) return;
-      post.angle = angle; // optimistic; the server's change event re-renders with the saved plan
-      render();
-      const res = await api(`/posts/${post.id}`, { method: "PATCH", body: JSON.stringify({ angle }) });
-      if (!res.ok) { toast("Couldn't move that post"); load(); }
+      if (state.viewer !== "team") return askToMove(post, angle);
+      moveAngle(post, angle);
     });
   });
+}
+
+// Team: re-file a post directly.
+async function moveAngle(post, angle) {
+  post.angle = angle; // optimistic; the server's change event re-renders with the saved plan
+  render();
+  const res = await api(`/posts/${post.id}`, { method: "PATCH", body: JSON.stringify({ angle }) });
+  if (!res.ok) { toast("Couldn't move that post"); load(); }
+}
+
+async function decideRequest(rid, decision) {
+  const res = await api(`/angle-requests/${rid}`, { method: "POST", body: JSON.stringify({ decision }) });
+  if (!res.ok) { toast((await res.json().catch(() => ({}))).error || "Couldn't update that request"); load(); }
+}
+
+// Client: confirm, with an optional note, before the request goes to RevBoss.
+function askToMove(post, angle) {
+  const word = state.plan.angleWord.toLowerCase();
+  const wrap = document.createElement("div");
+  wrap.className = "modal";
+  wrap.innerHTML = `<form class="card" role="dialog" aria-label="Request a different ${esc(word)}">
+    <div class="section-title">Request a different ${esc(word)}</div>
+    <p style="margin:10px 0 0">Ask RevBoss to move <b>${esc(post.title)}</b> from ${chip(post.angle)} to ${chip(angle)}?</p>
+    <p class="note" style="margin:6px 0 0">The post stays where it is until the team approves. You'll see it update here.</p>
+    <label for="mvNote">Anything we should know? (optional)</label>
+    <textarea id="mvNote" rows="3" placeholder="e.g. This reads more like a client story than an opinion."></textarea>
+    <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:12px">
+      <button type="button" class="btn" data-cancel>Cancel</button>
+      <button type="submit" class="btn primary">Send request</button>
+    </div></form>`;
+  document.body.appendChild(wrap);
+  const close = () => wrap.remove();
+  wrap.addEventListener("click", (e) => e.target === wrap && close());
+  wrap.querySelector("[data-cancel]").onclick = close;
+  wrap.querySelector("textarea").focus();
+  wrap.querySelector("form").onsubmit = async (e) => {
+    e.preventDefault();
+    const note = wrap.querySelector("textarea").value.trim();
+    close();
+    const res = await api("/angle-requests", { method: "POST", body: JSON.stringify({ postId: post.id, toAngle: angle, note }) });
+    if (!res.ok) toast((await res.json().catch(() => ({}))).error || "Couldn't send that request");
+  };
 }
 
 function renderCalendar(p) {
@@ -377,7 +437,7 @@ function openPost(id, refresh = false) {
     <div class="d-body">
       <dl class="facts">
         <dt>Topic tag</dt><dd>${esc(x.topicTag || "—")}</dd>
-        <dt>${esc(p.angleWord)}</dt><dd>${esc(x.angle)}${angleDesc(x.angle)}</dd>
+        <dt>${esc(p.angleWord)}</dt><dd>${esc(x.angle)}${angleDesc(x.angle)}${angleControl(x)}</dd>
         <dt>Status</dt><dd>${esc(statusExplain(x.effectiveStatus))}</dd>
       </dl>
       ${needsOk && x.ordinalUrl ? `<p style="margin:16px 0 0"><a class="btn blue" href="${esc(x.ordinalUrl)}" target="_blank" rel="noopener">Review &amp; approve in Ordinal ↗</a></p>` : x.ordinalUrl ? `<p style="margin:16px 0 0"><a class="btn" href="${esc(x.ordinalUrl)}" target="_blank" rel="noopener">Open in Ordinal ↗</a></p>` : ""}
@@ -406,6 +466,14 @@ function openPost(id, refresh = false) {
   d.setAttribute("aria-hidden", "false");
   $("#scrim").classList.add("on");
   $("#dClose").onclick = closeDrawer;
+  d.querySelectorAll("[data-decide]").forEach((b) => (b.onclick = () => decideRequest(b.dataset.rid, b.dataset.decide)));
+  const mv = $("#mvSelect");
+  if (mv) mv.onchange = () => {
+    if (!mv.value) return;
+    if (state.viewer === "team") moveAngle(x, mv.value);
+    else askToMove(x, mv.value);
+    mv.value = "";
+  };
   $("#fbForm").onsubmit = async (e) => {
     e.preventDefault();
     const message = $("#fbText").value.trim();
@@ -413,6 +481,20 @@ function openPost(id, refresh = false) {
     $("#fbText").value = "";
     await api("/feedback", { method: "POST", body: JSON.stringify({ postId: id, message }) });
   };
+}
+
+function angleControl(x) {
+  const p = state.plan;
+  const req = (p.angleRequests || []).find((r) => r.postId === x.id && r.status === "pending");
+  const others = p.angles.map((a) => a.name).filter((n) => n !== x.angle);
+  if (!others.length) return "";
+  const team = state.viewer === "team";
+  return `<div class="angle-move">
+    ${req ? `<div class="kc-req ${team ? "team" : ""}" style="margin:0 0 6px">${team ? `${esc(req.author)} asked to move this to <b>${esc(req.toAngle)}</b>${req.note ? `: “${esc(req.note)}”` : ""}
+      <div class="kc-req-actions"><button class="btn sm blue" data-decide="approve" data-rid="${req.id}">Move it</button><button class="btn sm" data-decide="decline" data-rid="${req.id}">Keep</button></div>`
+      : `Requested: move to <b>${esc(req.toAngle)}</b> · waiting on RevBoss`}</div>` : ""}
+    <select id="mvSelect" aria-label="Move to another ${esc(p.angleWord.toLowerCase())}"><option value="">${team ? "Move to…" : `Ask to move to another ${esc(p.angleWord.toLowerCase())}…`}</option>${others.map((n) => `<option>${esc(n)}</option>`).join("")}</select>
+  </div>`;
 }
 
 function angleDesc(name) {
@@ -476,6 +558,7 @@ const TOOL_TEXT = {
   get_performance: "Pulling LinkedIn numbers…",
   leave_feedback: "Passing that to the team…",
   complete_ask: "Updating your checklist…",
+  request_angle_change: "Sending your request to the team…",
 };
 
 function renderChatIntro() {

@@ -140,11 +140,33 @@ app.patch("/api/plans/:id/posts/:postId", requireTeam, withPlan, (req, res) => {
     const fromAngle = post.angle;
     for (const f of POST_FIELDS) if (f in req.body) post[f] = req.body[f];
     if ("angle" in req.body && req.body.angle !== fromAngle) {
+      // Moving a post where the client asked for it settles their open request.
+      for (const r of p.angleRequests) {
+        if (r.postId === post.id && r.status === "pending") {
+          r.status = r.toAngle === post.angle ? "approved" : "declined";
+          r.decidedAt = new Date().toISOString();
+          r.decidedBy = "RevBoss team";
+        }
+      }
       return { kind: "edit", text: `Moved "${post.title}" from ${fromAngle} to ${post.angle}`, postId: post.id };
     }
     return { kind: "edit", text: `Updated "${post.title}"`, postId: post.id };
   });
   res.json({ plan: publicPlan(plan) });
+});
+
+app.post("/api/plans/:id/angle-requests", withPlan, wrap(async (req, res) => {
+  const author = req.viewer === "team" ? "RevBoss team" : req.plan.person;
+  const out = await fns.requestAngleChange(req.plan.id, {
+    post: req.body.postId, toAngle: req.body.toAngle, note: String(req.body.note || "").trim().slice(0, 1000), author,
+  });
+  res.status(out.error ? 400 : 200).json(out);
+}));
+
+app.post("/api/plans/:id/angle-requests/:rid", requireTeam, withPlan, (req, res) => {
+  const decision = req.body.decision === "approve" ? "approve" : "decline";
+  const out = fns.decideAngleRequest(req.plan.id, { id: req.params.rid, decision });
+  res.status(out?.error ? 409 : 200).json(out);
 });
 
 app.post("/api/plans/:id/feedback/:fid/resolve", requireTeam, withPlan, (req, res) => {

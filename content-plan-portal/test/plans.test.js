@@ -81,3 +81,27 @@ test("generator rebuilds a month from the Ordinal calendar", async () => {
   const empty = await generatePlan({ fromPlanId: WHITNEY, month: "2026-11" });
   assert.equal(empty.posts.length, 0);
 });
+
+test("client angle-change requests wait for the team, then apply or not", async () => {
+  const id = "agp-liz-lowe-2026-10";
+  const plan = store.getPlan(id);
+  const post = plan.posts[0];
+  const target = plan.angles.find((a) => a.name !== post.angle).name;
+
+  assert.ok((await fns.requestAngleChange(id, { post: post.id, toAngle: "Nonsense" })).error);
+  assert.ok((await fns.requestAngleChange(id, { post: post.id, toAngle: post.angle })).error);
+
+  const r = await fns.requestAngleChange(id, { post: post.id, toAngle: target, note: "reads like proof", author: "Liz" });
+  assert.equal(r.request.status, "pending");
+  assert.equal(store.getPlan(id).posts[0].angle, post.angle, "nothing moves before approval");
+  assert.match(store.getPlan(id).feedback[0].message, new RegExp(`to ${target}`));
+
+  // A second drag replaces the first open request.
+  const again = await fns.requestAngleChange(id, { post: post.id, toAngle: target, author: "Liz" });
+  assert.equal(store.getPlan(id).angleRequests.filter((x) => x.status === "pending").length, 1);
+  assert.equal(store.getPlan(id).angleRequests.find((x) => x.id === r.request.id).status, "replaced");
+
+  assert.equal(fns.decideAngleRequest(id, { id: again.request.id, decision: "approve" }).request.status, "approved");
+  assert.equal(store.getPlan(id).posts[0].angle, target);
+  assert.ok(fns.decideAngleRequest(id, { id: again.request.id, decision: "decline" }).error, "can't decide twice");
+});

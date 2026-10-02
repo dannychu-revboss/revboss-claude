@@ -299,3 +299,18 @@ table.posts .metric small { color: var(--faint); }
 .kc-cta { display: inline-block; margin-top: 8px; font-size: 12px; font-weight: 700; }
 .kcard.overdue .kc-cta { color: var(--red); }
 @media (max-width: 760px) { .board { grid-template-columns: repeat(var(--cols), 82%); scroll-snap-type: x mandatory; } .col { scroll-snap-align: start; } }
+
+/* ---------- angle-change requests ---------- */
+.kc-req { margin-top: 8px; padding: 6px 8px; border-radius: 7px; background: var(--orange-soft); color: var(--orange-ink); font-size: 12px; line-height: 1.4; }
+.kc-req b { color: var(--navy); }
+.kc-req.team { background: #eef2fd; color: var(--navy-2); }
+.kc-req-actions { display: flex; gap: 6px; margin-top: 6px; }
+.kghost { border: 1.5px dashed #e3b26b; background: rgba(255, 241, 222, 0.6); border-radius: 10px; padding: 9px 11px; cursor: pointer; }
+.kghost b { display: block; font-size: 13px; color: var(--navy); }
+.kghost span { font-size: 11.5px; color: var(--orange-ink); }
+.angle-move { margin-top: 8px; }
+.angle-move select { border: 1px solid var(--line); background: var(--paper); border-radius: 8px; padding: 6px 10px; font: inherit; font-size: 13px; color: var(--navy); max-width: 100%; }
+.modal { position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; background: rgba(7, 23, 68, 0.35); padding: 16px; }
+.modal .card { width: min(460px, 100%); }
+.modal label { display: block; font-size: 12.5px; font-weight: 700; color: var(--muted); margin: 14px 0 4px; }
+.modal textarea { width: 100%; border: 1px solid var(--line); border-radius: 9px; padding: 9px 11px; font: inherit; font-size: 14px; color: var(--navy); resize: vertical; }

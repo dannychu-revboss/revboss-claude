@@ -45,6 +45,7 @@ export function normalize(plan) {
   plan.shareToken ||= crypto.randomBytes(12).toString("base64url");
   plan.feedback ||= [];
   plan.activity ||= [];
+  plan.angleRequests ||= [];
   plan.updatedAt ||= new Date().toISOString();
   plan.posts.forEach((p) => {
     p.metrics ??= null;

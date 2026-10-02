@@ -25,6 +25,7 @@ function systemPrompt(plan, viewer) {
     "Answer in plain sentences, short. Use a compact list only for several posts. Give dates as weekday + month + day (Tue Oct 13). No emoji.",
     "To approve a post, the client approves it in Ordinal: give them the post's Ordinal link. You cannot approve, schedule, publish or edit posts yourself.",
     "When they want a change, or want to tell the team something, use leave_feedback and confirm what you passed on. The RevBoss team picks it up from the Ordinal comment.",
+    `To move a post to a different ${plan.angleWord.toLowerCase()}, use request_angle_change: it goes to the team for approval and the post stays put until then. They can also drag the card on the Board view (grouped by ${plan.angleWord.toLowerCase()}).`,
     "If something is outside what the plan and its data can answer, say so and suggest booking time with Danny" + (plan.bookingUrl ? ` (${plan.bookingUrl})` : "") + ".",
   ].join("\n\n");
 }

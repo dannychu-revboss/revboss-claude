@@ -39,6 +39,7 @@ export const fns = {
       waitingOnYou: plan.waitingOn.map((w, i) => ({ index: i, when: w.when, ask: w.ask, done: !!w.done })),
       nextPost: s.nextPost,
       campaignsAndNotes: plan.sections,
+      pendingAngleRequests: plan.angleRequests.filter((r) => r.status === "pending").map((r) => ({ post: r.postTitle, from: r.fromAngle, to: r.toAngle, by: r.author })),
       statusKey: STATUS_HELP,
       lastSyncedWithOrdinal: plan.lastSyncedAt || null,
       dataSource: plan.lastSyncAdapter === "live" ? "Ordinal (live)" : "demo data",
@@ -106,7 +107,7 @@ export const fns = {
     };
   },
 
-  async leaveFeedback(planId, { post, message, author }) {
+  async leaveFeedback(planId, { post, message, author, silent = false }) {
     const plan = getPlan(planId);
     const p = post ? findPost(plan, post) : null;
     if (post && !p) return { error: `No post matching "${post}".` };
@@ -122,9 +123,60 @@ export const fns = {
     const item = { id: `f${Date.now().toString(36)}`, at: new Date().toISOString(), postId: p?.id || null, postTitle: p?.title || null, message, author: author || plan.person, sentToOrdinal, resolved: false };
     updatePlan(planId, (pl) => {
       pl.feedback.unshift(item);
-      return { kind: "feedback", text: `${item.author} left feedback${p ? ` on "${p.title}"` : ""}` };
+      return { kind: "feedback", text: `${item.author} left feedback${p ? ` on "${p.title}"` : ""}`, silent };
     });
     return { saved: true, sentToOrdinal, item };
+  },
+
+  // A client asks to re-file a post under another angle. Nothing moves until
+  // the team approves; the request is logged as feedback and, when Ordinal is
+  // connected, added as a comment on the post.
+  async requestAngleChange(planId, { post, toAngle, note, author }) {
+    const plan = getPlan(planId);
+    const p = findPost(plan, post);
+    if (!p) return { error: `No post matching "${post}".` };
+    const target = plan.angles.find((a) => a.name.toLowerCase() === String(toAngle || "").toLowerCase());
+    if (!target) return { error: `"${toAngle}" isn't one of this plan's ${plan.angleWord.toLowerCase()}s: ${plan.angles.map((a) => a.name).join(", ")}.` };
+    if (target.name === p.angle) return { error: `"${p.title}" is already ${target.name}.` };
+    const message = `Please move "${p.title}" from ${p.angle} to ${target.name}.${note ? ` ${note}` : ""}`;
+    const fb = await fns.leaveFeedback(planId, { post: p.id, message, author, silent: true });
+    const req = {
+      id: `r${Date.now().toString(36)}`, at: new Date().toISOString(), postId: p.id, postTitle: p.title,
+      fromAngle: p.angle, toAngle: target.name, note: note || "", author: author || plan.person,
+      status: "pending", feedbackId: fb.item?.id || null,
+    };
+    updatePlan(planId, (pl) => {
+      // One open request per post: a new drag replaces the previous ask.
+      for (const r of pl.angleRequests) if (r.postId === p.id && r.status === "pending") r.status = "replaced";
+      pl.angleRequests.unshift(req);
+      return { kind: "angle_request", text: `${req.author} asked to move "${p.title}" to ${target.name}`, postId: p.id };
+    });
+    return { saved: true, request: req, sentToOrdinal: fb.sentToOrdinal };
+  },
+
+  decideAngleRequest(planId, { id, decision, by = "RevBoss team" }) {
+    let out;
+    updatePlan(planId, (pl) => {
+      const r = pl.angleRequests.find((x) => x.id === id);
+      if (!r || r.status !== "pending") {
+        out = { error: "That request is no longer open." };
+        return null;
+      }
+      const post = pl.posts.find((x) => x.id === r.postId);
+      r.status = decision === "approve" ? "approved" : "declined";
+      r.decidedAt = new Date().toISOString();
+      r.decidedBy = by;
+      if (r.status === "approved" && post) post.angle = r.toAngle;
+      const fb = pl.feedback.find((f) => f.id === r.feedbackId);
+      if (fb) fb.resolved = true;
+      out = { ok: true, request: r };
+      return {
+        kind: "angle_request",
+        text: r.status === "approved" ? `Moved "${r.postTitle}" to ${r.toAngle}, as requested` : `Kept "${r.postTitle}" in ${r.fromAngle} for now`,
+        postId: r.postId,
+      };
+    });
+    return out;
   },
 
   completeAsk(planId, { index, done = true }) {
@@ -182,6 +234,16 @@ export function buildTools(planId, { author } = {}) {
         message: z.string().min(1).max(2000),
       }),
       run: async (input) => json(await fns.leaveFeedback(planId, { ...input, author })),
+    }),
+    betaZodTool({
+      name: "request_angle_change",
+      description: "Ask the RevBoss team to move a post to a different angle/pillar. The post doesn't move until the team approves; tell the viewer that. Only call this when the viewer asks for it.",
+      inputSchema: z.object({
+        post: z.string().describe("Post id or title"),
+        toAngle: z.string().describe("Target angle or pillar name, exactly as the plan names it"),
+        note: z.string().max(1000).optional().describe("The viewer's reason, if they gave one"),
+      }),
+      run: async (input) => json(await fns.requestAngleChange(planId, { ...input, author })),
     }),
     betaZodTool({
       name: "complete_ask",
