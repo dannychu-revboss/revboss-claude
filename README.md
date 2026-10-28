@@ -1,5 +1,9 @@
 # Ordinal Comment Agent
 
+> This repo also contains **[`reply-assistant/`](reply-assistant/README.md)**: a client-facing chat app
+> that helps clients answer LinkedIn/email replies using a per-client follow-up matrix
+> (HeyReach + Google Drive + voice).
+
 An agent that watches client feedback comments on Ordinal posts, drafts proposed
 revisions, and routes them through a human review flow before anything changes.
 

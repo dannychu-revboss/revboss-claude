@@ -1,0 +1,201 @@
+{
+  "id": "demo",
+  "name": "Demo Client (Northwind Analytics)",
+  "active": true,
+  "accessToken": "demo-token-change-me-0000000000",
+  "profile": {
+    "company": "Northwind Analytics",
+    "offer": "Fractional data team for mid-market e-commerce brands: dashboards, forecasting and attribution set up in 30 days, then run monthly.",
+    "audience": "VPs and Directors of Ecommerce, Marketing and Finance at DTC brands doing $10M-$150M revenue.",
+    "voice": "Plainspoken, warm, a little dry. First names. Short sentences. No hype words, no exclamation marks, never 'just following up'.",
+    "signature": "Jamie Lee\nFounder, Northwind Analytics\nnorthwind.example.com",
+    "calendarLink": "https://cal.example.com/northwind/20min"
+  },
+  "heyreach": {
+    "apiKeyEnv": "HEYREACH_KEY_DEMO",
+    "linkedInAccountIds": [],
+    "allowSend": false
+  },
+  "drive": {
+    "folderIds": []
+  },
+  "assets": [
+    {
+      "id": "one-sheet",
+      "type": "one_sheet",
+      "title": "Northwind One Sheet",
+      "description": "One page: what we do, the 30-day setup, pricing tiers, three client logos.",
+      "url": "https://drive.google.com/file/d/REPLACE_ME/view",
+      "whenToUse": "Prospect asks for more info, an overview, or 'send me something'."
+    },
+    {
+      "id": "benchmark-report",
+      "type": "lead_magnet",
+      "title": "2026 DTC Metrics Benchmark Report",
+      "description": "Benchmarks for CAC, repeat rate and contribution margin across 140 DTC brands, by revenue band.",
+      "url": "https://drive.google.com/file/d/REPLACE_ME/view",
+      "whenToUse": "Prospect is curious but not ready to talk, or says 'not now'. A useful give with no ask."
+    },
+    {
+      "id": "tear-sheet-apparel",
+      "type": "tear_sheet",
+      "title": "Apparel Brand Tear Sheet",
+      "description": "One-page result: $42M apparel brand cut blended CAC 18% in two quarters after attribution rebuild.",
+      "url": "https://drive.google.com/file/d/REPLACE_ME/view",
+      "whenToUse": "Prospect is skeptical, already has a vendor/agency, or asks for proof."
+    },
+    {
+      "id": "case-study-forecasting",
+      "type": "case_study",
+      "title": "Forecasting Case Study",
+      "description": "Two-page case study: inventory forecasting for a $90M home goods brand, 31% fewer stockouts.",
+      "url": "https://drive.google.com/file/d/REPLACE_ME/view",
+      "whenToUse": "Prospect mentions inventory, planning, or finance is the main stakeholder."
+    }
+  ],
+  "templates": [
+    {
+      "id": "send-info",
+      "name": "Send info + soft ask",
+      "channel": "linkedin",
+      "body": "Thanks {{first_name}}. Here's the one-pager: {{asset_link}}\n\nThe short version: we set up dashboards, forecasting and attribution in about 30 days, then run it monthly. If it looks relevant, happy to walk through how it'd work for {{company}} — 20 minutes: {{calendar_link}}"
+    },
+    {
+      "id": "book-call",
+      "name": "Book the call",
+      "channel": "linkedin",
+      "body": "Great, {{first_name}}. Here's my calendar if it's easiest to grab a time: {{calendar_link}}\n\nIf you'd rather, send me two times that work and I'll send the invite."
+    },
+    {
+      "id": "nurture-give",
+      "name": "Not now: give value, no ask",
+      "channel": "linkedin",
+      "body": "Totally fair, {{first_name}}. In the meantime this might be useful — benchmarks from 140 DTC brands, broken out by revenue band: {{asset_link}}\n\nI'll check back in {{timeframe}}."
+    },
+    {
+      "id": "referral-ask",
+      "name": "Ask for the intro",
+      "channel": "linkedin",
+      "body": "Appreciate it, {{first_name}}. Would you be open to pointing me to {{referral_name}}, or would you rather I reach out and mention you suggested it?"
+    },
+    {
+      "id": "has-vendor",
+      "name": "Already has a vendor: proof, not pitch",
+      "channel": "linkedin",
+      "body": "Makes sense, {{first_name}}. Not trying to replace anyone. A lot of our clients came to us after an agency setup, usually because attribution didn't match the P&L. Here's one example in case it's ever useful: {{asset_link}}"
+    },
+    {
+      "id": "polite-close",
+      "name": "Polite close",
+      "channel": "linkedin",
+      "body": "Understood, {{first_name}}, thanks for letting me know. Wishing you a strong Q4."
+    },
+    {
+      "id": "email-send-info",
+      "name": "Email: send info",
+      "channel": "email",
+      "body": "Subject: Northwind overview for {{company}}\n\nHi {{first_name}},\n\nThanks for the reply. Attached is a one-page overview of how we work: {{asset_link}}\n\nIn short, we set up dashboards, forecasting and attribution in about 30 days, then run it monthly as your fractional data team.\n\nIf it's relevant, here's my calendar for a 20-minute walkthrough: {{calendar_link}}\n\n{{signature}}"
+    }
+  ],
+  "matrix": [
+    {
+      "id": "wants-info",
+      "scenario": "Interested: wants more information",
+      "intent": "curious",
+      "signals": ["send me more info", "do you have a deck", "what does this look like", "can you share details", "tell me more"],
+      "goal": "Give them the right one-pager and make booking a call the obvious next step.",
+      "options": [
+        { "label": "Send the one sheet + soft call ask", "templateId": "send-info", "assetIds": ["one-sheet"] },
+        { "label": "Send proof that matches their situation", "templateId": "send-info", "assetIds": ["tear-sheet-apparel"], "guidance": "Use when they are in apparel or mention CAC/attribution." },
+        { "label": "Email version (if they gave an email)", "templateId": "email-send-info", "assetIds": ["one-sheet"] }
+      ],
+      "avoid": "Do not paste the whole pitch into the message. Do not send more than two assets."
+    },
+    {
+      "id": "wants-call",
+      "scenario": "Interested: open to a call",
+      "intent": "positive",
+      "signals": ["happy to chat", "let's talk", "sure, when works", "open to a call", "set something up"],
+      "goal": "Get a time on the calendar with as little back-and-forth as possible.",
+      "options": [
+        { "label": "Send calendar link", "templateId": "book-call", "assetIds": [] },
+        { "label": "Calendar link + one sheet to review beforehand", "templateId": "book-call", "assetIds": ["one-sheet"], "guidance": "Use when they seem to want context before the call." }
+      ],
+      "avoid": "No more selling. They said yes."
+    },
+    {
+      "id": "not-now",
+      "scenario": "Timing: not right now",
+      "intent": "timing",
+      "signals": ["not a priority right now", "reach out next quarter", "maybe in the new year", "budget is set", "too busy"],
+      "goal": "Leave a useful asset, set a specific follow-up time, keep the door open.",
+      "options": [
+        { "label": "Send the benchmark report, check back later", "templateId": "nurture-give", "assetIds": ["benchmark-report"], "guidance": "Use the timeframe they gave; if none, say 'early next quarter'." },
+        { "label": "Short acknowledgment only", "templateId": "polite-close", "assetIds": [], "guidance": "Use when they were curt." }
+      ],
+      "avoid": "Do not push for a call."
+    },
+    {
+      "id": "has-vendor",
+      "scenario": "Objection: already have a vendor / in-house team",
+      "intent": "objection",
+      "signals": ["we already work with", "we have an agency", "we do this in-house", "we're covered"],
+      "goal": "Plant a seed with proof without arguing.",
+      "options": [
+        { "label": "Proof, not pitch (tear sheet)", "templateId": "has-vendor", "assetIds": ["tear-sheet-apparel"] },
+        { "label": "Give the benchmark report as a free check", "templateId": "nurture-give", "assetIds": ["benchmark-report"], "guidance": "Frame it as a way to sanity-check their current numbers." }
+      ],
+      "avoid": "Never criticize their current vendor."
+    },
+    {
+      "id": "referral",
+      "scenario": "Wrong person: refers someone else",
+      "intent": "referral",
+      "signals": ["not my area", "you should talk to", "reach out to our", "I'm not the right person"],
+      "goal": "Get the name and, ideally, a warm intro.",
+      "options": [
+        { "label": "Ask for the intro", "templateId": "referral-ask", "assetIds": [] }
+      ]
+    },
+    {
+      "id": "pricing",
+      "scenario": "Question: what does it cost?",
+      "intent": "curious",
+      "signals": ["how much", "what's the pricing", "ballpark cost", "what's the investment"],
+      "goal": "Give a straight answer (the one sheet has tiers) and offer to scope it on a call.",
+      "options": [
+        { "label": "Point to tiers in the one sheet + offer to scope", "templateId": "send-info", "assetIds": ["one-sheet"], "guidance": "Mention that pricing tiers are on the one sheet. Do not quote numbers that aren't in the background knowledge." }
+      ]
+    },
+    {
+      "id": "not-interested",
+      "scenario": "Not interested",
+      "intent": "negative",
+      "signals": ["not interested", "no thanks", "please remove me", "stop messaging"],
+      "goal": "Close gracefully. If they asked to stop, confirm and stop.",
+      "options": [
+        { "label": "Polite close", "templateId": "polite-close", "assetIds": [] }
+      ],
+      "avoid": "No asset, no ask, no 'but'."
+    },
+    {
+      "id": "ooo",
+      "scenario": "Out of office / auto-reply",
+      "intent": "out_of_office",
+      "signals": ["out of office", "on leave", "returning on", "limited access to email"],
+      "goal": "Don't reply now; note the return date and follow up after it.",
+      "options": [
+        { "label": "No reply now: follow up after their return date", "assetIds": [], "guidance": "Draft a short message for after they return and say when to send it." }
+      ]
+    }
+  ],
+  "knowledge": [
+    {
+      "id": "pricing-notes",
+      "title": "Pricing and packaging notes",
+      "kind": "notes",
+      "text": "Three tiers: Starter (dashboards only), Growth (dashboards + attribution), Full (adds forecasting). Setup is a fixed 30-day project, then monthly retainer. Exact pricing is shared on the call, not in DMs.",
+      "addedAt": "2026-10-28T00:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reply Assistant Admin</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="admin">
+    <h1>Reply Assistant · Client setup</h1>
+
+    <div id="login" class="card hidden">
+      <form id="login-form" class="bar">
+        <input type="password" id="admin-token" placeholder="Admin token" style="max-width:320px" autocomplete="current-password">
+        <button class="primary">Sign in</button>
+      </form>
+    </div>
+
+    <div id="workspace" class="hidden">
+      <div class="bar">
+        <select id="client-select" style="max-width:320px"></select>
+        <button id="new-client">New client</button>
+        <span style="flex:1"></span>
+        <span id="save-status" class="status"></span>
+        <button id="save" class="primary">Save changes</button>
+      </div>
+
+      <div id="editor"></div>
+    </div>
+  </div>
+  <script src="/admin.js" type="module"></script>
+</body>
+</html>

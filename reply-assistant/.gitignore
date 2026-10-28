@@ -1,0 +1,7 @@
+node_modules/
+.env
+# Real client configs and chat transcripts stay out of git; only the demo is committed.
+data/*
+!data/clients/
+data/clients/*
+!data/clients/demo.json

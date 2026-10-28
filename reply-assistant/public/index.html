@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reply Assistant</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <header>
+        <h1 id="client-name">Reply Assistant</h1>
+        <div class="muted small">by RevBoss</div>
+      </header>
+      <section id="inbox-section" class="hidden">
+        <h2>Needs a reply</h2>
+        <ul class="list" id="inbox"></ul>
+      </section>
+      <section style="flex:1">
+        <h2>Chats</h2>
+        <ul class="list" id="chats"></ul>
+      </section>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <button class="icon menu-btn" id="menu-btn" aria-label="Menu">☰</button>
+        <strong id="chat-title">New chat</strong>
+        <span class="spacer"></span>
+        <label class="toggle" id="voice-toggle-wrap" title="Speak answers out loud and send dictated messages automatically">
+          <input type="checkbox" id="voice-mode"> Voice mode
+        </label>
+        <button id="export-btn" class="hidden">Export</button>
+        <button id="new-chat">New chat</button>
+      </div>
+
+      <div class="messages" id="messages">
+        <div class="messages-inner" id="messages-inner"></div>
+      </div>
+
+      <div class="composer">
+        <form id="composer">
+          <textarea id="input" rows="1" placeholder="Paste a reply, name a lead, or ask how to respond…"></textarea>
+          <button type="button" class="icon mic" id="mic" title="Dictate">🎤</button>
+          <button type="submit" class="primary" id="send">Send</button>
+        </form>
+      </div>
+    </main>
+  </div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
